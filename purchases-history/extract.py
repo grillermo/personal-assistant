@@ -107,3 +107,41 @@ class MeliClient:
             time.sleep(0.5)
 
         return orders
+
+    def hydrate_items(self, item_ids: list[str]) -> dict[str, dict]:
+        unique_ids = list(dict.fromkeys(item_ids))  # deduplicate, preserve insertion order
+        batches = [unique_ids[i : i + 20] for i in range(0, len(unique_ids), 20)]
+        results: dict[str, dict] = {}
+
+        def fetch_batch(batch: list[str]) -> dict[str, dict]:
+            batch_results: dict[str, dict] = {}
+            try:
+                data = self.get(f"{API_BASE}/items", params={"ids": ",".join(batch)})
+                for entry in data:
+                    if entry.get("code") == 200:
+                        body = entry.get("body", {})
+                        batch_results[body["id"]] = body
+            except Exception as e:
+                print(f"[Warning] Batch hydration failed: {e}")
+            return batch_results
+
+        print(f"\nHydrating {len(unique_ids)} items across {len(batches)} batch(es)...")
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            for batch_result in executor.map(fetch_batch, batches):
+                results.update(batch_result)
+
+        return results
+
+
+def collect_item_ids(orders: list[dict]) -> tuple[list[str], set[str]]:
+    all_ids: list[str] = []
+    has_title: set[str] = set()
+    for order in orders:
+        for oi in order.get("order_items", []):
+            item = oi.get("item", {})
+            item_id = item.get("id")
+            if item_id:
+                all_ids.append(item_id)
+                if item.get("title"):
+                    has_title.add(item_id)
+    return all_ids, has_title

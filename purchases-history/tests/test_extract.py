@@ -141,3 +141,59 @@ def test_get_all_orders_stops_on_empty_results(tmp_path):
         orders = client.get_all_orders(user_id=123456)
 
     assert orders == []
+
+
+def test_collect_item_ids_splits_by_title_presence():
+    from extract import collect_item_ids
+    orders = [
+        {
+            "order_items": [
+                {"item": {"id": "MLA1", "title": "Laptop"}},
+                {"item": {"id": "MLA2", "title": ""}},
+                {"item": {"id": "MLA3"}},
+            ]
+        }
+    ]
+    all_ids, has_title = collect_item_ids(orders)
+    assert set(all_ids) == {"MLA1", "MLA2", "MLA3"}
+    assert has_title == {"MLA1"}
+
+
+def test_hydrate_items_filters_non_200(tmp_path):
+    tokens_path, creds_path = _write_fixtures(tmp_path)
+    from extract import MeliClient
+    client = MeliClient(tokens_path=tokens_path, creds_path=creds_path)
+
+    batch_resp = MagicMock()
+    batch_resp.status_code = 200
+    batch_resp.json.return_value = [
+        {"code": 200, "body": {"id": "MLA1", "title": "Good Item", "category_id": "MLA1055"}},
+        {"code": 404, "body": {"id": "MLA2", "message": "Item not found"}},
+    ]
+    batch_resp.raise_for_status = MagicMock()
+
+    with patch("extract.requests.get", return_value=batch_resp):
+        result = client.hydrate_items(["MLA1", "MLA2"])
+
+    assert "MLA1" in result
+    assert result["MLA1"]["title"] == "Good Item"
+    assert "MLA2" not in result
+
+
+def test_hydrate_items_deduplicates_ids(tmp_path):
+    tokens_path, creds_path = _write_fixtures(tmp_path)
+    from extract import MeliClient
+    client = MeliClient(tokens_path=tokens_path, creds_path=creds_path)
+
+    batch_resp = MagicMock()
+    batch_resp.status_code = 200
+    batch_resp.json.return_value = [
+        {"code": 200, "body": {"id": "MLA1", "title": "Item", "category_id": "CAT1"}},
+    ]
+    batch_resp.raise_for_status = MagicMock()
+
+    with patch("extract.requests.get", return_value=batch_resp) as mock_get:
+        client.hydrate_items(["MLA1", "MLA1", "MLA1"])
+
+    # Only one batch call for one unique ID
+    assert mock_get.call_count == 1
