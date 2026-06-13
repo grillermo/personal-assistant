@@ -1,7 +1,17 @@
 import io
-from unittest.mock import MagicMock
+import json
+from pathlib import Path
+from unittest.mock import MagicMock, patch
 
-from auth import parse_oauth_code, make_oauth_handler, start_oauth_server, stop_oauth_server
+from auth import (
+    exchange_code_for_tokens,
+    make_oauth_handler,
+    parse_oauth_code,
+    save_credentials,
+    save_tokens,
+    start_oauth_server,
+    stop_oauth_server,
+)
 
 
 def test_parse_oauth_code_with_valid_code():
@@ -23,9 +33,6 @@ def test_parse_oauth_code_other_params_ignored():
 def _make_request(handler_class, path):
     """Simulate an HTTP GET to the handler."""
     code_container = {}
-    # handler_class is a factory that takes code_container
-    # We test the handler behavior via its do_GET method
-    # Build the factory result
     handler_cls = handler_class(code_container)
 
     handler = handler_cls.__new__(handler_cls)
@@ -57,13 +64,6 @@ def test_start_stop_server_lifecycle():
     assert thread.is_alive()
     stop_oauth_server(server, thread)
     assert not thread.is_alive()
-
-
-import json
-import tempfile
-from unittest.mock import patch, MagicMock
-from pathlib import Path
-from auth import exchange_code_for_tokens, save_credentials, save_tokens
 
 
 def test_exchange_code_posts_correct_payload():
