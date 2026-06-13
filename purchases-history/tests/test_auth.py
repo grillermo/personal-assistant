@@ -1,5 +1,5 @@
 import io
-from unittest.mock import MagicMock, patch
+from unittest.mock import MagicMock
 
 import pytest
 from auth import parse_oauth_code, make_oauth_handler, start_oauth_server, stop_oauth_server
@@ -28,12 +28,6 @@ def _make_request(handler_class, path):
     # We test the handler behavior via its do_GET method
     # Build the factory result
     handler_cls = handler_class(code_container)
-
-    mock_request = MagicMock()
-    mock_request.makefile.return_value = io.BytesIO(
-        f"GET {path} HTTP/1.1\r\nHost: localhost\r\n\r\n".encode()
-    )
-    mock_server = MagicMock()
 
     handler = handler_cls.__new__(handler_cls)
     handler.path = path

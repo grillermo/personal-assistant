@@ -37,7 +37,7 @@ def make_oauth_handler(code_container: dict):
                 self.end_headers()
                 self.wfile.write(b"<h1>Error: no code found in redirect.</h1>")
 
-        def log_message(self, *args):
+        def log_message(self, format, *args):
             pass  # suppress server log noise
 
     return _Handler
