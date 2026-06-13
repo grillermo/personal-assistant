@@ -83,3 +83,27 @@ class MeliClient:
         data = self.get(f"{API_BASE}/users/me")
         assert isinstance(data, dict)
         return data["id"]
+
+    def get_all_orders(self, user_id: int) -> list[dict]:
+        orders: list[dict] = []
+        offset = 0
+        limit = 50
+
+        while True:
+            print(f"  Fetching orders {offset}–{offset + limit}...")
+            data = self.get(
+                f"{API_BASE}/orders/search",
+                params={"buyer": user_id, "offset": offset, "limit": limit},
+            )
+            assert isinstance(data, dict)
+            results = data.get("results", [])
+            total = data.get("paging", {}).get("total", 0)
+            orders.extend(results)
+            offset += len(results)
+            print(f"  Progress: {len(orders)}/{total}")
+
+            if not results or offset >= total:
+                break
+            time.sleep(0.5)
+
+        return orders

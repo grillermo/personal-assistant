@@ -92,3 +92,52 @@ def test_refresh_at_computed_from_expires_in(tmp_path):
     expected_min = before + 21600 - 300
     expected_max = after + 21600 - 300
     assert expected_min <= client._refresh_at <= expected_max
+
+
+def test_get_all_orders_paginates(tmp_path):
+    tokens_path, creds_path = _write_fixtures(tmp_path)
+    from extract import MeliClient
+    client = MeliClient(tokens_path=tokens_path, creds_path=creds_path)
+
+    page1 = MagicMock()
+    page1.status_code = 200
+    page1.json.return_value = {
+        "results": [{"id": f"order_{i}"} for i in range(50)],
+        "paging": {"total": 75, "offset": 0, "limit": 50},
+    }
+    page1.raise_for_status = MagicMock()
+
+    page2 = MagicMock()
+    page2.status_code = 200
+    page2.json.return_value = {
+        "results": [{"id": f"order_{i}"} for i in range(50, 75)],
+        "paging": {"total": 75, "offset": 50, "limit": 50},
+    }
+    page2.raise_for_status = MagicMock()
+
+    with patch("extract.requests.get", side_effect=[page1, page2]):
+        with patch("extract.time.sleep"):
+            orders = client.get_all_orders(user_id=123456)
+
+    assert len(orders) == 75
+    assert orders[0]["id"] == "order_0"
+    assert orders[74]["id"] == "order_74"
+
+
+def test_get_all_orders_stops_on_empty_results(tmp_path):
+    tokens_path, creds_path = _write_fixtures(tmp_path)
+    from extract import MeliClient
+    client = MeliClient(tokens_path=tokens_path, creds_path=creds_path)
+
+    empty_resp = MagicMock()
+    empty_resp.status_code = 200
+    empty_resp.json.return_value = {
+        "results": [],
+        "paging": {"total": 0},
+    }
+    empty_resp.raise_for_status = MagicMock()
+
+    with patch("extract.requests.get", return_value=empty_resp):
+        orders = client.get_all_orders(user_id=123456)
+
+    assert orders == []
