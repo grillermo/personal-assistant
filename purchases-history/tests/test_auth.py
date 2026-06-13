@@ -1,7 +1,6 @@
 import io
 from unittest.mock import MagicMock
 
-import pytest
 from auth import parse_oauth_code, make_oauth_handler, start_oauth_server, stop_oauth_server
 
 
