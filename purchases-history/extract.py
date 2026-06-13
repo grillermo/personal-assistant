@@ -145,3 +145,81 @@ def collect_item_ids(orders: list[dict]) -> tuple[list[str], set[str]]:
                 if item.get("title"):
                     has_title.add(item_id)
     return all_ids, has_title
+
+
+def extract_order_rows(order: dict, items_cache: dict) -> list[dict]:
+    order_id = order.get("id")
+    purchase_date = order.get("date_created", "")
+    status = order.get("status", "")
+    order_total = order.get("total_amount", 0)
+    currency = order.get("currency_id", "")
+
+    rows = []
+    for oi in order.get("order_items", []):
+        item = oi.get("item", {})
+        item_id = item.get("id", "")
+        cached = items_cache.get(item_id, {})
+        rows.append({
+            "order_id": order_id,
+            "purchase_date": purchase_date,
+            "status": status,
+            "item_title": item.get("title") or cached.get("title", "Unknown"),
+            "item_category": cached.get("category_id", "Unknown"),
+            "item_quantity": oi.get("quantity", 1),
+            "item_unit_price": oi.get("unit_price", 0),
+            "order_total_amount": order_total,
+            "currency": currency,
+        })
+
+    if not rows:
+        rows.append({
+            "order_id": order_id,
+            "purchase_date": purchase_date,
+            "status": status,
+            "item_title": "N/A",
+            "item_category": "N/A",
+            "item_quantity": 0,
+            "item_unit_price": 0,
+            "order_total_amount": order_total,
+            "currency": currency,
+        })
+
+    return rows
+
+
+def main() -> None:
+    print("=== Mercado Libre Purchase History Extractor ===\n")
+
+    client = MeliClient()
+
+    print("Identifying user...")
+    user_id = client.get_user_id()
+    print(f"User ID: {user_id}\n")
+
+    print("Fetching all orders (this may take a while for large histories)...")
+    orders = client.get_all_orders(user_id)
+    print(f"\nTotal orders fetched: {len(orders)}")
+
+    all_ids, has_title = collect_item_ids(orders)
+    ids_to_fetch = [i for i in dict.fromkeys(all_ids) if i not in has_title]
+    items_cache: dict = {}
+    if ids_to_fetch:
+        items_cache = client.hydrate_items(ids_to_fetch)
+
+    print("\nBuilding rows...")
+    rows: list[dict] = []
+    for order in orders:
+        rows.extend(extract_order_rows(order, items_cache))
+
+    df = pd.DataFrame(rows)
+    df["purchase_date"] = pd.to_datetime(df["purchase_date"], errors="coerce", utc=True)
+
+    output = "meli_purchase_history.csv"
+    df.to_csv(output, index=False, encoding="utf-8")
+
+    print(f"\nExported {len(df)} rows → {output}")
+    print(df[["order_id", "purchase_date", "item_title", "order_total_amount"]].head(5).to_string(index=False))
+
+
+if __name__ == "__main__":
+    main()

@@ -197,3 +197,82 @@ def test_hydrate_items_deduplicates_ids(tmp_path):
 
     # Only one batch call for one unique ID
     assert mock_get.call_count == 1
+
+
+def test_extract_order_rows_single_item():
+    from extract import extract_order_rows
+    order = {
+        "id": "ORD1",
+        "date_created": "2024-01-15T10:00:00.000Z",
+        "status": "paid",
+        "total_amount": 299.0,
+        "currency_id": "MXN",
+        "order_items": [
+            {"item": {"id": "MLA1", "title": "Laptop"}, "quantity": 1, "unit_price": 299.0}
+        ],
+    }
+    rows = extract_order_rows(order, {})
+    assert len(rows) == 1
+    assert rows[0]["order_id"] == "ORD1"
+    assert rows[0]["item_title"] == "Laptop"
+    assert rows[0]["item_quantity"] == 1
+    assert rows[0]["item_unit_price"] == 299.0
+    assert rows[0]["order_total_amount"] == 299.0
+    assert rows[0]["currency"] == "MXN"
+
+
+def test_extract_order_rows_multi_item_shares_order_total():
+    from extract import extract_order_rows
+    order = {
+        "id": "ORD2",
+        "date_created": "2024-02-01T08:00:00.000Z",
+        "status": "paid",
+        "total_amount": 500.0,
+        "currency_id": "MXN",
+        "order_items": [
+            {"item": {"id": "MLA1", "title": "Book"}, "quantity": 2, "unit_price": 150.0},
+            {"item": {"id": "MLA2"}, "quantity": 1, "unit_price": 200.0},
+        ],
+    }
+    cache = {"MLA2": {"title": "Headphones", "category_id": "ELEC"}}
+    rows = extract_order_rows(order, cache)
+
+    assert len(rows) == 2
+    assert rows[0]["order_id"] == rows[1]["order_id"] == "ORD2"
+    assert rows[0]["order_total_amount"] == rows[1]["order_total_amount"] == 500.0
+    assert rows[0]["item_title"] == "Book"
+    assert rows[1]["item_title"] == "Headphones"
+    assert rows[1]["item_category"] == "ELEC"
+
+
+def test_extract_order_rows_no_items_produces_placeholder():
+    from extract import extract_order_rows
+    order = {
+        "id": "ORD3",
+        "date_created": "2024-03-01T00:00:00.000Z",
+        "status": "cancelled",
+        "total_amount": 0,
+        "currency_id": "MXN",
+        "order_items": [],
+    }
+    rows = extract_order_rows(order, {})
+    assert len(rows) == 1
+    assert rows[0]["item_title"] == "N/A"
+
+
+def test_extract_order_rows_falls_back_to_cache_for_missing_title():
+    from extract import extract_order_rows
+    order = {
+        "id": "ORD4",
+        "date_created": "2024-04-01T00:00:00.000Z",
+        "status": "paid",
+        "total_amount": 100.0,
+        "currency_id": "MXN",
+        "order_items": [
+            {"item": {"id": "MLA9"}, "quantity": 1, "unit_price": 100.0},
+        ],
+    }
+    cache = {"MLA9": {"title": "Widget", "category_id": "TOOLS"}}
+    rows = extract_order_rows(order, cache)
+    assert rows[0]["item_title"] == "Widget"
+    assert rows[0]["item_category"] == "TOOLS"
