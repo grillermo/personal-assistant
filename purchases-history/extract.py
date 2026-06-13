@@ -1,9 +1,8 @@
 import json
 import time
 import threading
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from typing import Optional
 
 import pandas as pd
 import requests
