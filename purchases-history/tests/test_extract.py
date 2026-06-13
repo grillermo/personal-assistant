@@ -1,8 +1,6 @@
 import json
 import time
-import pytest
-from pathlib import Path
-from unittest.mock import patch, MagicMock, call
+from unittest.mock import patch, MagicMock
 
 
 def _write_fixtures(tmp_path):

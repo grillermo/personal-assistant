@@ -57,7 +57,7 @@ class MeliClient:
         with self._lock:
             return {"Authorization": f"Bearer {self._tokens['access_token']}"}
 
-    def get(self, url: str, params: dict = None, retries: int = 3) -> dict | list:
+    def get(self, url: str, params: dict | None = None, retries: int = 3) -> dict | list:
         for attempt in range(retries):
             resp = requests.get(url, headers=self._headers(), params=params, timeout=30)
             if resp.status_code == 429:
@@ -80,4 +80,6 @@ class MeliClient:
         raise RuntimeError(f"Failed after {retries} retries: {url}")
 
     def get_user_id(self) -> int:
-        return self.get(f"{API_BASE}/users/me")["id"]
+        data = self.get(f"{API_BASE}/users/me")
+        assert isinstance(data, dict)
+        return data["id"]
