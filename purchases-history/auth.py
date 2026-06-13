@@ -59,3 +59,26 @@ def start_oauth_server(code_container: dict) -> tuple[HTTPServer, threading.Thre
 def stop_oauth_server(server: HTTPServer, thread: threading.Thread) -> None:
     server.shutdown()
     thread.join(timeout=5)
+
+
+def exchange_code_for_tokens(app_id: str, secret_key: str, code: str) -> dict:
+    response = requests.post(
+        TOKEN_URL,
+        data={
+            "grant_type": "authorization_code",
+            "client_id": app_id,
+            "client_secret": secret_key,
+            "code": code,
+            "redirect_uri": REDIRECT_URI,
+        },
+    )
+    response.raise_for_status()
+    return response.json()
+
+
+def save_credentials(app_id: str, secret_key: str, path: str = "credentials.json") -> None:
+    Path(path).write_text(json.dumps({"app_id": app_id, "secret_key": secret_key}, indent=2))
+
+
+def save_tokens(tokens: dict, path: str = "tokens.json") -> None:
+    Path(path).write_text(json.dumps(tokens, indent=2))

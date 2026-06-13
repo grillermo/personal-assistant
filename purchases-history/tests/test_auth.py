@@ -57,3 +57,43 @@ def test_start_stop_server_lifecycle():
     assert thread.is_alive()
     stop_oauth_server(server, thread)
     assert not thread.is_alive()
+
+
+import json
+import tempfile
+from unittest.mock import patch, MagicMock
+from pathlib import Path
+from auth import exchange_code_for_tokens, save_credentials, save_tokens
+
+
+def test_exchange_code_posts_correct_payload():
+    mock_resp = MagicMock()
+    mock_resp.json.return_value = {
+        "access_token": "AT-abc",
+        "refresh_token": "RT-xyz",
+        "expires_in": 21600,
+    }
+    with patch("auth.requests.post", return_value=mock_resp) as mock_post:
+        result = exchange_code_for_tokens("APP1", "SECRET1", "CODE1")
+
+    posted_data = mock_post.call_args.kwargs["data"]
+    assert posted_data["grant_type"] == "authorization_code"
+    assert posted_data["client_id"] == "APP1"
+    assert posted_data["code"] == "CODE1"
+    assert result["access_token"] == "AT-abc"
+    mock_resp.raise_for_status.assert_called_once()
+
+
+def test_save_credentials_writes_json(tmp_path):
+    path = str(tmp_path / "creds.json")
+    save_credentials("MY_APP", "MY_SECRET", path)
+    data = json.loads(Path(path).read_text())
+    assert data == {"app_id": "MY_APP", "secret_key": "MY_SECRET"}
+
+
+def test_save_tokens_writes_json(tmp_path):
+    path = str(tmp_path / "tokens.json")
+    tokens = {"access_token": "AT", "refresh_token": "RT", "expires_in": 21600}
+    save_tokens(tokens, path)
+    data = json.loads(Path(path).read_text())
+    assert data == tokens
