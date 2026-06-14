@@ -13,7 +13,24 @@ pip install -r requirements.txt
 playwright install chromium
 ```
 
-## Step 1: Run auth.py
+## Quick Start
+
+```bash
+python import_orders.py
+```
+
+This runs the full workflow in one command:
+1. Checks if `tokens.json` exists and is fresh (< 6h old).
+2. If missing or stale, runs auth (OAuth flow below).
+3. Fetches all orders and exports `meli_purchase_history.csv`.
+
+Output: `meli_purchase_history.csv` with columns:
+`order_id`, `purchase_date`, `status`, `item_title`, `item_category`,
+`item_quantity`, `item_unit_price`, `order_total_amount`, `currency`
+
+## Manual Workflow (optional reference)
+
+### Step 1: auth.py
 
 ```bash
 python auth.py
@@ -36,7 +53,7 @@ Output files written:
 - `credentials.json` — APP_ID + SECRET_KEY
 - `tokens.json` — access_token + refresh_token (valid ~6h)
 
-## Step 2: Run extract.py
+### Step 2: extract.py
 
 ```bash
 python extract.py
@@ -48,10 +65,6 @@ What happens:
 3. Paginates all buyer orders (50 per page).
 4. Batch-fetches item details for any orders missing product titles.
 5. Exports `meli_purchase_history.csv`.
-
-Output: `meli_purchase_history.csv` with columns:
-`order_id`, `purchase_date`, `status`, `item_title`, `item_category`,
-`item_quantity`, `item_unit_price`, `order_total_amount`, `currency`
 
 ## Troubleshooting
 
@@ -65,6 +78,10 @@ Output: `meli_purchase_history.csv` with columns:
 | `RuntimeError: Failed after 3 retries` | Network connectivity issue — check your connection and re-run `extract.py` |
 | Many rows show `item_title = Unknown` | Those items were deleted or delisted from Mercado Libre; titles are no longer available |
 
-## Re-running export without re-authenticating
+## Re-running export
 
-As long as `tokens.json` is less than 6 hours old, you can re-run `extract.py` without re-running `auth.py`.
+`import_orders.py` handles token expiration automatically:
+- If `tokens.json` is fresh (< 6h old), it skips auth and goes straight to extract.
+- If missing or stale, it re-authenticates first.
+
+Just run `python import_orders.py` each time.
