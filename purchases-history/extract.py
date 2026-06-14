@@ -27,9 +27,11 @@ class MeliClient:
     def _start_refresh_thread(self) -> None:
         def loop():
             while True:
-                sleep_for = max(0, self._refresh_at - time.time())
-                time.sleep(sleep_for)
-                self._refresh_token()
+                time.sleep(max(0, self._refresh_at - time.time()))
+                try:
+                    self._refresh_token()
+                except Exception as e:
+                    print(f"[Token] Background refresh failed: {e}. Will retry on next request.")
 
         threading.Thread(target=loop, daemon=True).start()
 

@@ -59,8 +59,14 @@ def test_oauth_handler_bad_request_on_missing_code():
 
 
 def test_start_stop_server_lifecycle():
+    import socket
+    from http.server import HTTPServer
+    with socket.socket() as s:
+        s.bind(("localhost", 0))
+        free_port = s.getsockname()[1]
     code_container = {}
-    server, thread = start_oauth_server(code_container)
+    with patch("auth.HTTPServer", lambda _addr, cls: HTTPServer(("localhost", free_port), cls)):
+        server, thread = start_oauth_server(code_container)
     assert thread.is_alive()
     stop_oauth_server(server, thread)
     assert not thread.is_alive()
