@@ -1,16 +1,12 @@
-import io
 import json
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
 from auth import (
     exchange_code_for_tokens,
-    make_oauth_handler,
     parse_oauth_code,
     save_credentials,
     save_tokens,
-    start_oauth_server,
-    stop_oauth_server,
 )
 
 
@@ -30,46 +26,9 @@ def test_parse_oauth_code_other_params_ignored():
     assert parse_oauth_code("/?state=xyz&code=TG-abc123&foo=bar") == "TG-abc123"
 
 
-def _make_request(handler_class, path):
-    """Simulate an HTTP GET to the handler."""
-    code_container = {}
-    handler_cls = handler_class(code_container)
-
-    handler = handler_cls.__new__(handler_cls)
-    handler.path = path
-    handler.wfile = io.BytesIO()
-    handler.send_response = MagicMock()
-    handler.end_headers = MagicMock()
-
-    return handler, code_container
-
-
-def test_oauth_handler_captures_code():
-    handler, code_container = _make_request(make_oauth_handler, "/?code=TG-abc123")
-    handler.do_GET()
-    assert code_container["code"] == "TG-abc123"
-    handler.send_response.assert_called_once_with(200)
-
-
-def test_oauth_handler_bad_request_on_missing_code():
-    handler, code_container = _make_request(make_oauth_handler, "/")
-    handler.do_GET()
-    assert "code" not in code_container
-    handler.send_response.assert_called_once_with(400)
-
-
-def test_start_stop_server_lifecycle():
-    import socket
-    from http.server import HTTPServer
-    with socket.socket() as s:
-        s.bind(("localhost", 0))
-        free_port = s.getsockname()[1]
-    code_container = {}
-    with patch("auth.HTTPServer", lambda _addr, cls: HTTPServer(("localhost", free_port), cls)):
-        server, thread = start_oauth_server(code_container)
-    assert thread.is_alive()
-    stop_oauth_server(server, thread)
-    assert not thread.is_alive()
+def test_parse_oauth_code_full_redirect_url():
+    url = "https://historial-de-compras.chiq.me/?code=TG-xyz99&state=abc"
+    assert parse_oauth_code(url) == "TG-xyz99"
 
 
 def test_exchange_code_posts_correct_payload():
