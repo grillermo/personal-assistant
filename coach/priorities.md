@@ -43,6 +43,9 @@ With his wife. Many possible buyers in Argentina, no local payment method.
   (last used 2026-10-22).
 - Next step: implementation plan from the spec, then build it.
 - Smaller items: `Proyectos/antesis/to-do.md`.
+- Also: an **iOS app** for Comunidad Antesis, a possible quick win as another distribution
+  channel. He started a Claude conversation about it (session not located yet; ask him which
+  machine). Comes after dLocal unless he decides otherwise.
 
 ## 4. ListLab / YourList (59 Pines): decide by end of October
 
