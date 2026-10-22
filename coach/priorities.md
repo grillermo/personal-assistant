@@ -18,7 +18,7 @@ Second income with his father-in-law and brother-in-law. The bot is overdue.
   de garantía, install SIM in Kapso, GTM dashboard prototype).
 - Versioned in git since 2026-10-22 (no secrets tracked).
 - Next step: work through the to-do in order, starting with: when asking for the CFE bill, ask the prospect how they want to be contacted
-  (WhatsApp or a call; no email). Bot deployed 2026-10-22; update the presentation, then "contáctame en 3 meses".
+  (WhatsApp or a call; no email). Bot deployed 2026-10-22; update the presentation, then "13 años de garantía".
 
 ## 2. LinkedIn: post daily (the job hunt strategy)
 
