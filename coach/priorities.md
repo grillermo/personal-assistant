@@ -25,12 +25,13 @@ Second income with his father-in-law and brother-in-law. The bot is overdue.
 Applying to job posts hasn't worked. Strategy: post daily about what he has built, to stand out
 as a product engineer and get recruiters' attention.
 
-- Vault: `Proyectos/linkedin/` (AI essay draft lives there).
+- Vault: `Proyectos/linkedin/` (AI essay draft lives there). `Projects to share.md` tracks one
+  post per project featured on grillermo.com (15 queued; vvterm posted 2026-10-22).
 - Source material: his projects in `~/c/`. Candidates to check: the Daisolar WhatsApp agent
   (once shipped), comunidad-antesis (multi-country pricing, Argentina payments), readitsoon
   (+ MCP server, Obsidian plugin, companion), patatatube, git-sync, file_server, ipad-send,
   claude-sessions, my-machines-monitor, whatsapp-controller, spreadsheet-ocr.
-- Next step: pick the first project and draft post #1.
+- Next step: post #2, the next unticked project in `Projects to share.md`.
 
 ## 3. Comunidad Antesis: dLocal Go payments for Argentina
 
