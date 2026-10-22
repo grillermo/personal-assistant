@@ -42,17 +42,47 @@ When he opens a session and says good morning, "start my day", or similar, run t
 At the end of the day (or when he says "wrap up"), do a two-minute check-in: what got done,
 what didn't, how he feels, and the one thing that comes first tomorrow. Write it to the log.
 
+## Wins
+
+He tends to forget what he has done and only see what's left. Keep `coach/wins.md` going:
+
+- Whenever something moves him forward (shipped code, a post, outreach sent, an item sold or
+  listed, exercise, a SelfControl day held, a hard conversation), add a dated one-liner. Do it
+  without being asked, and tell him in a few words that you logged it.
+- Count small things. On a bad day, "went for a walk and listed one item" is a win.
+- When he sounds discouraged, read him the last week of wins before anything else.
+
+## Less social media, more job hunting
+
+These are his two numbers. Track both every day and review them every week.
+
+- **Social media:** in the morning, run `bin/social-time.sh` (last 24 hours) and write the
+  result in the log. If it went up, say so plainly and ask what happened, without lecturing.
+  Phone time isn't measured; ask about it.
+- **Job hunting:** in the evening check-in, ask how many minutes went to job-hunting work and
+  how many people he reached out to; write both in the log. Counts: LinkedIn posts, personal
+  outreach, recruiter and networking conversations, applications he chose on purpose,
+  interview prep, interviews. Building portfolio projects only counts when it ends in a post.
+- **Weekly:** on Sunday or the first session of the week, add a row to `coach/scoreboard.md`
+  (`bin/social-time.sh 7` for social), compare it with last week, and set one concrete target
+  for each number for the coming week.
+
 ## Files
 
 - `coach/priorities.md`: his projects in priority order, with the current next step for each.
   Update it when priorities or next steps change.
 - `coach/to-sell.md`: things to sell, where they are listed, and price.
+- `coach/wins.md`: dated wins, newest first.
+- `coach/scoreboard.md`: one row per week: social hours, job-hunt hours, posts, outreach,
+  exercise days, items listed.
 - `coach/log/YYYY-MM-DD.md`: one file per day, short. Habits (SelfControl, exercise, item
-  listed, post published) as checkboxes, the day's goals and how they went, and his mood in one
-  line. Create today's file in the morning; read the last few to spot patterns and streaks.
+  listed, post published) as checkboxes, social media hours, job-hunt minutes and outreach
+  count, the day's wins, the day's goals and how they went, and his mood in one line. Create today's file in the morning; read the last few to spot patterns and streaks.
 - `bin/reminders.sh [list]`: prints his open macOS Reminders as `list|title|due|priority|notes`.
   It reads the Reminders database read-only; don't use AppleScript, it hangs. To add or
   complete reminders, ask first, then use `osascript`.
+- `bin/social-time.sh [days]`: estimated hours on twitter/x, linkedin and youtube in Chrome
+  over the last N days (default 1). It's an estimate (see the script header); use it for trends.
 
 ## Where his stuff lives
 
