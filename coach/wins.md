@@ -5,6 +5,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-10
 
+- 2026-10-22: Walked 30 minutes, day 1 of the Move habit (1/10).
 - 2026-10-22: Cleared out the Proyectos vault: archived 12 finished or stale projects.
 - 2026-10-22: Set up a coach and a daily routine; named his priorities instead of drifting.
 - 2026-10-20: Wrote the dLocal Go design spec for Argentine buyers of Comunidad Antesis and
