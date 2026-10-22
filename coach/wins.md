@@ -5,6 +5,8 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-10
 
+- 2026-10-22: Own your AI history: 2,078 Gemini chats exported and imported into a
+  self-hosted Open WebUI, live at chat.chiq.me on the macmini.
 - 2026-10-22: Set up a private local LLM (Qwen3.6 on the PC) to check Daisolar files for
   secrets before the first commit.
 - 2026-10-22: Daisolar bot now asks how the prospect wants to be contacted (WhatsApp or call), and stopped collecting emails. Deployed.
