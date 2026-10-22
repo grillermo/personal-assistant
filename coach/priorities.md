@@ -16,9 +16,8 @@ Second income with his father-in-law and brother-in-law. The bot is overdue.
 - Pending changes: `Proyectos/daisolar/to-do.md` in the vault (presupuesto → cotización, ask
   for preferred contact channel when asking for the CFE bill, "contáctame en 3 meses", 13 años
   de garantía, install SIM in Kapso, GTM dashboard prototype).
-- Risk: `~/c/daisolar` is not a git repository, so none of it is versioned or synced.
-  The bot has a `.gitignore` that covers `.env`.
-- Next step: put `~/c/daisolar` under git, then work through the to-do in order.
+- Versioned in git since 2026-10-22 (no secrets tracked).
+- Next step: work through the to-do in order, starting with presupuesto → cotización.
 
 ## 2. LinkedIn: post daily (the job hunt strategy)
 
