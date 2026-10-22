@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-22",
+  "dateLabel": "Thursday, October 22",
+  "greeting": "Day one of the new routine. It's late morning, and that's fine: a short day done well beats a perfect plan.",
+  "nextAction": "Start a SelfControl block, then go for a 20-minute walk. Come back and open Daisolar.",
+  "quotes": [
+    {"text": "Be so good they can't ignore you.", "author": "Steve Martin"},
+    {"text": "Real artists ship.", "author": "Steve Jobs"},
+    {"text": "If you are not embarrassed by the first version of your product, you've launched too late.", "author": "Reid Hoffman"}
+  ],
+  "habits": [
+    {"title": "SelfControl block on", "detail": "x.com, youtube.com, linkedin.com. Post to LinkedIn first if today's post is ready."},
+    {"title": "Move: 20-minute walk", "detail": "Before screens. Day 1 of the streak."},
+    {"title": "List one item for sale", "detail": "Pick one thing you don't use, take 3 photos, send them here for the listing text."},
+    {"title": "Publish LinkedIn post #1", "detail": "Comunidad Antesis: buyers in Argentina, no way to pay locally, so I'm adding dLocal Go."}
+  ],
+  "goals": [
+    {"title": "Daisolar: version the bot, then change \"presupuesto\" to \"cotización\"", "detail": "~/c/daisolar isn't in git yet. Run git init there first (the bot's .gitignore already keeps secrets out), then do the first to-do in Proyectos/daisolar/to-do.md."},
+    {"title": "Antesis: turn the dLocal spec into an implementation plan", "detail": "macmini, ~/c/comunidad-antesis-staging, branch feat/dlocal-argentina, Claude session 8ddbe2ff."},
+    {"title": "Send one job-hunt message", "detail": "A former colleague or someone at a company you'd like to work for. Short and personal. Your job-hunt number shouldn't be zero today."}
+  ],
+  "comingUp": [
+    "ListLab: your unpaid month ends around Nov 1. Ask Jay when the round closes and what your role would be.",
+    "Día de muertos, Nov 1–2: alfeñique, veladoras, hojaldra, incienso, fotos de abuelos, papel picado.",
+    "Write to Liz to renew the SAT certificate."
+  ],
+  "stats": [
+    {"label": "social media, last 24h (Mac)", "value": "0.3h"},
+    {"label": "job hunt yesterday", "value": "?"},
+    {"label": "exercise streak", "value": "0 days"},
+    {"label": "posts this week", "value": "0"}
+  ],
+  "recentWins": [
+    "Cleared out the Proyectos vault: archived 12 old projects.",
+    "Set up a coach and a daily routine; named your priorities.",
+    "Wrote the dLocal Go design spec for Argentine buyers.",
+    "Finished ListLab's onboarding and TDW training."
+  ],
+  "vision": "Get paid as a product engineer for building products, and grow the audience that will later buy what you build. Every post counts toward both."
+}

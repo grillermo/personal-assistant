@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start your day</title>
+<style>
+  :root {
+    --bg: #faf7f2; --card: #ffffff; --text: #22201c; --muted: #6f6a62;
+    --accent: #d9623b; --accent-soft: #fbe6dc; --ok: #2f8f5b; --line: #ebe5dc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17161a; --card: #211f25; --text: #eeebe6; --muted: #a09a92;
+      --accent: #f08a5d; --accent-soft: #3a2a24; --ok: #5cc48d; --line: #302d34;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 28px 16px 64px; }
+  .date { color: var(--muted); font-size: 15px; letter-spacing: .02em; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 4px 0 20px; }
+  h2 { font-size: 14px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 12px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px; margin: 0 0 16px; }
+  .quote { background: var(--accent-soft); border: 0; }
+  .quote blockquote { margin: 0; font-size: 21px; line-height: 1.4; font-style: italic; }
+  .quote cite { display: block; margin-top: 10px; font-style: normal; color: var(--muted); font-size: 15px; }
+  .quote + .quote { margin-top: -6px; }
+  .quote.small blockquote { font-size: 17px; }
+  .next { border: 2px solid var(--accent); }
+  .next p { margin: 0; font-size: 19px; font-weight: 600; }
+  ul.tasks { list-style: none; margin: 0; padding: 0; }
+  ul.tasks li { border-top: 1px solid var(--line); }
+  ul.tasks li:first-child { border-top: 0; }
+  ul.tasks label { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; cursor: pointer; }
+  ul.tasks input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--ok); flex: none; }
+  ul.tasks .title { font-weight: 600; }
+  ul.tasks .detail { display: block; color: var(--muted); font-size: 15px; }
+  ul.tasks input:checked + span .title { text-decoration: line-through; color: var(--muted); }
+  .progress { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; margin: 4px 0 14px; }
+  .progress div { height: 100%; width: 0; background: var(--ok); transition: width .3s; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+  .stat { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+  .stat b { display: block; font-size: 22px; }
+  .stat span { color: var(--muted); font-size: 14px; }
+  ul.plain { margin: 0; padding-left: 20px; }
+  ul.plain li { margin: 4px 0; }
+  .vision p { margin: 0; color: var(--muted); }
+  .done-msg { display: none; color: var(--ok); font-weight: 600; margin-top: 8px; }
+</style>
+</head>
+<body>
+<main id="app"></main>
+
+<script id="day-data" type="application/json">{"date": "2026-10-22", "dateLabel": "Thursday, October 22", "greeting": "Day one of the new routine. It's late morning, and that's fine: a short day done well beats a perfect plan.", "nextAction": "Start a SelfControl block, then go for a 20-minute walk. Come back and open Daisolar.", "quotes": [{"text": "Be so good they can't ignore you.", "author": "Steve Martin"}, {"text": "Real artists ship.", "author": "Steve Jobs"}, {"text": "If you are not embarrassed by the first version of your product, you've launched too late.", "author": "Reid Hoffman"}], "habits": [{"title": "SelfControl block on", "detail": "x.com, youtube.com, linkedin.com. Post to LinkedIn first if today's post is ready."}, {"title": "Move: 20-minute walk", "detail": "Before screens. Day 1 of the streak."}, {"title": "List one item for sale", "detail": "Pick one thing you don't use, take 3 photos, send them here for the listing text."}, {"title": "Publish LinkedIn post #1", "detail": "Comunidad Antesis: buyers in Argentina, no way to pay locally, so I'm adding dLocal Go."}], "goals": [{"title": "Daisolar: version the bot, then change \"presupuesto\" to \"cotización\"", "detail": "~/c/daisolar isn't in git yet. Run git init there first (the bot's .gitignore already keeps secrets out), then do the first to-do in Proyectos/daisolar/to-do.md."}, {"title": "Antesis: turn the dLocal spec into an implementation plan", "detail": "macmini, ~/c/comunidad-antesis-staging, branch feat/dlocal-argentina, Claude session 8ddbe2ff."}, {"title": "Send one job-hunt message", "detail": "A former colleague or someone at a company you'd like to work for. Short and personal. Your job-hunt number shouldn't be zero today."}], "comingUp": ["ListLab: your unpaid month ends around Nov 1. Ask Jay when the round closes and what your role would be.", "Día de muertos, Nov 1–2: alfeñique, veladoras, hojaldra, incienso, fotos de abuelos, papel picado.", "Write to Liz to renew the SAT certificate."], "stats": [{"label": "social media, last 24h (Mac)", "value": "0.3h"}, {"label": "job hunt yesterday", "value": "?"}, {"label": "exercise streak", "value": "0 days"}, {"label": "posts this week", "value": "0"}], "recentWins": ["Cleared out the Proyectos vault: archived 12 old projects.", "Set up a coach and a daily routine; named your priorities.", "Wrote the dLocal Go design spec for Argentine buyers.", "Finished ListLab's onboarding and TDW training."], "vision": "Get paid as a product engineer for building products, and grow the audience that will later buy what you build. Every post counts toward both."}</script>
+<script>
+const d = JSON.parse(document.getElementById('day-data').textContent);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const key = 'start-day:' + d.date;
+const saved = JSON.parse(localStorage.getItem(key) || '{}');
+
+const taskList = (id, items) => `<ul class="tasks">${items.map((t, i) => `
+  <li><label><input type="checkbox" data-id="${id}-${i}" ${saved[id + '-' + i] ? 'checked' : ''}>
+  <span><span class="title">${esc(t.title)}</span>${t.detail ? `<span class="detail">${esc(t.detail)}</span>` : ''}</span></label></li>`).join('')}</ul>`;
+
+const [first, ...more] = d.quotes || [];
+document.getElementById('app').innerHTML = `
+  <div class="date">${esc(d.dateLabel)}</div>
+  <h1>${esc(d.greeting)}</h1>
+
+  ${first ? `<div class="card quote"><blockquote>${esc(first.text)}</blockquote><cite>${esc(first.author)}</cite></div>` : ''}
+
+  <div class="card next"><h2>Your one next action</h2><p>${esc(d.nextAction)}</p></div>
+
+  <div class="card"><h2>Today</h2>
+    <div class="progress"><div id="bar"></div></div>
+    <h2 style="margin-top:4px">Habits</h2>${taskList('habit', d.habits || [])}
+    <h2 style="margin-top:18px">Goals</h2>${taskList('goal', d.goals || [])}
+    <div class="done-msg" id="done">Everything done. That's a win; tell your coach.</div>
+  </div>
+
+  ${(d.comingUp || []).length ? `<div class="card"><h2>Coming up</h2><ul class="plain">${d.comingUp.map(c => `<li>${esc(c)}</li>`).join('')}</ul></div>` : ''}
+
+  ${(d.stats || []).length ? `<div class="card"><h2>Scoreboard</h2><div class="stats">${d.stats.map(s => `<div class="stat"><b>${esc(s.value)}</b><span>${esc(s.label)}</span></div>`).join('')}</div></div>` : ''}
+
+  ${(d.recentWins || []).length ? `<div class="card"><h2>Recent wins</h2><ul class="plain">${d.recentWins.map(w => `<li>${esc(w)}</li>`).join('')}</ul></div>` : ''}
+
+  ${more.map(q => `<div class="card quote small"><blockquote>${esc(q.text)}</blockquote><cite>${esc(q.author)}</cite></div>`).join('')}
+
+  ${d.vision ? `<div class="card vision"><h2>Why</h2><p>${esc(d.vision)}</p></div>` : ''}
+`;
+
+function refresh() {
+  const boxes = [...document.querySelectorAll('ul.tasks input')];
+  const done = boxes.filter(b => b.checked).length;
+  document.getElementById('bar').style.width = (boxes.length ? done / boxes.length * 100 : 0) + '%';
+  document.getElementById('done').style.display = boxes.length && done === boxes.length ? 'block' : 'none';
+}
+document.querySelectorAll('ul.tasks input').forEach(b => b.addEventListener('change', () => {
+  saved[b.dataset.id] = b.checked;
+  localStorage.setItem(key, JSON.stringify(saved));
+  refresh();
+}));
+refresh();
+</script>
+</body>
+</html>

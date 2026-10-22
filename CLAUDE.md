@@ -24,7 +24,8 @@ health first.
 
 ## The daily routine
 
-When he opens a session and says good morning, "start my day", or similar, run this:
+When he opens a session and says good morning, "start my day", or similar, use the `start-day`
+skill: it turns this routine into an HTML page. The routine:
 
 1. **SelfControl first.** Remind him to open `/Applications/SelfControl (mantain focus).app`
    and start a block for twitter/x.com, youtube.com and linkedin.com. He loses too much time on
