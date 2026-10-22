@@ -7,7 +7,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 - 2026-10-22: Set up a private local LLM (Qwen3.6 on the PC) to check Daisolar files for
   secrets before the first commit.
-- 2026-10-22: Daisolar bot now asks how the prospect wants to be contacted (WhatsApp or call).
+- 2026-10-22: Daisolar bot now asks how the prospect wants to be contacted (WhatsApp or call), and stopped collecting emails.
 - 2026-10-22: Put ~/c/daisolar under git: the bot is versioned and synced now.
 - 2026-10-22: Published a LinkedIn post about vvterm.
 - 2026-10-22: Walked 30 minutes, day 1 of the Move habit (1/10).
