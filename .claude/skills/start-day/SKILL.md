@@ -14,7 +14,7 @@ All paths are relative to the repo root (`~/c/personal-assistant`).
 
 ## 1. Gather (run in parallel)
 
-- `coach/vision.md`, `coach/priorities.md`, `coach/wins.md`, `coach/to-sell.md`,
+- `coach/vision.md`, `coach/habits.md`, `coach/priorities.md`, `coach/wins.md`, `coach/to-sell.md`,
   last row of `coach/scoreboard.md`
 - The last 3 files in `coach/log/` (yesterday's unfinished goals, mood, used quotes)
 - `bin/reminders.sh` (open reminders; anything with a date in the next 10 days, or a seasonal
@@ -23,15 +23,14 @@ All paths are relative to the repo root (`~/c/personal-assistant`).
 
 ## 2. Decide the day
 
-- **Habits**, always these four, in this order:
-  1. SelfControl block on (x.com, youtube.com, linkedin.com); post to LinkedIn before it starts
-  2. Move: 20–30 minute walk (or more, if the log shows a streak)
-  3. List one item for sale (name the next one from `coach/to-sell.md`, or "pick one thing")
-  4. Publish today's LinkedIn post (name the project it's about)
+- **Habits**, from `coach/habits.md`: the active ones first, as required items, each with its
+  "when X, I will Y" trigger as the `detail`. Then the queued ones with `"bonus": true`. If the
+  log shows an active habit skipped 2+ days, use its relapse rule's small version as today's
+  title, not the full one. Never present a bonus habit as a miss.
 - **Goals**: at most 3, taken from the next steps in `priorities.md`, top-down. Carry over
   yesterday's unfinished goal first. Each goal is one concrete, finishable thing, with a
   `detail` saying where to start (file, machine, command), not "work on X".
-- **Next action**: the first physical step of the day, usually "Start SelfControl, then walk".
+- **Next action**: the first physical step of the day, usually the first active habit.
 - **Quotes**: 2–3 real quotes with their real author, about persistence, shipping, or building
   an audience; pick ones that fit his week (low energy, job hunt, distribution). Only quotes you
   are confident are real and correctly attributed; if unsure, choose a different one. Don't
@@ -57,7 +56,7 @@ Shape (the renderer rejects missing fields and more than 3 goals):
   "date": "2026-10-22", "dateLabel": "Thursday, October 22",
   "greeting": "…", "nextAction": "…",
   "quotes": [{"text": "…", "author": "…"}],
-  "habits": [{"title": "…", "detail": "…"}],
+  "habits": [{"title": "…", "detail": "…"}, {"title": "…", "detail": "…", "bonus": true}],
   "goals": [{"title": "…", "detail": "…"}],
   "comingUp": ["…"], "stats": [{"label": "…", "value": "…"}],
   "recentWins": ["…"], "vision": "…"

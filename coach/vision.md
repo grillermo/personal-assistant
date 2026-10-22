@@ -1,5 +1,15 @@
 # The life he's building
 
+Structured after Daniel Miessler's Telos (github.com/danielmiessler/Telos): every project should
+trace back up to a goal, a mission and a problem. If a project can't, question it.
+
+## Problem
+
+Ten months without a job, and applying to open positions gets no response. Income depends on
+side work that isn't paying yet.
+
+## Mission
+
 **First:** get paid as a product engineer for building products.
 
 **Eventually:** a life like Tibo's (@tibo_maker, ~215k followers on X): build many products and
@@ -36,3 +46,39 @@ money, just at a small scale.
   cheap; don't start a second strategy until LinkedIn is a daily habit.
 - When he compares himself to Tibo and feels behind, remind him that Tibo's audience is years
   of daily posting. The only thing to compare is whether today's post went out.
+
+## Goals
+
+- G1: A paid product engineer role (job or steady contract).
+- G2: A second income from Daisolar and Comunidad Antesis.
+- G3: An audience that follows what he builds (LinkedIn first).
+- G4: Health: move every day.
+
+## Challenges
+
+- C1: Low energy and feeling lost after months of rejection.
+- C2: Distribution: he can build, but few people see it.
+- C3: Social media eats time (twitter/x above all).
+- C4: Too many projects at once; the late Daisolar delivery is the cost.
+- C5: Enjoys building tools, so tweaking his own system can stand in for the real work.
+
+## Strategies
+
+- S1: Post daily about what he builds instead of applying to job posts (G1, G3).
+- S2: Ship Daisolar's agent first: it's late, it's family, and it's income (G2).
+- S3: One new habit at a time, starting with moving (G4, C1). See `habits.md`.
+- S4: SelfControl blocks; posting without scrolling (C3).
+- S5: Change the coach only once a month (C5).
+
+## Wisdom
+
+His own lessons about himself, in his own words, for the coach to read back at the right moment.
+**Fill this in with him; don't write it for him.** Prompts to start the conversation:
+
+- When you've felt low on energy before, what got you out of it?
+- What do you know works for you that you keep forgetting?
+- What do good days have in common?
+
+## Things I've been wrong about
+
+To fill in with him: beliefs that turned out wrong, so we don't repeat them.

@@ -40,6 +40,7 @@
   ul.tasks .title { font-weight: 600; }
   ul.tasks .detail { display: block; color: var(--muted); font-size: 15px; }
   ul.tasks input:checked + span .title { text-decoration: line-through; color: var(--muted); }
+  .tag { display: inline-block; margin-left: 6px; padding: 0 7px; border: 1px solid var(--line); border-radius: 9px; color: var(--muted); font-size: 12px; font-weight: 500; vertical-align: 2px; }
   .progress { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; margin: 4px 0 14px; }
   .progress div { height: 100%; width: 0; background: var(--ok); transition: width .3s; }
   .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
@@ -63,8 +64,8 @@ const key = 'start-day:' + d.date;
 const saved = JSON.parse(localStorage.getItem(key) || '{}');
 
 const taskList = (id, items) => `<ul class="tasks">${items.map((t, i) => `
-  <li><label><input type="checkbox" data-id="${id}-${i}" ${saved[id + '-' + i] ? 'checked' : ''}>
-  <span><span class="title">${esc(t.title)}</span>${t.detail ? `<span class="detail">${esc(t.detail)}</span>` : ''}</span></label></li>`).join('')}</ul>`;
+  <li><label><input type="checkbox" data-id="${id}-${i}" ${t.bonus ? 'data-bonus' : ''} ${saved[id + '-' + i] ? 'checked' : ''}>
+  <span><span class="title">${esc(t.title)}</span>${t.bonus ? '<span class="tag">bonus</span>' : ''}${t.detail ? `<span class="detail">${esc(t.detail)}</span>` : ''}</span></label></li>`).join('')}</ul>`;
 
 const [first, ...more] = d.quotes || [];
 document.getElementById('app').innerHTML = `
@@ -79,7 +80,7 @@ document.getElementById('app').innerHTML = `
     <div class="progress"><div id="bar"></div></div>
     <h2 style="margin-top:4px">Habits</h2>${taskList('habit', d.habits || [])}
     <h2 style="margin-top:18px">Goals</h2>${taskList('goal', d.goals || [])}
-    <div class="done-msg" id="done">Everything done. That's a win; tell your coach.</div>
+    <div class="done-msg" id="done">Everything that counts is done. That's a win; tell your coach.</div>
   </div>
 
   ${(d.comingUp || []).length ? `<div class="card"><h2>Coming up</h2><ul class="plain">${d.comingUp.map(c => `<li>${esc(c)}</li>`).join('')}</ul></div>` : ''}
@@ -94,7 +95,8 @@ document.getElementById('app').innerHTML = `
 `;
 
 function refresh() {
-  const boxes = [...document.querySelectorAll('ul.tasks input')];
+  // Bonus habits never count against the day: progress tracks required items only.
+  const boxes = [...document.querySelectorAll('ul.tasks input:not([data-bonus])')];
   const done = boxes.filter(b => b.checked).length;
   document.getElementById('bar').style.width = (boxes.length ? done / boxes.length * 100 : 0) + '%';
   document.getElementById('done').style.display = boxes.length && done === boxes.length ? 'block' : 'none';
