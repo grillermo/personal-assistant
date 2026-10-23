@@ -1,0 +1,42 @@
+{
+ "date": "2026-10-23",
+ "dateLabel": "Friday, October 23",
+ "greeting": "Yesterday was a big one: a walk, a LinkedIn post, the Daisolar bot deployed. Today is day 2 of Move. Keep the chain going.",
+ "nextAction": "After breakfast: shoes on, out the door for a 20-minute walk (5 minutes counts). Day 2 of 10.",
+ "quotes": [
+  {"text": "The best way out is always through.", "author": "Robert Frost"},
+  {"text": "Share something small every day.", "author": "Austin Kleon"},
+  {"text": "Make something people want.", "author": "Paul Graham"}
+ ],
+ "habits": [
+  {"title": "Move: walk 20 minutes (day 2 of 10)", "detail": "When I finish breakfast, I will put on shoes and walk outside for 20 minutes, before opening the laptop."},
+  {"title": "SelfControl block", "detail": "When I come back from the walk, I will start SelfControl (x.com, youtube.com, linkedin.com) before reading anything.", "bonus": true},
+  {"title": "LinkedIn post #2: ReadItSoon", "detail": "Next in Projects to share.md (readitsoon.app). Ask the coach for the draft, tweak, publish, then start the block. Show a demo GIF if you have one.", "bonus": true},
+  {"title": "List one item for sale", "detail": "When I close the laptop, I will photograph one thing I don't use and send the photos to the coach.", "bonus": true}
+ ],
+ "goals": [
+  {"title": "Daisolar: deploy \"13 años de garantía\", then update the presentation", "detail": "~/c/daisolar/bot: the warranty change is in the bot but not deployed. Deploy it, then add the WhatsApp-or-call question to the uploaded presentation."},
+  {"title": "Antesis: turn the dLocal spec into an implementation plan", "detail": "Carried over. macmini, ~/c/comunidad-antesis-staging, branch feat/dlocal-argentina, Claude session 8ddbe2ff. Just the plan today, not the code."},
+  {"title": "Message Jay at ListLab about the round", "detail": "Carried over (yesterday's job-hunt message). Two questions: when do you expect to close the round, and what would my role be? Your unpaid month ends around Nov 1."}
+ ],
+ "comingUp": [
+  "ListLab decision by Nov 1 (8 days): get Jay's answer first.",
+  "Día de muertos, Nov 1–2: alfeñique, veladoras, hojaldra, incienso, fotos de abuelos, papel picado.",
+  "Write to Liz to renew the SAT certificate.",
+  "Kapso SIM setup link expires Nov 7: connect the Puebla SIM before then."
+ ],
+ "stats": [
+  {"label": "social media, last 24h (Mac)", "value": "0.8h"},
+  {"label": "job hunt yesterday", "value": "?"},
+  {"label": "walk streak", "value": "1 → day 2 today"},
+  {"label": "posts this week", "value": "1"}
+ ],
+ "recentWins": [
+  "Your Gemini history is yours now: 2,078 chats self-hosted at chat.chiq.me.",
+  "Daisolar bot asks WhatsApp-or-call and stopped collecting emails. Deployed.",
+  "Put ~/c/daisolar under git.",
+  "Published a LinkedIn post about vvterm.",
+  "Walked 30 minutes: day 1 of the Move habit."
+ ],
+ "vision": "Posting daily about what you build is the job hunt now, and it becomes the distribution channel for your own products later. Every post counts toward both."
+}
