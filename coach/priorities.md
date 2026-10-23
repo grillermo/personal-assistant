@@ -25,8 +25,11 @@ Second income with his father-in-law and brother-in-law. The bot is overdue.
 Applying to job posts hasn't worked. Strategy: post daily about what he has built, to stand out
 as a product engineer and get recruiters' attention.
 
-- Vault: `Proyectos/linkedin/` (AI essay draft lives there). `Projects to share.md` tracks one
+- Vault: `Areas/LinkedIn/` (AI essay draft lives there). `Projects to share.md` tracks one
   post per project featured on grillermo.com (15 queued; vvterm posted 2026-10-22).
+- Published posts are backed up in `Areas/LinkedIn/Posts/`, one note per post named
+  `YYYY-MM-DD <project>.md` with the exact published text and `date`, `project`, `url`
+  frontmatter. Save it there once he publishes, and link it from `Projects to share.md`.
 - Source material: his projects in `~/c/`. Candidates to check: the Daisolar WhatsApp agent
   (once shipped), comunidad-antesis (multi-country pricing, Argentina payments), readitsoon
   (+ MCP server, Obsidian plugin, companion), patatatube, git-sync, file_server, ipad-send,

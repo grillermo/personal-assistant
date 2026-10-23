@@ -44,4 +44,4 @@ a relapse rule decided in advance.
 
 | Habit | Activated | Streak reached 10 | Notes |
 |-------|-----------|-------------------|-------|
-| Move | 2026-10-22 | | Day 1 done 2026-10-22. |
+| Move | 2026-10-22 | | Day 1 done 2026-10-22, day 2 done 2026-10-23. |

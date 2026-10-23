@@ -5,6 +5,11 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-10
 
+- 2026-10-23: Published LinkedIn post #2, "Customizing your life": why engineers are still
+  needed for custom software, with Japanese Walking as the example. Two days in a row.
+- 2026-10-23: Walked 30 minutes, day 2 of the Move habit (2/10).
+- 2026-10-23: Japanese Walking iOS app: built from one prompt on 2026-10-22, four OTA releases
+  in a day (Live Activity, AlarmKit, heart rate from the ScanWatch, walking.chiq.me).
 - 2026-10-22: Own your AI history: 2,078 Gemini chats exported and imported into a
   self-hosted Open WebUI, live at chat.chiq.me on the macmini.
 - 2026-10-22: Set up a private local LLM (Qwen3.6 on the PC) to check Daisolar files for
