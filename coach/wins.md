@@ -5,6 +5,8 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-10
 
+- 2026-10-23: Listed the NOTIUS walking pad on Facebook Marketplace for $2,500: the first item
+  for sale. Plus a ranked list of 30 more things to sell.
 - 2026-10-23: Daisolar bot now tells prospects about the 13-year installation warranty.
   Deployed to Kapso.
 - 2026-10-23: Published LinkedIn post #2, "Customizing your life": why engineers are still
