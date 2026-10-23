@@ -129,3 +129,8 @@ he's low; they persuade more than anything you could say.
 
 Commit changes to `coach/` and this file as you make them (git-sync carries them to his other
 machines). The daily log is part of the record; commit it too.
+
+**Never use git worktrees in this repo.** Work and commit directly on `main` in
+`~/c/personal-assistant`. git-sync only carries `main`, so a log, win or start-day page committed
+in a worktree branch is invisible to every other session and machine (on 2026-10-23 a whole
+morning's tracking sat in `.claude/worktrees/` and `/start-day` ran twice).
