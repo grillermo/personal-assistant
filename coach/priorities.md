@@ -17,8 +17,9 @@ Second income with his father-in-law and brother-in-law. The bot is overdue.
   for preferred contact channel when asking for the CFE bill, "contáctame en 3 meses", 13 años
   de garantía, install SIM in Kapso, GTM dashboard prototype).
 - Versioned in git since 2026-10-22 (no secrets tracked).
-- Next step: work through the to-do in order, starting with: when asking for the CFE bill, ask the prospect how they want to be contacted
-  (WhatsApp or a call; no email). Bot deployed 2026-10-22; update the presentation, then "13 años de garantía".
+- Done: presupuesto → cotización, contact channel (2026-10-22), 13 años de garantía (deployed
+  2026-10-23). Won't do: updating the presentation (he won't use it again).
+- Next step: install the SIM in Kapso, then the GTM dashboard prototype.
 
 ## 2. LinkedIn: post daily (the job hunt strategy)
 
