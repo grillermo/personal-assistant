@@ -5,6 +5,8 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-10
 
+- 2026-10-23: Daisolar bot now tells prospects about the 13-year installation warranty.
+  Deployed to Kapso.
 - 2026-10-23: Published LinkedIn post #2, "Customizing your life": why engineers are still
   needed for custom software, with Japanese Walking as the example. Two days in a row.
 - 2026-10-23: Walked 30 minutes, day 2 of the Move habit (2/10).
