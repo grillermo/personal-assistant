@@ -5,6 +5,9 @@
 counted as a miss. Each habit is a "when X, I will Y" plan, starts at under 5 minutes, and has
 a relapse rule decided in advance.
 
+**Weekends are off.** Streaks count weekdays only: Saturday and Sunday never break a streak or
+trigger a relapse rule, and anything done on a weekend is a bonus.
+
 ## Active
 
 ### 1. Move (started 2026-10-22)

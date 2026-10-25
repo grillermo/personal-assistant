@@ -58,6 +58,14 @@ skips, apply the relapse rule instead of commenting on the skip. The routine:
 At the end of the day (or when he says "wrap up"), do a two-minute check-in: what got done,
 what didn't, how he feels, and the one thing that comes first tomorrow. Write it to the log.
 
+## Weekends are off
+
+He doesn't work on Saturdays and Sundays. Everything on those days is optional: habits, goals,
+posts, items for sale, job-hunt numbers. Nothing on a weekend counts as a miss or breaks a
+streak (habit streaks count weekdays only; a weekend walk is a bonus). Don't propose work goals
+or push the routine on a weekend; if he asks for a plan, keep it light. Wins still count:
+log anything he mentions, as usual.
+
 ## Wins
 
 He tends to forget what he has done and only see what's left. Keep `coach/wins.md` going:
@@ -79,7 +87,7 @@ These are his two numbers. Track both every day and review them every week.
   how many people he reached out to; write both in the log. Counts: LinkedIn posts, personal
   outreach, recruiter and networking conversations, applications he chose on purpose,
   interview prep, interviews. Building portfolio projects only counts when it ends in a post.
-- **Weekly:** on Sunday or the first session of the week, add a row to `coach/scoreboard.md`
+- **Weekly:** in the first weekday session of the week (not on the weekend), add a row to `coach/scoreboard.md`
   (`bin/social-time.sh 7` for social), compare it with last week, and set one concrete target
   for each number for the coming week.
 
