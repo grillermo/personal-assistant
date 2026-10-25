@@ -72,6 +72,16 @@ Don't sink more unpaid time into the scraping work. Before Nov 1, ask Jay direct
 expect to close the round, and what would his role be. Until then, cap ListLab at a few hours a
 week, below priorities 1–3. His call.
 
+## 5. Ayuyo: publish the app (added 2026-10-25)
+
+Android panic app: a long press sends a pre-set emergency SMS (optionally with location) to one
+contact. Code in `~/c/ayuyo` (last commit: the "Ajustes" settings control); there's also a
+`webpage/` folder.
+
+- Next step: decide where and how to publish it (Play Store or a direct download), then
+  list what's missing.
+- Once it's out, it's a good LinkedIn post.
+
 ## Dated things from Reminders
 
 - Día de muertos (Nov 1–2): alfeñique, veladoras, hojaldra, incienso, fotos de abuelos,
