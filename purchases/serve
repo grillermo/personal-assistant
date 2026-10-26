@@ -163,7 +163,8 @@ echo "==> Ready. Session '$SESSION': web:$PORT, images."
 #    non-interactively (no TTY) attaching would fail, so skip it then.
 if [ -n "${TMUX:-}" ]; then
   echo "==> Switching client to session '$SESSION'"
-  tmux switch-client -t "$SESSION"
+  # No client is attached when after-reboot.sh runs this at boot.
+  tmux switch-client -t "$SESSION" || true
 elif [ -t 1 ]; then
   echo "==> Attaching to session '$SESSION' (detach with Ctrl-b d)"
   tmux attach-session -t "$SESSION"
