@@ -20,6 +20,9 @@ Second income with his father-in-law and brother-in-law. The bot is overdue.
 - Done: presupuesto → cotización, contact channel (2026-10-22), 13 años de garantía (deployed
   2026-10-23). Won't do: updating the presentation (he won't use it again).
 - Next step: install the SIM in Kapso, then the GTM dashboard prototype.
+- Pending (added 2026-10-25): **Bot envía cotizaciones reales basadas en costo de CFE.** Today
+  the `generar_estimacion` tool only gives an "estimación ilustrativa" from the bill's kWh or
+  amount.
 
 ## 2. LinkedIn: post daily (the job hunt strategy)
 
