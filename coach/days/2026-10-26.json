@@ -1,0 +1,42 @@
+{
+ "date": "2026-10-26",
+ "dateLabel": "Monday, October 26",
+ "greeting": "New week. Last week you published 5 LinkedIn posts, walked two days in a row and listed your first item. Today is day 3 of Move; the weekend didn't break anything.",
+ "nextAction": "After breakfast: shoes on, out the door for a 20-minute walk (5 minutes counts). Day 3 of 10.",
+ "quotes": [
+  {"text": "How we spend our days is, of course, how we spend our lives.", "author": "Annie Dillard"},
+  {"text": "Document, don't create.", "author": "Gary Vaynerchuk"},
+  {"text": "People like us do things like this.", "author": "Seth Godin"}
+ ],
+ "habits": [
+  {"title": "Move: walk 20 minutes (day 3 of 10)", "detail": "When I finish breakfast, I will put on shoes and walk outside for 20 minutes, before opening the laptop."},
+  {"title": "SelfControl block", "detail": "When I come back from the walk, I will start SelfControl (x.com, youtube.com, linkedin.com) before reading anything.", "bonus": true},
+  {"title": "LinkedIn post: PatataTube", "detail": "Next in Projects to share.md (ReadItSoon already had its post in May). Ask the coach for the draft, tweak, publish, then start the block. A screen recording of the iPad app beats an explanation.", "bonus": true},
+  {"title": "List one item for sale", "detail": "When I close the laptop, I will photograph one thing I don't use and send the photos to the coach. The list of 30 is ready to pick from.", "bonus": true}
+ ],
+ "goals": [
+  {"title": "Message Jay at ListLab about the round", "detail": "Carried over, and the clock matters: your unpaid month ends Nov 1. Two questions only: when do you expect to close the round, and what would my role be? Send it before 11:00."},
+  {"title": "Daisolar: install the SIM in Kapso", "detail": "Carried over. Use the Kapso SIM setup link (expires Nov 7) with the Puebla SIM. Done = the bot answers a test WhatsApp on the new number."},
+  {"title": "Antesis: turn the dLocal spec into an implementation plan", "detail": "Carried over. macmini, ~/c/comunidad-antesis-staging, branch feat/dlocal-argentina, Claude session 8ddbe2ff. Just the plan today, not the code."}
+ ],
+ "comingUp": [
+  "ListLab decision by Nov 1 (6 days): get Jay's answer first.",
+  "Día de muertos, Nov 1–2: buy alfeñique, veladoras, hojaldra, incienso, papel picado; print fotos de abuelos this week.",
+  "Kapso SIM setup link expires Nov 7.",
+  "Write to Liz to renew the SAT certificate."
+ ],
+ "stats": [
+  {"label": "social media, last 7 days (Mac)", "value": "0.5h"},
+  {"label": "job hunt last week", "value": "?"},
+  {"label": "walk streak", "value": "2 → day 3 today"},
+  {"label": "LinkedIn posts last week", "value": "5"}
+ ],
+ "recentWins": [
+  "5 LinkedIn posts published last week.",
+  "Listed the NOTIUS walking pad on Marketplace for $2,500: the first item for sale.",
+  "Daisolar bot: 13-year warranty deployed, and a CRM built for it.",
+  "Japanese Walking iOS app: four OTA releases in a day.",
+  "Walked 30 minutes two days in a row."
+ ],
+ "vision": "Posting daily about what you build is the job hunt now, and it becomes the distribution channel for your own products later. Every post counts toward both."
+}
