@@ -1,0 +1,9 @@
+# Personal data (addresses, card endings, invoices) and generated files: never sync.
+/exports/
+/*.zip
+/*.csv
+/purchases.db
+/meli.json
+/images/
+/fetch.log
+/bin/

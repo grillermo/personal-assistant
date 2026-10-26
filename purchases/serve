@@ -1,0 +1,172 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+APP_DIR="$(cd "$(dirname "$0")/amazon-purchases-history" && pwd)"
+cd "$APP_DIR"
+
+SESSION='purchases'
+PORT=4031
+
+# End state: ONE detached tmux session "purchases" with two panes —
+#   web    : the Go server (bin/purchases) on $PORT
+#   images : fetch_images.py downloading missing product images; it is
+#            resumable and exits when there is nothing left, so a finished
+#            pane is normal. Images appear on the next page reload.
+#
+# tmux panes do NOT inherit this script's environment when a tmux server is
+# already running, so every pane command carries this shell's PATH itself.
+ENV_SETUP="cd $APP_DIR && export PATH='$PATH'"
+
+web_cmd() {
+  echo "$ENV_SETUP && export PORT=$PORT && exec bin/purchases"
+}
+
+images_cmd() {
+  echo "$ENV_SETUP && exec python3 -I fetch_images.py"
+}
+
+# Report PIDs listening on a port (empty if none).
+port_listeners() {
+  lsof -ti "tcp:$1" -sTCP:LISTEN 2>/dev/null || true
+}
+
+# The port must be free before the web pane respawns, otherwise the new server
+# dies instantly with "address already in use". Its previous occupant is ours.
+free_port() {
+  local port="$1" pids
+  pids=$(port_listeners "$port")
+  [ -n "$pids" ] || return 0
+
+  echo "==> Port $port still held by PID(s): $(echo "$pids" | tr '\n' ' ')- stopping"
+  # shellcheck disable=SC2086
+  kill $pids 2> /dev/null || true
+  for _ in $(seq 1 20); do
+    sleep 0.5
+    [ -n "$(port_listeners "$port")" ] || return 0
+  done
+
+  pids=$(port_listeners "$port")
+  # shellcheck disable=SC2086
+  [ -z "$pids" ] || kill -9 $pids 2> /dev/null || true
+  sleep 1
+  if [ -n "$(port_listeners "$port")" ]; then
+    echo "ERROR: could not free port $port."
+    return 1
+  fi
+}
+
+# Find a pane by its title within the session ("" if absent).
+# Guard on has-session: without it, list-panes exits 1 on a missing session and
+# pipefail + set -e abort the script on a fresh run.
+pane_for() {
+  tmux has-session -t "$SESSION" 2>/dev/null || return 0
+  tmux list-panes -t "$SESSION" -F '#{pane_title} #{pane_id}' 2>/dev/null \
+    | awk -v t="$1" '$1==t{print $2}'
+}
+
+# True when the pane exists but its command has exited (needs remain-on-exit).
+pane_dead() {
+  [ "$(tmux display-message -p -t "$1" '#{pane_dead}' 2>/dev/null)" = "1" ]
+}
+
+# Start or replace a single pane (identified by title) with the given command.
+# remain-on-exit keeps a pane that crashes on boot around holding its output,
+# so wait_healthy can show it instead of stalling with no explanation.
+start_pane() {
+  local title="$1" cmd="$2"
+  local pid
+  pid=$(pane_for "$title")
+
+  if [ -z "$pid" ]; then
+    if tmux has-session -t "$SESSION" 2>/dev/null; then
+      pid=$(tmux split-window -P -F '#{pane_id}' -t "$SESSION")
+    else
+      tmux new-session -d -s "$SESSION" -n main -x 200 -y 50
+      tmux set-option -t "$SESSION" remain-on-exit on > /dev/null
+      pid=$(tmux list-panes -t "$SESSION" -F '#{pane_id}' | head -1)
+    fi
+    tmux select-pane -t "$pid" -T "$title"
+  fi
+
+  tmux set-option -t "$SESSION" remain-on-exit on > /dev/null
+  tmux respawn-pane -k -t "$pid" "$cmd"
+  # respawn-pane resets the title on some tmux versions; re-assert it so
+  # pane_for keeps finding this pane next time.
+  tmux select-pane -t "$pid" -T "$title"
+  tmux select-layout -t "$SESSION" even-vertical > /dev/null
+}
+
+dump_pane() {
+  local title="$1"
+  local pid
+  pid=$(pane_for "$title")
+  [ -n "$pid" ] || { echo "(no $title pane to inspect)"; return 0; }
+  echo "----- last lines of $title pane -----"
+  tmux capture-pane -p -S -500 -t "$pid" 2>/dev/null | grep -v '^$' | tail -n 25 || true
+  echo "------------------------------------"
+}
+
+wait_healthy() {
+  local pid
+  pid=$(pane_for web)
+  echo "==> Waiting for web on port $PORT..."
+  for _ in $(seq 1 20); do
+    if curl -sf "http://127.0.0.1:$PORT/health" 2>/dev/null | jq -e ".status == \"ok\" and .port == \"$PORT\"" > /dev/null 2>&1; then
+      echo "==> web healthy: http://127.0.0.1:$PORT"
+      return 0
+    fi
+    # Fail fast instead of burning the whole timeout on a process that is
+    # already gone.
+    if [ -z "$pid" ] || pane_dead "$pid"; then
+      echo "ERROR: web exited during boot."
+      dump_pane web
+      return 1
+    fi
+    sleep 0.5
+  done
+  echo "ERROR: web failed health check after 10s."
+  dump_pane web
+  return 1
+}
+
+# 1. Build the database from the Amazon exports if it is missing (rerun
+#    ./build.sh by hand after adding a new export).
+if [ ! -f purchases.db ]; then
+  echo "==> purchases.db missing; building it from exports/"
+  ./build.sh
+fi
+
+# 2. Build the server.
+echo "==> go build"
+go build -o bin/purchases .
+
+# 3. (Re)start the web pane.
+echo "==> (Re)starting web pane (port $PORT)"
+free_port "$PORT" || exit 1
+start_pane web "$(web_cmd)"
+wait_healthy || exit 1
+
+# 4. (Re)start the image downloader, unless one is already running outside the
+#    session (two would fetch the same images and double the load on Amazon).
+images_pane=$(pane_for images)
+if pgrep -f 'fetch_images.py' > /dev/null && { [ -z "$images_pane" ] || pane_dead "$images_pane"; }; then
+  echo "==> fetch_images.py already running outside the session; leaving it"
+else
+  echo "==> (Re)starting images pane"
+  start_pane images "$(images_cmd)"
+fi
+
+echo "==> Ready. Session '$SESSION': web:$PORT, images."
+
+# 5. Attach so the server and downloader output is visible live.
+#    switch-client if already inside tmux; plain attach otherwise. When run
+#    non-interactively (no TTY) attaching would fail, so skip it then.
+if [ -n "${TMUX:-}" ]; then
+  echo "==> Switching client to session '$SESSION'"
+  tmux switch-client -t "$SESSION"
+elif [ -t 1 ]; then
+  echo "==> Attaching to session '$SESSION' (detach with Ctrl-b d)"
+  tmux attach-session -t "$SESSION"
+else
+  echo "==> No TTY; not attaching. Run: tmux attach -t $SESSION"
+fi
