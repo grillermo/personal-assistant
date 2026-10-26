@@ -1,10 +1,12 @@
 # Personal data (addresses, card endings, invoices) and generated files: never sync.
-/exports/
+# Imports live in data/<source>/<YYYY-MM-DD>/; only whatsapp is synced.
+/data/amazon/
+/data/aliexpress/
+/data/mercadolibre/
+/data/purchases.db
+/data/images/
 /*.zip
 /*.csv
-/purchases.db
-/meli.json
-/images/
 /fetch.log
 /bin/
 # Slack webhook for sign-in codes, and the key that signs the session cookie.

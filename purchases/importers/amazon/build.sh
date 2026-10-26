@@ -1,16 +1,19 @@
 #!/usr/bin/env bash
-# Rebuilds purchases.db from every Amazon "Your Orders" export unzipped under exports/<site>/.
+# Rebuilds data/purchases.db from the newest Amazon "Your Orders" exports, unzipped under
+# data/amazon/<YYYY-MM-DD>/<site>/.
 # Usage: ./build.sh            (rebuild the DB)
 #        ./build.sh serve      (rebuild, then open the search UI on http://127.0.0.1:8001)
 set -euo pipefail
-cd "$(dirname "$0")"
+cd "$(dirname "$0")/../.."
 
-db=purchases.db
+db=data/purchases.db
+latest=$(ls -d data/amazon/*/ 2>/dev/null | sort | tail -1)
+[ -n "$latest" ] || { echo "no export in data/amazon/<date>/" >&2; exit 1; }
 rm -f "$db"
 su() { uvx sqlite-utils "$@"; }
 
 shopt -s nullglob
-for dir in exports/*/; do
+for dir in "$latest"*/; do
   orders="$dir/Your Amazon Orders/Order History.csv"
   digital="$dir/Your Amazon Orders/Digital Content Orders.csv"
   refunds="$dir/Your Returns & Refunds/Refund Details.csv"

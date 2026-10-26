@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-APP_DIR="$(cd "$(dirname "$0")/amazon-purchases-history" && pwd)"
+APP_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$APP_DIR"
 
 SESSION='purchases'
@@ -22,7 +22,7 @@ web_cmd() {
 }
 
 images_cmd() {
-  echo "$ENV_SETUP && exec python3 -I fetch_images.py"
+  echo "$ENV_SETUP && exec python3 -I importers/amazon/fetch_images.py"
 }
 
 # Report PIDs listening on a port (empty if none).
@@ -130,10 +130,10 @@ wait_healthy() {
 }
 
 # 1. Build the database from the Amazon exports if it is missing (rerun
-#    ./build.sh by hand after adding a new export).
-if [ ! -f purchases.db ]; then
-  echo "==> purchases.db missing; building it from exports/"
-  ./build.sh
+#    importers/amazon/build.sh by hand after adding a new export).
+if [ ! -f data/purchases.db ]; then
+  echo "==> data/purchases.db missing; building it from data/amazon/"
+  importers/amazon/build.sh
 fi
 
 # 2. Build the server.

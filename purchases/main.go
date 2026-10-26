@@ -1,8 +1,10 @@
 // Command purchases serves every Amazon, Mercado Libre and AliExpress purchase as a searchable
 // Mercado Libre-style catalog.
 //
-// Data is read on every request, so rebuilding purchases.db (build.sh), adding
-// meli.json or AliExpress CSVs, or downloading images (fetch_images.py) shows up on the next reload.
+// Data lives in data/<source>/<YYYY-MM-DD>/ and the newest date of each source wins. It is read on
+// every request, so rebuilding data/purchases.db (importers/amazon/build.sh), adding a mercadolibre
+// meli.json or aliexpress CSVs, or downloading images (importers/amazon/fetch_images.py) shows up
+// on the next reload.
 package main
 
 import (
@@ -101,7 +103,7 @@ func main() {
 		}
 		writeJSON(w, search(all, r.URL.Query()))
 	})
-	http.Handle("GET /images/", http.StripPrefix("/images/", http.FileServer(http.Dir(filepath.Join(root, "images")))))
+	http.Handle("GET /images/", http.StripPrefix("/images/", http.FileServer(http.Dir(filepath.Join(root, "data", "images")))))
 
 	addr := envOr("HOST", "127.0.0.1") + ":" + port
 	log.Printf("purchases listening on http://%s", addr)
@@ -109,15 +111,15 @@ func main() {
 }
 
 func loadAll(root string) ([]Purchase, error) {
-	amazon, err := loadAmazon(filepath.Join(root, "purchases.db"))
+	amazon, err := loadAmazon(filepath.Join(root, "data", "purchases.db"))
 	if err != nil {
 		return nil, err
 	}
-	meli, err := loadMeli(filepath.Join(root, "meli.json"))
+	meli, err := loadMeli(filepath.Join(latestImport(root, "mercadolibre"), "meli.json"))
 	if err != nil {
 		return nil, err
 	}
-	ali, err := loadAliexpress(filepath.Join(root, "exports", "aliexpress"))
+	ali, err := loadAliexpress(latestImport(root, "aliexpress"))
 	if err != nil {
 		return nil, err
 	}
@@ -127,6 +129,20 @@ func loadAll(root string) ([]Purchase, error) {
 		p.haystack = fold(p.Product + " " + p.Brand + " " + p.Date + " " + storeLabels[p.Store])
 	}
 	return all, nil
+}
+
+// latestImport returns the newest data/<source>/<date> directory, or a path that does not exist
+// when the source has no imports yet.
+func latestImport(root, source string) string {
+	dir := filepath.Join(root, "data", source)
+	entries, _ := os.ReadDir(dir)
+	latest := "none"
+	for _, e := range entries {
+		if e.IsDir() && e.Name() > latest {
+			latest = e.Name()
+		}
+	}
+	return filepath.Join(dir, latest)
 }
 
 func loadAmazon(path string) ([]Purchase, error) {
@@ -199,7 +215,7 @@ func loadMeli(path string) ([]Purchase, error) {
 	return out, nil
 }
 
-// exports/aliexpress/*.csv are AliExpress order exports, one row per item, with
+// data/aliexpress/<date>/*.csv are AliExpress order exports, one row per item, with
 // Spanish dates ("27 sep, 2026") and prices like "MX$1,236.99".
 func loadAliexpress(dir string) ([]Purchase, error) {
 	files, err := filepath.Glob(filepath.Join(dir, "*.csv"))

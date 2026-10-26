@@ -1,4 +1,4 @@
-"""Downloads one product image per ASIN in purchases.db into images/<ASIN>.jpg.
+"""Downloads one product image per ASIN in data/purchases.db into data/images/<ASIN>.jpg.
 
 Resumable: skips ASINs that already have an image or are listed in images/missing.txt.
 Tries the product page's main image first, then Amazon's ASIN image URL.
@@ -12,7 +12,7 @@ import time
 import subprocess
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2] / "data"
 IMAGES = ROOT / "images"
 MISSING = IMAGES / "missing.txt"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Safari/537.36"
@@ -56,7 +56,7 @@ def fetch(site, asin):
 
 
 def main():
-    IMAGES.mkdir(exist_ok=True)
+    IMAGES.mkdir(parents=True, exist_ok=True)
     missing = set(MISSING.read_text().split()) if MISSING.exists() else set()
     db = sqlite3.connect(ROOT / "purchases.db")
     rows = db.execute("select asin, lower(max(site)) from purchases where asin != '' group by asin order by max(date) desc").fetchall()
