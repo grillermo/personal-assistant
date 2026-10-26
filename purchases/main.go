@@ -64,11 +64,24 @@ type Store struct {
 	Count int    `json:"count"`
 }
 
+// Month is one calendar month of matches with its spend per currency, so a month paged across
+// several requests still shows its full total.
+type Month struct {
+	Key  string             `json:"key"`
+	Sums map[string]float64 `json:"sums"`
+}
+
 type Result struct {
 	Items  []Purchase         `json:"items"`
 	Total  int                `json:"total"`
 	Stores []Store            `json:"stores"`
 	Sums   map[string]float64 `json:"sums"`
+	Months []Month            `json:"months"`
+}
+
+// monthOf returns "YYYY-MM" for a "YYYY-MM-DD" date.
+func monthOf(date string) string {
+	return date[:min(7, len(date))]
 }
 
 func main() {
@@ -337,11 +350,25 @@ func search(all []Purchase, params map[string][]string) Result {
 	if less == nil {
 		less = func(a, b Purchase) bool { return a.Date > b.Date }
 	}
-	sort.SliceStable(matches, func(i, j int) bool { return less(matches[i], matches[j]) })
+	// Months stay in date order whatever the sort, because the page groups purchases by month;
+	// the chosen sort only orders the purchases inside each month.
+	oldestFirst := get("sort") == "old"
+	sort.SliceStable(matches, func(i, j int) bool {
+		a, b := matches[i], matches[j]
+		if ma, mb := monthOf(a.Date), monthOf(b.Date); ma != mb {
+			return (ma < mb) == oldestFirst
+		}
+		return less(a, b)
+	})
 
-	res := Result{Total: len(matches), Sums: map[string]float64{}, Items: []Purchase{}}
+	res := Result{Total: len(matches), Sums: map[string]float64{}, Items: []Purchase{}, Months: []Month{}}
 	for _, p := range matches {
 		res.Sums[p.Currency] += p.Total
+		key := monthOf(p.Date)
+		if n := len(res.Months); n == 0 || res.Months[n-1].Key != key {
+			res.Months = append(res.Months, Month{Key: key, Sums: map[string]float64{}})
+		}
+		res.Months[len(res.Months)-1].Sums[p.Currency] += p.Total
 	}
 	if offset < len(matches) {
 		res.Items = matches[offset:min(offset+pageSize, len(matches))]
