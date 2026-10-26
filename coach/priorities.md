@@ -55,25 +55,12 @@ With his wife. Many possible buyers in Argentina, no local payment method.
   channel. He started a Claude conversation about it (session not located yet; ask him which
   machine). Comes after dLocal unless he decides otherwise.
 
-## 4. ListLab / YourList (59 Pines): decide by end of October
+## 4. ListLab / YourList (59 Pines): closed 2026-10-26
 
-Deal: unpaid for a month (started ~2026-10-01), hired if they raise a round and he did well.
-He's disappointed: unclear direction, engineers building a task management tool instead of the
-product, and his assigned work is scraping Facebook (against its terms, fragile, painful).
-
-What Slack showed on 2026-10-22:
-- GTM weekly (Oct 20): the Facebook VA automation got **1 lead from 200+ attempts** because of
-  account restrictions; US VAs refuse to install the extension or use personal Facebook
-  accounts. They are pivoting to Facebook Ads.
-- Engineering weekly (Oct 19): 2 items shipped.
-- Investor update (Oct 16): one investor wire came in; still filling the funnel. No sign of a
-  closed round.
-- Jay publicly frustrated with the team on Oct 15.
-
-Coach's take: the month is almost up and the funding that the hire depends on isn't there.
-Don't sink more unpaid time into the scraping work. Before Nov 1, ask Jay directly: when do they
-expect to close the round, and what would his role be. Until then, cap ListLab at a few hours a
-week, below priorities 1–3. His call.
+He told Ciaran (second in command) on 2026-10-26 that he won't put more time into the project.
+His real reasons, kept to himself: he doesn't believe in the direction, no round has closed,
+the Facebook scraping work is against Meta's terms, and he was placed under someone he'd be
+competing with for the one position. Done; don't bring it back into the plan.
 
 ## 5. Ayuyo: publish the app (added 2026-10-25)
 
