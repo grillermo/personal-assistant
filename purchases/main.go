@@ -136,13 +136,13 @@ func loadAll(root string) ([]Purchase, error) {
 func latestImport(root, source string) string {
 	dir := filepath.Join(root, "data", source)
 	entries, _ := os.ReadDir(dir)
-	latest := "none"
+	latest := ""
 	for _, e := range entries {
 		if e.IsDir() && e.Name() > latest {
 			latest = e.Name()
 		}
 	}
-	return filepath.Join(dir, latest)
+	return filepath.Join(dir, cmp.Or(latest, "none"))
 }
 
 func loadAmazon(path string) ([]Purchase, error) {
