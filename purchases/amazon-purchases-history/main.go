@@ -76,6 +76,15 @@ func main() {
 	}
 	port := envOr("PORT", "4031")
 
+	auth, err := newAuth(root)
+	if err != nil {
+		log.Fatal(err)
+	}
+	if auth.webhook == "" {
+		log.Print("warning: SLACK_OTP_WEBHOOK_URL is not set; nobody can sign in")
+	}
+	auth.Register(http.DefaultServeMux)
+
 	http.HandleFunc("GET /{$}", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		w.Write(indexHTML)
@@ -96,7 +105,7 @@ func main() {
 
 	addr := envOr("HOST", "127.0.0.1") + ":" + port
 	log.Printf("purchases listening on http://%s", addr)
-	log.Fatal(http.ListenAndServe(addr, logRequests(http.DefaultServeMux)))
+	log.Fatal(http.ListenAndServe(addr, logRequests(auth.Middleware(http.DefaultServeMux))))
 }
 
 func loadAll(root string) ([]Purchase, error) {

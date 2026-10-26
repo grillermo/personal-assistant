@@ -18,7 +18,7 @@ PORT=4031
 ENV_SETUP="cd $APP_DIR && export PATH='$PATH'"
 
 web_cmd() {
-  echo "$ENV_SETUP && export PORT=$PORT && exec bin/purchases"
+  echo "$ENV_SETUP && set -a && { [ ! -f .env ] || . ./.env; } && set +a && export PORT=$PORT && exec bin/purchases"
 }
 
 images_cmd() {

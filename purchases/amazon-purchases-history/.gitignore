@@ -7,3 +7,6 @@
 /images/
 /fetch.log
 /bin/
+# Slack webhook for sign-in codes, and the key that signs the session cookie.
+/.env
+/auth_secret
