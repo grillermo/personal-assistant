@@ -5,6 +5,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-10
 
+- 2026-10-27: Listed a vintage US Army Ike jacket on Mercado Libre for $1,200: the second item for sale, the first on Mercado Libre.
 - 2026-10-27: Walked 30 minutes, day 4 of the Move habit (4/10).
 - 2026-10-27: Jay (ListLab founder) on stepping away: "you were extremely strong the first couple weeks and I'd like to see you become a permanent team member."
 - 2026-10-26: Published LinkedIn post "Parenting problem solving with AI" about PatataTube, with three annotated screenshots. Written by him, start to finish.
