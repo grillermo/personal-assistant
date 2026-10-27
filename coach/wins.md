@@ -6,7 +6,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 ## 2026-10
 
 - 2026-10-26: Published LinkedIn post "Parenting problem solving with AI" about PatataTube, with three annotated screenshots. Written by him, start to finish.
-- 2026-10-26: Ended ListLab: told Ciaran he won't put more unpaid time into it. A hard call, made cleanly and without burning the bridge.
+- 2026-10-26: Stepped away from ListLab: told Ciaran he can't give it more time. Ciaran asked him to come back when he has room. A hard call, made cleanly, with the door left open.
 - 2026-10-23: Built a CRM for the Daisolar bot.
 - 2026-10-23: Listed the NOTIUS walking pad on Facebook Marketplace for $2,500: the first item
   for sale. Plus a ranked list of 30 more things to sell.

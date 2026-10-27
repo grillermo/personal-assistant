@@ -57,12 +57,13 @@ With his wife. Many possible buyers in Argentina, no local payment method.
   channel. He started a Claude conversation about it (session not located yet; ask him which
   machine). Comes after dLocal unless he decides otherwise.
 
-## 4. ListLab / YourList (59 Pines): closed 2026-10-26
+## 4. ListLab / YourList (59 Pines): stepped away 2026-10-26
 
-He told Ciaran (second in command) on 2026-10-26 that he won't put more time into the project.
-His real reasons, kept to himself: he doesn't believe in the direction, no round has closed,
-the Facebook scraping work is against Meta's terms, and he was placed under someone he'd be
-competing with for the one position. Done; don't bring it back into the plan.
+On 2026-10-26 he told Ciaran (second in command) that he can't give the project enough time.
+Ciaran offered a few weeks away and re-engaging later ("you've onboarded well & made a positive
+impact"); he agreed. The door is open, on his terms. Still to do: a short note to Jay saying
+the same. His private reasons (no closed round, Facebook scraping against Meta's terms, placed
+under someone he'd compete with for the role) stay private. Don't plan any ListLab work.
 
 ## 5. Ayuyo: publish the app (added 2026-10-25)
 
