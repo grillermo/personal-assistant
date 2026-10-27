@@ -5,6 +5,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-10
 
+- 2026-10-27: Jay (ListLab founder) on stepping away: "you were extremely strong the first couple weeks and I'd like to see you become a permanent team member."
 - 2026-10-26: Published LinkedIn post "Parenting problem solving with AI" about PatataTube, with three annotated screenshots. Written by him, start to finish.
 - 2026-10-26: Stepped away from ListLab: told Ciaran he can't give it more time. Ciaran asked him to come back when he has room. A hard call, made cleanly, with the door left open.
 - 2026-10-23: Built a CRM for the Daisolar bot.
