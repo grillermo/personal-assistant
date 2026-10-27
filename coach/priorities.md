@@ -38,7 +38,9 @@ as a product engineer and get recruiters' attention.
   (once shipped), comunidad-antesis (multi-country pricing, Argentina payments), readitsoon
   (+ MCP server, Obsidian plugin, companion), patatatube, git-sync, file_server, ipad-send,
   claude-sessions, my-machines-monitor, whatsapp-controller, spreadsheet-ocr.
-- Next step: post #2, the next unticked project in `Projects to share.md`.
+- Next step: publish the ready draft `Posts/2026-10-27 Narrate the web.md` on 2026-10-27
+  ("this morning" → "yesterday"; prompt link in the first comment). Then the next unticked
+  project in `Projects to share.md`.
 
 ## 3. Comunidad Antesis: dLocal Go payments for Argentina
 
