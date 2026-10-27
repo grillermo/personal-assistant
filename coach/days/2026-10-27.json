@@ -1,0 +1,41 @@
+{
+ "date": "2026-10-27",
+ "dateLabel": "Tuesday, October 27",
+ "greeting": "A founder who hired you on the spot just told you that you were \"extremely strong\" and that he wants you back. ListLab is handled, cleanly. Today the time it was eating goes to your own work.",
+ "nextAction": "After breakfast: shoes on, out the door for a 20-minute walk (5 minutes counts). Day 4 of 10.",
+ "quotes": [
+  {"text": "Inspiration is for amateurs. The rest of us just show up and get to work.", "author": "Chuck Close"},
+  {"text": "Just take it bird by bird.", "author": "Anne Lamott"}
+ ],
+ "habits": [
+  {"title": "Move: walk 20 minutes (day 4 of 10)", "detail": "When I finish breakfast, I will put on shoes and walk outside for 20 minutes, before opening the laptop."},
+  {"title": "Publish the narrate post (ready)", "detail": "Areas/LinkedIn/Posts/2026-10-27 Narrate the web.md. Change \"this morning\" to \"yesterday\", paste, then put the prompt link in the first comment.", "bonus": true},
+  {"title": "SelfControl block", "detail": "When I come back from the walk (and the post is out), I will start SelfControl (x.com, youtube.com, linkedin.com) before reading anything.", "bonus": true},
+  {"title": "List one item for sale", "detail": "When I close the laptop, I will photograph one thing I don't use and send the photos to the coach.", "bonus": true}
+ ],
+ "goals": [
+  {"title": "Daisolar: install the SIM in Kapso", "detail": "Carried over twice, so shrink it: open the Kapso SIM setup link (expires Nov 7) and get the Puebla SIM into the phone. Test WhatsApp if there's time."},
+  {"title": "Send one job-hunt message", "detail": "This week's target is 3. Pick one person from your past teams (a former CTO, founder or colleague) and tell them you're looking for a product engineer role. Link your PatataTube post."},
+  {"title": "Antesis: turn the dLocal spec into an implementation plan", "detail": "Carried over. macmini, ~/c/comunidad-antesis-staging, branch feat/dlocal-argentina, Claude session 8ddbe2ff. Just the plan, not the code."}
+ ],
+ "comingUp": [
+  "Día de muertos, Nov 1–2 (5 days): alfeñique, veladoras, hojaldra, incienso, papel picado, fotos de abuelos.",
+  "Kapso SIM setup link expires Nov 7.",
+  "Write to Liz to renew the SAT certificate.",
+  "Coach monthly review in the first session of November: knowledge base idea is on the list."
+ ],
+ "stats": [
+  {"label": "social media, last 24h (Mac)", "value": "0.0h"},
+  {"label": "job hunt yesterday", "value": "?"},
+  {"label": "walk streak", "value": "3 → day 4 today"},
+  {"label": "posts this week", "value": "1"}
+ ],
+ "recentWins": [
+  "Jay: \"you were extremely strong the first couple weeks.\"",
+  "Stepped away from ListLab cleanly, door left open.",
+  "Published the PatataTube post with three annotated screenshots.",
+  "Wrote the narrate post, ready to publish today.",
+  "Walked 30 minutes: day 3 of Move."
+ ],
+ "vision": "Posting daily about what you build is the job hunt now, and it becomes the distribution channel for your own products later. Every post counts toward both."
+}
