@@ -61,8 +61,12 @@ With his wife. Many possible buyers in Argentina, no local payment method.
 
 On 2026-10-26 he told Ciaran (second in command) that he can't give the project enough time.
 Ciaran offered a few weeks away and re-engaging later ("you've onboarded well & made a positive
-impact"); he agreed. The door is open, on his terms. Still to do: a short note to Jay saying
-the same. His private reasons (no closed round, Facebook scraping against Meta's terms, placed
+impact"); he agreed. Jay replied on 2026-10-27: "extremely strong the first couple weeks,"
+wants him as a permanent team member. Later: ask Jay for a LinkedIn recommendation.
+
+Why it isn't a backup plan (his words, 2026-10-27): pre-seed and pre-launch, so no money and no
+customers. The "hire" was a 30-day unpaid trial: if they raise money and he does well, they hire
+him. They aren't getting interest from customers or investors. His private reasons (no closed round, Facebook scraping against Meta's terms, placed
 under someone he'd compete with for the role) stay private. Don't plan any ListLab work.
 
 ## 5. Ayuyo: publish the app (added 2026-10-25)
