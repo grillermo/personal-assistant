@@ -1,7 +1,0 @@
-credentials.json
-tokens.json
-*.csv
-__pycache__/
-.pytest_cache/
-*.pyc
-.venv/
