@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start your day</title>
+<style>
+  :root {
+    --bg: #faf7f2; --card: #ffffff; --text: #22201c; --muted: #6f6a62;
+    --accent: #d9623b; --accent-soft: #fbe6dc; --ok: #2f8f5b; --line: #ebe5dc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17161a; --card: #211f25; --text: #eeebe6; --muted: #a09a92;
+      --accent: #f08a5d; --accent-soft: #3a2a24; --ok: #5cc48d; --line: #302d34;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 28px 16px 64px; }
+  .date { color: var(--muted); font-size: 15px; letter-spacing: .02em; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 4px 0 20px; }
+  h2 { font-size: 14px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 12px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px; margin: 0 0 16px; }
+  .quote { background: var(--accent-soft); border: 0; }
+  .quote blockquote { margin: 0; font-size: 21px; line-height: 1.4; font-style: italic; }
+  .quote cite { display: block; margin-top: 10px; font-style: normal; color: var(--muted); font-size: 15px; }
+  .quote + .quote { margin-top: -6px; }
+  .quote.small blockquote { font-size: 17px; }
+  .next { border: 2px solid var(--accent); }
+  .next p { margin: 0; font-size: 19px; font-weight: 600; }
+  ul.tasks { list-style: none; margin: 0; padding: 0; }
+  ul.tasks li { border-top: 1px solid var(--line); }
+  ul.tasks li:first-child { border-top: 0; }
+  ul.tasks label { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; cursor: pointer; }
+  ul.tasks input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--ok); flex: none; }
+  ul.tasks .title { font-weight: 600; }
+  ul.tasks .detail { display: block; color: var(--muted); font-size: 15px; }
+  ul.tasks input:checked + span .title { text-decoration: line-through; color: var(--muted); }
+  .tag { display: inline-block; margin-left: 6px; padding: 0 7px; border: 1px solid var(--line); border-radius: 9px; color: var(--muted); font-size: 12px; font-weight: 500; vertical-align: 2px; }
+  .progress { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; margin: 4px 0 14px; }
+  .progress div { height: 100%; width: 0; background: var(--ok); transition: width .3s; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+  .stat { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+  .stat b { display: block; font-size: 22px; }
+  .stat span { color: var(--muted); font-size: 14px; }
+  ul.plain { margin: 0; padding-left: 20px; }
+  ul.plain li { margin: 4px 0; }
+  .vision p { margin: 0; color: var(--muted); }
+  .done-msg { display: none; color: var(--ok); font-weight: 600; margin-top: 8px; }
+</style>
+</head>
+<body>
+<main id="app"></main>
+
+<script id="day-data" type="application/json">{"date": "2026-10-28", "dateLabel": "Wednesday, October 28", "greeting": "Good morning. Two posts in a row and four walks done: you're on a real run. Let's make it five.", "nextAction": "Finish breakfast, put your shoes on and walk 20 minutes before opening the laptop.", "quotes": [{"text": "Ever tried. Ever failed. No matter. Try again. Fail again. Fail better.", "author": "Samuel Beckett"}, {"text": "A journey of a thousand miles begins with a single step.", "author": "Lao Tzu"}], "habits": [{"title": "Move: 20-minute walk (day 5)", "detail": "When I finish breakfast, I will put on shoes and walk outside for 20 minutes, before opening the laptop. 5 minutes counts."}, {"title": "SelfControl block", "detail": "When I come back from the walk, start SelfControl (x.com, youtube.com, linkedin.com) before reading anything.", "bonus": true}, {"title": "Daily LinkedIn post", "detail": "Next project in Projects to share.md: ReadItSoon. Tweak the draft and publish before the block.", "bonus": true}, {"title": "List one item for sale", "detail": "Photograph one thing you don't use and send it to the coach.", "bonus": true}], "goals": [{"title": "Daisolar: install the SIM in Kapso", "detail": "Carried over three times; the link expires Nov 7. Just the first step: open Kapso and start the SIM setup (10 minutes)."}, {"title": "Send one job-hunt message", "detail": "Weekly target is 3. One short message to one person you already know counts."}, {"title": "Antesis: dLocal implementation plan", "detail": "On the macmini, ~/c/comunidad-antesis-staging, branch feat/dlocal-argentina. Start from docs/superpowers/specs/2026-10-20-dlocal-argentina-design.md."}], "comingUp": ["Nov 1-2: Día de muertos. Still to get: alfeñique, veladoras, hojaldra, incienso, fotos de abuelos, papel picado.", "Nov 7: the Kapso SIM link expires.", "Write to Liz to renew the SAT certificate."], "stats": [{"label": "Social media yesterday", "value": "0.0 h (this Mac)"}, {"label": "Job-hunt minutes yesterday", "value": "?"}, {"label": "Move streak", "value": "4 days"}, {"label": "Posts this week", "value": "2"}], "recentWins": ["Published \"Web article to voice for free\" on LinkedIn, with a demo video.", "Listed the vintage Ike jacket on Mercado Libre for $1,200.", "Walked 30 minutes: day 4 of Move.", "Jay (ListLab): \"extremely strong the first couple weeks.\"", "Published the PatataTube post on LinkedIn."], "vision": "Posting daily about what you build is the job hunt now, and the distribution channel for your own products later."}</script>
+<script>
+const d = JSON.parse(document.getElementById('day-data').textContent);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const key = 'start-day:' + d.date;
+const saved = JSON.parse(localStorage.getItem(key) || '{}');
+
+const taskList = (id, items) => `<ul class="tasks">${items.map((t, i) => `
+  <li><label><input type="checkbox" data-id="${id}-${i}" ${t.bonus ? 'data-bonus' : ''} ${saved[id + '-' + i] ? 'checked' : ''}>
+  <span><span class="title">${esc(t.title)}</span>${t.bonus ? '<span class="tag">bonus</span>' : ''}${t.detail ? `<span class="detail">${esc(t.detail)}</span>` : ''}</span></label></li>`).join('')}</ul>`;
+
+const [first, ...more] = d.quotes || [];
+document.getElementById('app').innerHTML = `
+  <div class="date">${esc(d.dateLabel)}</div>
+  <h1>${esc(d.greeting)}</h1>
+
+  ${first ? `<div class="card quote"><blockquote>${esc(first.text)}</blockquote><cite>${esc(first.author)}</cite></div>` : ''}
+
+  <div class="card next"><h2>Your one next action</h2><p>${esc(d.nextAction)}</p></div>
+
+  <div class="card"><h2>Today</h2>
+    <div class="progress"><div id="bar"></div></div>
+    <h2 style="margin-top:4px">Habits</h2>${taskList('habit', d.habits || [])}
+    <h2 style="margin-top:18px">Goals</h2>${taskList('goal', d.goals || [])}
+    <div class="done-msg" id="done">Everything that counts is done. That's a win; tell your coach.</div>
+  </div>
+
+  ${(d.comingUp || []).length ? `<div class="card"><h2>Coming up</h2><ul class="plain">${d.comingUp.map(c => `<li>${esc(c)}</li>`).join('')}</ul></div>` : ''}
+
+  ${(d.stats || []).length ? `<div class="card"><h2>Scoreboard</h2><div class="stats">${d.stats.map(s => `<div class="stat"><b>${esc(s.value)}</b><span>${esc(s.label)}</span></div>`).join('')}</div></div>` : ''}
+
+  ${(d.recentWins || []).length ? `<div class="card"><h2>Recent wins</h2><ul class="plain">${d.recentWins.map(w => `<li>${esc(w)}</li>`).join('')}</ul></div>` : ''}
+
+  ${more.map(q => `<div class="card quote small"><blockquote>${esc(q.text)}</blockquote><cite>${esc(q.author)}</cite></div>`).join('')}
+
+  ${d.vision ? `<div class="card vision"><h2>Why</h2><p>${esc(d.vision)}</p></div>` : ''}
+`;
+
+function refresh() {
+  // Bonus habits never count against the day: progress tracks required items only.
+  const boxes = [...document.querySelectorAll('ul.tasks input:not([data-bonus])')];
+  const done = boxes.filter(b => b.checked).length;
+  document.getElementById('bar').style.width = (boxes.length ? done / boxes.length * 100 : 0) + '%';
+  document.getElementById('done').style.display = boxes.length && done === boxes.length ? 'block' : 'none';
+}
+document.querySelectorAll('ul.tasks input').forEach(b => b.addEventListener('change', () => {
+  saved[b.dataset.id] = b.checked;
+  localStorage.setItem(key, JSON.stringify(saved));
+  refresh();
+}));
+refresh();
+</script>
+</body>
+</html>
