@@ -47,4 +47,4 @@ trigger a relapse rule, and anything done on a weekend is a bonus.
 
 | Habit | Activated | Streak reached 10 | Notes |
 |-------|-----------|-------------------|-------|
-| Move | 2026-10-22 | | Day 1 done 2026-10-22, day 2 done 2026-10-23, day 3 done 2026-10-26, day 4 done 2026-10-27. |
+| Move | 2026-10-22 | | Day 1 done 2026-10-22, day 2 done 2026-10-23, day 3 done 2026-10-26, day 4 done 2026-10-27, day 5 done 2026-10-28. |
