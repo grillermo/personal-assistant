@@ -63,7 +63,8 @@ With his wife. Many possible buyers in Argentina, no local payment method.
 On 2026-10-26 he told Ciaran (second in command) that he can't give the project enough time.
 Ciaran offered a few weeks away and re-engaging later ("you've onboarded well & made a positive
 impact"); he agreed. Jay replied on 2026-10-27: "extremely strong the first couple weeks,"
-wants him as a permanent team member. Later: ask Jay for a LinkedIn recommendation.
+wants him as a permanent team member. His read (2026-10-29): Jay wants the free labor and
+would rather he not join another company, so no asking Jay for a recommendation or outreach.
 
 Why it isn't a backup plan (his words, 2026-10-27): pre-seed and pre-launch, so no money and no
 customers. The "hire" was a 30-day unpaid trial: if they raise money and he does well, they hire
