@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-29", "dateLabel": "Thursday, October 29",
+  "greeting": "Good morning. The walk is already done, so day 6 of Move is in the bank before the laptop is even open.",
+  "nextAction": "Open the Kapso dashboard and install the SIM, the one item that has been carried over three days.",
+  "quotes": [
+    {"text": "Do the thing, and you shall have the power: but they who do not do the thing have not the power.", "author": "Ralph Waldo Emerson"},
+    {"text": "What we hope ever to do with ease, we may learn first to do with diligence.", "author": "Samuel Johnson"}
+  ],
+  "habits": [
+    {"title": "Move: 30 minute walk (done, day 6)", "detail": "When I finish breakfast, I put on shoes and walk. Already done this morning."},
+    {"title": "Start the SelfControl block", "detail": "When I come back from the walk, I start SelfControl (x.com, youtube.com, linkedin.com) before reading anything.", "bonus": true},
+    {"title": "Daily LinkedIn post", "detail": "Next in Projects to share: ReadItSoon. Ask the coach for the draft, tweak it and publish before the block.", "bonus": true},
+    {"title": "List one item for sale", "detail": "Photograph one thing you don't use and send it to the coach for the listing.", "bonus": true}
+  ],
+  "goals": [
+    {"title": "Daisolar: install the SIM in Kapso", "detail": "Carried over from three days. The link expires Nov 7. Start in the Kapso dashboard; 10 minutes is enough."},
+    {"title": "Send one job-hunt message", "detail": "Weekly target is 3. One short message to a person, not an application."},
+    {"title": "Antesis: dLocal implementation plan", "detail": "On the macmini, ~/c/comunidad-antesis-staging, branch feat/dlocal-argentina. Write the plan from docs/superpowers/specs/2026-10-20-dlocal-argentina-design.md."}
+  ],
+  "comingUp": [
+    "Día de muertos, Nov 1-2 (weekend): alfeñique, veladoras, hojaldra, incienso, fotos de abuelos, papel picado.",
+    "Write to Liz to renew the SAT certificate.",
+    "Kapso SIM link expires Nov 7."
+  ],
+  "stats": [
+    {"label": "Social media yesterday", "value": "0.0 h"},
+    {"label": "Job-hunt minutes yesterday", "value": "?"},
+    {"label": "Move streak", "value": "6 days"},
+    {"label": "LinkedIn posts this week", "value": "3"}
+  ],
+  "recentWins": [
+    "Published the git-sync post on LinkedIn: three days in a row.",
+    "Listed the TOPDON TC002 on Mercado Libre for $3,500: third item for sale.",
+    "Published 'Web article to voice for free' with a demo video.",
+    "Walked 30 minutes, day 5 of Move.",
+    "Jay (ListLab) wants you as a permanent team member."
+  ],
+  "vision": "Posting daily about what you build is the job hunt now, and the distribution channel for your own products later."
+}
