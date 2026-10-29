@@ -19,9 +19,8 @@ Second income with his father-in-law and brother-in-law. The bot is overdue.
 - Versioned in git since 2026-10-22 (no secrets tracked).
 - Done: presupuesto → cotización, contact channel (2026-10-22), 13 años de garantía (deployed
   2026-10-23). Won't do: updating the presentation (he won't use it again).
-- Next step: install the SIM in Kapso (needs the paid Kapso account, 25 USD/month; asked
-  Armando on 2026-10-29 to confirm Daisolar pays it, waiting on his answer; SIM link expires
-  Nov 7), then the GTM dashboard prototype.
+- Next step: install the SIM in Kapso (needs the paid Kapso account, 25 USD/month; Armando
+  paid it on 2026-10-29; setup in progress), then the GTM dashboard prototype.
 - Pending (added 2026-10-25): **Bot envía cotizaciones reales basadas en costo de CFE.** Today
   the `generar_estimacion` tool only gives an "estimación ilustrativa" from the bill's kWh or
   amount.
