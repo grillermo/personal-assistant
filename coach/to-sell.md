@@ -2,8 +2,8 @@
 
 Habit: list one item a day on Facebook Marketplace or Mercado Libre.
 
-Each item has a folder in `ventas/<item>/` with its photos and an `item.yml` (listing text,
-price, link, status). This table is the overview.
+Each item's photos and listing data live in the ventas-libres ledger (`~/c/ventas-libres`,
+https://ventas.chiq.me). This table is the overview.
 
 | Item | Where listed | Price (MXN) | Listed on | Status |
 |------|--------------|-------------|-----------|--------|
