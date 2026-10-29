@@ -5,6 +5,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-10
 
+- 2026-10-28: Published a LinkedIn post about git-sync, with the menu bar screenshot. Third post in a row.
 - 2026-10-28: Listed a TOPDON TC002 thermal camera on Mercado Libre for $3,500: the third item for sale, two days in a row.
 - 2026-10-27: Published "Web article to voice for free" on LinkedIn: gave away the prompt and recorded a demo video. Posts on two days in a row.
 - 2026-10-27: Listed a vintage US Army Ike jacket on Mercado Libre for $1,200: the second item for sale, the first on Mercado Libre.
