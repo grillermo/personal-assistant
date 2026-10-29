@@ -5,6 +5,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-10
 
+- 2026-10-29: First sale! Levi's 510 jeans sold on Mercado Libre for $800, the same day he listed them with his own app, ventas-libres.
 - 2026-10-29: Walked 30 minutes before the laptop, day 6 of the Move habit (6/10).
 - 2026-10-28: Published a LinkedIn post about git-sync, with the menu bar screenshot. Third post in a row.
 - 2026-10-28: Listed a TOPDON TC002 thermal camera on Mercado Libre for $3,500: the third item for sale, two days in a row.

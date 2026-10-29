@@ -3,7 +3,8 @@
 Habit: list one item a day on Facebook Marketplace or Mercado Libre.
 
 Each item's photos and listing data live in the ventas-libres ledger (`~/c/ventas-libres`,
-https://ventas.chiq.me). This table is the overview.
+https://ventas.chiq.me). **Since 2026-10-29 the ventas-libres app is the only tracker** (status, sales, prices). The table
+below is the history up to then and is no longer updated.
 
 | Item | Where listed | Price (MXN) | Listed on | Status |
 |------|--------------|-------------|-----------|--------|
