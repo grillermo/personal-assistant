@@ -5,7 +5,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-10
 
-- 2026-10-29: Daisolar: SIM configured in Kapso, after three days carried over. Unblocked it by asking Armando to pay the Kapso account; he paid the same morning.
+- 2026-10-29: Daisolar: SIM configured in Kapso, after three days carried over. Unblocked it by asking Armando to pay the Kapso account; he paid the same day.
 - 2026-10-29: Listed Levi's 510 jeans on Mercado Libre for $800, published from his own app, ventas-libres: the fourth item for sale.
 - 2026-10-29: Walked 30 minutes before the laptop, day 6 of the Move habit (6/10).
 - 2026-10-28: Published a LinkedIn post about git-sync, with the menu bar screenshot. Third post in a row.
