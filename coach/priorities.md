@@ -51,8 +51,8 @@ Upstream: `ai-job-search-dev/ai-job-search`.
 - Code: `~/c/ai-job-search` on the macmini and immunemac, synced through git-sync via a
   **private** repo `grillermo/ai-job-search` (`upstream` remote for their updates). Never push
   it to a public fork: `/setup` writes his profile into tracked files.
-- Installed on the macmini 2026-10-31: portal CLIs and TinyTeX (`lualatex`/`xelatex`). Not on
-  immunemac yet, so PDFs only compile on the macmini for now.
+- Installed on the macmini and immunemac 2026-10-31: portal CLIs and TinyTeX
+  (`lualatex`/`xelatex`), so PDFs compile on both.
 - Its bundled portals are Danish, plus LinkedIn and freehire; `/add-portal` makes one for
   another job board.
 - Next step: `cd ~/c/ai-job-search && claude`, run `/setup` with his CV, then `/apply` one real
