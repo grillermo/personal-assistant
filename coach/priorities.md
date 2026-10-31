@@ -42,7 +42,23 @@ as a product engineer and get recruiters' attention.
 - Published: PatataTube (2026-10-26), Narrate the web (2026-10-27), git-sync (2026-10-28).
 - Next step: the next unticked project in `Projects to share.md`.
 
-## 3. Comunidad Antesis: dLocal Go payments for Argentina
+## 3. Try ai-job-search (added 2026-10-31)
+
+An open-source Claude Code workflow for the job hunt: it scrapes job boards, ranks postings
+against his profile, and drafts a tailored CV and cover letter (LaTeX → PDF) for each one.
+Upstream: `ai-job-search-dev/ai-job-search`.
+
+- Code: `~/c/ai-job-search` on the macmini and immunemac, synced through git-sync via a
+  **private** repo `grillermo/ai-job-search` (`upstream` remote for their updates). Never push
+  it to a public fork: `/setup` writes his profile into tracked files.
+- Installed on the macmini 2026-10-31: portal CLIs and TinyTeX (`lualatex`/`xelatex`). Not on
+  immunemac yet, so PDFs only compile on the macmini for now.
+- Its bundled portals are Danish, plus LinkedIn and freehire; `/add-portal` makes one for
+  another job board.
+- Next step: `cd ~/c/ai-job-search && claude`, run `/setup` with his CV, then `/apply` one real
+  posting and judge whether the result beats applying by hand.
+
+## 4. Comunidad Antesis: dLocal Go payments for Argentina
 
 With his wife. Many possible buyers in Argentina, no local payment method.
 
@@ -57,7 +73,7 @@ With his wife. Many possible buyers in Argentina, no local payment method.
   channel. He started a Claude conversation about it (session not located yet; ask him which
   machine). Comes after dLocal unless he decides otherwise.
 
-## 4. ListLab / YourList (59 Pines): stepped away 2026-10-26
+## 5. ListLab / YourList (59 Pines): stepped away 2026-10-26
 
 On 2026-10-26 he told Ciaran (second in command) that he can't give the project enough time.
 Ciaran offered a few weeks away and re-engaging later ("you've onboarded well & made a positive
@@ -70,7 +86,7 @@ customers. The "hire" was a 30-day unpaid trial: if they raise money and he does
 him. They aren't getting interest from customers or investors. His private reasons (no closed round, Facebook scraping against Meta's terms, placed
 under someone he'd compete with for the role) stay private. Don't plan any ListLab work.
 
-## 5. Ayuyo: publish the app (added 2026-10-25)
+## 6. Ayuyo: publish the app (added 2026-10-25)
 
 Android panic app: a long press sends a pre-set emergency SMS (optionally with location) to one
 contact. Code in `~/c/ayuyo` (last commit: the "Ajustes" settings control); there's also a
