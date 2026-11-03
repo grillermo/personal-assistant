@@ -3,8 +3,13 @@
 Anything that moved him forward, big or small: shipped work, a post, an item sold, a walk,
 a hard conversation had, a day without doomscrolling. Newest first. One line each.
 
+## 2026-11
+
+- 2026-11-03: Published another item for sale, before the morning page was even ready.
+
 ## 2026-10
 
+- 2026-10-31: Installed ai-job-search on the macmini and immunemac (portal CLIs + TinyTeX), on a Saturday.
 - 2026-10-29: Daisolar: SIM configured in Kapso, after three days carried over. Unblocked it by asking Armando to pay the Kapso account; he paid the same day.
 - 2026-10-29: Listed Levi's 510 jeans on Mercado Libre for $800, published from his own app, ventas-libres: the fourth item for sale.
 - 2026-10-29: Walked 30 minutes before the laptop, day 6 of the Move habit (6/10).

@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-03", "dateLabel": "Tuesday, November 3",
+  "greeting": "Good morning. One item already listed before the page was even ready: that's the habit running itself. First page since Thursday; let's pick up from here.",
+  "nextAction": "Shoes on, out the door: a 5-minute walk around the block, then come back to the laptop.",
+  "quotes": [
+    {"text": "It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.", "author": "Seneca"},
+    {"text": "Great things are done by a series of small things brought together.", "author": "Vincent van Gogh"}
+  ],
+  "habits": [
+    {"title": "Move: 5-minute walk (restart)", "detail": "When I finish breakfast, I put on shoes and walk. No log for Friday or Monday, so today is the 5-minute restart. If you did walk those days, tell the coach and the streak stays at 6+."},
+    {"title": "Start the SelfControl block", "detail": "When I come back from the walk, I start SelfControl (x.com, youtube.com, linkedin.com) before reading anything.", "bonus": true},
+    {"title": "Daily LinkedIn post", "detail": "Next in Projects to share: ReadItSoon. Missed 2+ days, so 3 sentences about recent work is enough (ventas-libres is a good one).", "bonus": true},
+    {"title": "List one item for sale (done)", "detail": "Already published another item this morning.", "bonus": true}
+  ],
+  "goals": [
+    {"title": "Send one job-hunt message", "detail": "Carried over twice. One person: a founder, recruiter or ex-colleague. A 4-line message counts. 15 minutes."},
+    {"title": "ai-job-search: run /setup with your CV", "detail": "On this Mac (immunemac): cd ~/c/ai-job-search && claude, then /setup. If there's time, /apply one real posting and judge it against applying by hand."},
+    {"title": "Daisolar: sketch the GTM dashboard prototype", "detail": "Next step in priorities. Start with one page listing what Armando needs to see (leads, urgent ones, stuck in the gate). Code in ~/c/daisolar."}
+  ],
+  "comingUp": [
+    "Write to Liz to renew the SAT certificate (certificado de hacienda)",
+    "Family monthly expenses: still open from Thursday (purchase histories are in purchases/)"
+  ],
+  "stats": [
+    {"label": "Move streak", "value": "6 (Fri, Mon unlogged)"},
+    {"label": "Posts last week", "value": "3"},
+    {"label": "Items listed (Oct 26 week)", "value": "3 + 1 today"},
+    {"label": "Social media yesterday", "value": "?"}
+  ],
+  "recentWins": [
+    "Today: published another item for sale",
+    "Oct 31: installed ai-job-search on the macmini and immunemac",
+    "Oct 29: Daisolar SIM configured in Kapso, unblocked by asking Armando",
+    "Oct 29: listed Levi's 510 jeans from your own app, ventas-libres",
+    "Oct 28: git-sync post on LinkedIn, three posts in a row"
+  ],
+  "vision": "Posting daily about what he builds is the job hunt now, and it becomes the distribution channel for his own products later."
+}

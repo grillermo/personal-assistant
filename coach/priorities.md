@@ -24,6 +24,12 @@ Second income with his father-in-law and brother-in-law. The bot is overdue.
 - Pending (added 2026-10-25): **Bot envía cotizaciones reales basadas en costo de CFE.** Today
   the `generar_estimacion` tool only gives an "estimación ilustrativa" from the bill's kWh or
   amount.
+- Pending (added 2026-10-29): **Send the "Prospecto para Armando" alerts to Armando, not to
+  Guillermo.** The `alerta_prospecto` template goes to the `ALERT_PHONE` secret of the `crm`
+  function, still Guillermo's `525585519954`. It fires on urgent leads (bill > $12,000 and
+  ready), when the agent hands a case over (`escalar_a_armando`), and when a prospect gets stuck
+  in the gate. Once Armando is ready: set his number as the secret and redeploy `crm`
+  (`HANDOFF.md` §7.3).
 
 ## 2. LinkedIn: post daily (the job hunt strategy)
 
