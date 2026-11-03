@@ -5,6 +5,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-11
 
+- 2026-11-03: Applied to nCube (Senior Full-Stack Engineer, energy-tech client): a role chosen on purpose, matching Rails + the Daisolar energy work.
 - 2026-11-03: Booked a meeting with a recruiter for Thursday 2026-11-05: the job-hunt goal carried over twice, done.
 - 2026-11-03: Started a 3-hour SelfControl block (bonus habit, first one logged).
 - 2026-11-03: Walked 30 minutes after two skipped days (Fri, Mon): restarted Move with the full walk, day 1 of a new streak.
