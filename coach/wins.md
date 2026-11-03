@@ -5,6 +5,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-11
 
+- 2026-11-03: Walked 30 minutes after two skipped days (Fri, Mon): restarted Move with the full walk, day 1 of a new streak.
 - 2026-11-03: Published another item for sale, before the morning page was even ready.
 
 ## 2026-10
