@@ -5,6 +5,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-11
 
+- 2026-11-04: Walked 25 minutes, day 2 of the new Move streak (2/10).
 - 2026-11-04: Started a SelfControl block, two days in a row.
 - 2026-11-04: Listed another item for sale on Mercado Libre (MLM3751441621) before the morning page, two days in a row.
 - 2026-11-03: Published a LinkedIn post on ReadItSoon as foundational technology: he wrote the draft, opened with a quote found in his own article library. First post since 10-28.
