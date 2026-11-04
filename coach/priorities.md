@@ -20,7 +20,7 @@ Second income with his father-in-law and brother-in-law. The bot is overdue.
 - Done: presupuesto → cotización, contact channel (2026-10-22), 13 años de garantía (deployed
   2026-10-23). Won't do: updating the presentation (he won't use it again).
 - Done 2026-10-29: SIM installed in Kapso (paid account, 25 USD/month, paid by Armando).
-- Next step: the GTM dashboard prototype.
+- Next step (updated 2026-11-04): cotizador reviewed by Armando and bot nearly ready; waiting on his final details, then deploy. After that: get his feedback on the CRM, and replace the Facebook instant form (which asks what the bot asks) so Armando's prospects start talking to the bot. GTM dashboard prototype after that.
 - Pending (added 2026-10-25): **Bot envía cotizaciones reales basadas en costo de CFE.** Today
   the `generar_estimacion` tool only gives an "estimación ilustrativa" from the bill's kWh or
   amount.
