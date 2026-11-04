@@ -5,6 +5,8 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-11
 
+- 2026-11-04: Started a SelfControl block, two days in a row.
+- 2026-11-04: Listed another item for sale on Mercado Libre (MLM3751441621) before the morning page, two days in a row.
 - 2026-11-03: Published a LinkedIn post on ReadItSoon as foundational technology: he wrote the draft, opened with a quote found in his own article library. First post since 10-28.
 - 2026-11-03: Applied to nCube (Senior Full-Stack Engineer, energy-tech client): a role chosen on purpose, matching Rails + the Daisolar energy work.
 - 2026-11-03: Booked a meeting with a recruiter for Thursday 2026-11-05: the job-hunt goal carried over twice, done.
