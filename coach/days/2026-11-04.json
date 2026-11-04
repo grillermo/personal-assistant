@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-04", "dateLabel": "Wednesday, November 4",
+  "greeting": "Good morning. Today's item is already listed on Mercado Libre, two days in a row before the page is ready. Yesterday was a big one: a post, an application and a recruiter meeting booked. Today: one hour that gets the Daisolar bot into Armando's hands.",
+  "nextAction": "Shoes on, out the door: a 20-minute walk (day 2 of the new streak), then come back to the laptop.",
+  "quotes": [
+    {"text": "Well done is better than well said.", "author": "Benjamin Franklin"},
+    {"text": "Nothing will work unless you do.", "author": "Maya Angelou"}
+  ],
+  "habits": [
+    {"title": "Move: 20-minute walk (day 2)", "detail": "When I finish breakfast, I put on shoes and walk outside for 20 minutes, before opening the laptop. Restarted yesterday with 30 minutes; today makes it 2/10."},
+    {"title": "Start the SelfControl block", "detail": "When I come back from the walk, I start SelfControl (x.com, youtube.com, linkedin.com) before reading anything. Yesterday's 3 hours was the first one logged.", "bonus": true},
+    {"title": "Daily LinkedIn post", "detail": "Next in Projects to share: Comunidad Antesis (multi-country store, the Argentina payments story). Post it in the window before the block.", "bonus": true},
+    {"title": "List one item for sale (done)", "detail": "Already published on Mercado Libre this morning (MLM3751441621).", "bonus": true}
+  ],
+  "goals": [
+    {"title": "Daisolar: 1 hour refining the bot, then hand it to Armando", "detail": "Timer for 60 minutes. In ~/c/daisolar/bot: run one full conversation as a prospect, fix the worst thing you find, redeploy. Before the handoff, set ALERT_PHONE in the crm function to Armando's number and redeploy crm (HANDOFF.md §7.3). Done = Armando has the bot's number and gets the alerts."},
+    {"title": "Prep for tomorrow's recruiter meeting (20 min)", "detail": "Write down three things: the role you want (product engineer, Rails), your one-minute story (Daisolar bot, Antesis, the LinkedIn posts), and your salary range. Have grillermo.com open."},
+    {"title": "ai-job-search: run /setup with your CV", "detail": "Carried over from yesterday. On this Mac (immunemac): cd ~/c/ai-job-search && claude, then /setup. Only if the Daisolar hour is done."}
+  ],
+  "comingUp": [
+    "Thursday Nov 5: recruiter meeting",
+    "Write to Liz to renew the SAT certificate (certificado de hacienda)",
+    "Family monthly expenses: still open (purchase histories are in purchases/)"
+  ],
+  "stats": [
+    {"label": "Move streak", "value": "1 (today makes 2)"},
+    {"label": "Posts this week", "value": "1"},
+    {"label": "Items listed this week", "value": "2"},
+    {"label": "Social media yesterday", "value": "?"}
+  ],
+  "recentWins": [
+    "Today: listed another item on Mercado Libre",
+    "Nov 3: LinkedIn post on ReadItSoon as foundational tech",
+    "Nov 3: applied to nCube, a role chosen on purpose",
+    "Nov 3: booked a recruiter meeting for Thursday",
+    "Nov 3: first SelfControl block logged (3 hours) and a 30-minute walk"
+  ],
+  "vision": "Ship Daisolar's agent first: it's late, it's family, and it's income."
+}
