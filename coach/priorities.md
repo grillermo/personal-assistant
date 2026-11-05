@@ -63,6 +63,16 @@ Upstream: `ai-job-search-dev/ai-job-search`.
   another job board.
 - Next step: `cd ~/c/ai-job-search && claude`, run `/setup` with his CV, then `/apply` one real
   posting and judge whether the result beats applying by hand.
+- Follow-ups from `/setup` (added 2026-11-05):
+  - Remove the CodeRabbit line from the original resume (`Resume(v12-fixed).pdf` in Google
+    Drive; setup couldn't edit it because the source file isn't there). If it came from an online
+    builder, delete the line there. Until then send `cv/main_example.pdf` (in `~/c/ai-job-search`),
+    which doesn't mention CodeRabbit.
+  - Make the Immunefi AI rollout story match the profile: the profile now says Claude Code only,
+    but the stories bank says Cursor. Tell it the same way in interviews, and fix whichever is
+    wrong.
+  - Update the old "Present" dates for EncargoGo and Pilou on the portfolio home page and
+    `grillermo.com/cv.pdf`.
 
 ## 4. Comunidad Antesis: dLocal Go payments for Argentina
 
