@@ -64,7 +64,7 @@ const key = 'start-day:' + d.date;
 const saved = JSON.parse(localStorage.getItem(key) || '{}');
 
 const taskList = (id, items) => `<ul class="tasks">${items.map((t, i) => `
-  <li><label><input type="checkbox" data-id="${id}-${i}" ${t.bonus ? 'data-bonus' : ''} ${saved[id + '-' + i] ? 'checked' : ''}>
+  <li><label><input type="checkbox" data-id="${id}-${i}" ${t.bonus ? 'data-bonus' : ''} ${(id + '-' + i in saved ? saved[id + '-' + i] : t.done) ? 'checked' : ''}>
   <span><span class="title">${esc(t.title)}</span>${t.bonus ? '<span class="tag">bonus</span>' : ''}${t.detail ? `<span class="detail">${esc(t.detail)}</span>` : ''}</span></label></li>`).join('')}</ul>`;
 
 const [first, ...more] = d.quotes || [];

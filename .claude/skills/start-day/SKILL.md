@@ -41,6 +41,10 @@ All paths are relative to the repo root (`~/c/personal-assistant`).
 - **Vision**: one sentence from `vision.md`.
 - **Greeting**: short and specific to today (a weekday, a deadline, yesterday's win). No guilt.
 
+- **Already done**: anything he says he has already done today (in the args or the log) gets
+  `"done": true` on its habit or goal, so the page opens with it checked. Keep the title as is;
+  don't write "done" into the copy. If he reports more later, set it and re-render.
+
 ## 3. Render
 
 Write the JSON to `coach/days/YYYY-MM-DD.json`, then render:
@@ -56,7 +60,7 @@ Shape (the renderer rejects missing fields and more than 3 goals):
   "date": "2026-10-22", "dateLabel": "Thursday, October 22",
   "greeting": "…", "nextAction": "…",
   "quotes": [{"text": "…", "author": "…"}],
-  "habits": [{"title": "…", "detail": "…"}, {"title": "…", "detail": "…", "bonus": true}],
+  "habits": [{"title": "…", "detail": "…"}, {"title": "…", "detail": "…", "bonus": true, "done": true}],
   "goals": [{"title": "…", "detail": "…"}],
   "comingUp": ["…"], "stats": [{"label": "…", "value": "…"}],
   "recentWins": ["…"], "vision": "…"
