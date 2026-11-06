@@ -2,14 +2,14 @@
   "date": "2026-11-06",
   "dateLabel": "Friday, November 6",
   "greeting": "Walk already done before the page: day 4 of the Move streak. Last weekday of the week, then the weekend is yours.",
-  "nextAction": "Start the SelfControl block, then message Armando for the cotizador details.",
+  "nextAction": "Message Armando for the cotizador details.",
   "quotes": [
     {"text": "Start where you are. Use what you have. Do what you can.", "author": "Arthur Ashe"},
     {"text": "Courage doesn't always roar. Sometimes courage is the quiet voice at the end of the day saying, 'I will try again tomorrow.'", "author": "Mary Anne Radmacher"}
   ],
   "habits": [
     {"title": "Move: 20-minute walk (day 4/10)", "detail": "When I finish breakfast, I will put on shoes and walk outside for 20 minutes, before opening the laptop.", "done": true},
-    {"title": "SelfControl block", "detail": "When I come back from the walk, I will start SelfControl (x.com, youtube.com, linkedin.com) before reading anything.", "bonus": true},
+    {"title": "SelfControl block", "detail": "When I come back from the walk, I will start SelfControl (x.com, youtube.com, linkedin.com) before reading anything.", "bonus": true, "done": true},
     {"title": "LinkedIn post: Comunidad Antesis", "detail": "Next in Projects to share. Post in the window before the SelfControl block.", "bonus": true},
     {"title": "List one item for sale", "detail": "When I close the laptop at the end of the day, I will photograph one thing I don't use and send the photos to the coach.", "bonus": true}
   ],
