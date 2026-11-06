@@ -5,6 +5,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-11
 
+- 2026-11-06: Walked before the morning page, day 4 of the new Move streak (4/10).
 - 2026-11-04: Walked 25 minutes, day 2 of the new Move streak (2/10).
 - 2026-11-04: Started a SelfControl block, two days in a row.
 - 2026-11-04: Listed another item for sale on Mercado Libre (MLM3751441621) before the morning page, two days in a row.
