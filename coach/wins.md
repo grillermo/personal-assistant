@@ -5,6 +5,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-11
 
+- 2026-11-06: Applied to a job position (details tracked in ai-job-search).
 - 2026-11-06: Started the SelfControl block before the morning page.
 - 2026-11-06: Walked before the morning page, day 4 of the new Move streak (4/10).
 - 2026-11-04: Walked 25 minutes, day 2 of the new Move streak (2/10).
