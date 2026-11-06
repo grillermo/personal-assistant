@@ -47,4 +47,4 @@ trigger a relapse rule, and anything done on a weekend is a bonus.
 
 | Habit | Activated | Streak reached 10 | Notes |
 |-------|-----------|-------------------|-------|
-| Move | 2026-10-22 | | Day 1 done 2026-10-22, day 2 done 2026-10-23, day 3 done 2026-10-26, day 4 done 2026-10-27, day 5 done 2026-10-28, day 6 done 2026-10-29. Skipped Fri 10-30 and Mon 11-02; restarted 2026-11-03 with a 30-minute walk (new streak, day 1); day 2 done 2026-11-04 (25 min), day 3 done 2026-11-05 (30 min). |
+| Move | 2026-10-22 | | Day 1 done 2026-10-22, day 2 done 2026-10-23, day 3 done 2026-10-26, day 4 done 2026-10-27, day 5 done 2026-10-28, day 6 done 2026-10-29. Skipped Fri 10-30 and Mon 11-02; restarted 2026-11-03 with a 30-minute walk (new streak, day 1); day 2 done 2026-11-04 (25 min), day 3 done 2026-11-05 (30 min), day 4 done 2026-11-06. |
