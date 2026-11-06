@@ -45,7 +45,7 @@ as a product engineer and get recruiters' attention.
   (once shipped), comunidad-antesis (multi-country pricing, Argentina payments), readitsoon
   (+ MCP server, Obsidian plugin, companion), patatatube, git-sync, file_server, ipad-send,
   claude-sessions, my-machines-monitor, whatsapp-controller, spreadsheet-ocr.
-- Published: PatataTube (2026-10-26), Narrate the web (2026-10-27), git-sync (2026-10-28), ReadItSoon foundational tech (2026-11-03).
+- Published: PatataTube (2026-10-26), Narrate the web (2026-10-27), git-sync (2026-10-28), ReadItSoon foundational tech (2026-11-03), "Crazy things Claude can do" (2026-11-05, off-list: Claude driving his iPhone to get bank data).
 - Next step: the next unticked project in `Projects to share.md`.
 
 ## 3. Try ai-job-search (added 2026-10-31)
