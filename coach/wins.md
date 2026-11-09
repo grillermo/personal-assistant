@@ -5,6 +5,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-11
 
+- 2026-11-09: Daisolar: Armando agreed to release the bot and will finish the remaining steps himself. The late project is out of your hands and moving.
 - 2026-11-09: Walked (day 5 of the Move streak), listed an item and started SelfControl before the morning page.
 
 - 2026-11-06: Applied to a job position (details tracked in ai-job-search).
