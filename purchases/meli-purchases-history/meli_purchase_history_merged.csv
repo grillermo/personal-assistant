@@ -1,0 +1,211 @@
+order_id,purchase_date,status,item_title,item_category,item_quantity,item_unit_price,order_total_amount,currency
+2000012113688624,2025-06-29 18:30:02+00:00,cancelled,2 Unidades Bolsa De Lavandería De Malla Con Cierre De,Unknown,1,52.27,52.27,MXN
+2000012113692318,2025-06-29 18:30:03+00:00,cancelled,Vinagre Clemente Jacques Blanco 3.75l,Unknown,2,47.22,94.44,MXN
+2000012113692322,2025-06-29 18:30:03+00:00,cancelled,Vitamina C Seltz Tabletas Efervescentes,Unknown,1,108.0,108.0,MXN
+2000012113692320,2025-06-29 18:30:03+00:00,cancelled,Consi Toallitas Húmedas Bebé Desechables Inodoro 1 Paquete,Unknown,2,59.0,118.0,MXN
+2000012113688630,2025-06-29 18:30:03+00:00,cancelled,Mango Deshidratado Yaab Frutos Secos Saludable Organico 100g /e Sin Azucar Natural Vitamina C Delicioso,Unknown,1,89.29,89.29,MXN
+2000012113685038,2025-06-29 18:30:03+00:00,cancelled,Berberina Hcl 97% | 500mg 120 Cápsulas Sabor Sin Sabor,Unknown,1,369.26,369.26,MXN
+2000012113688646,2025-06-29 18:30:04+00:00,paid,Solución Salina Cs 0.9% Pisa Botella Con 1000ml,Unknown,3,128.0,384.0,MXN
+2000012113688672,2025-06-29 18:30:04+00:00,paid,Plátanos Maduros En Tiras Tumbis 700g,Unknown,1,299.0,299.0,MXN
+2000012113690670,2025-06-29 18:30:05+00:00,paid,Control LG Minisplit Aire Acondicionado Inverter Akb75215401,Unknown,1,102.34,102.34,MXN
+2000012113692360,2025-06-29 18:30:05+00:00,paid,"Medidor De Saturación De Oxígeno Pulsovital Para Pediatría A1, Color Amarillo",Unknown,1,152.2,152.2,MXN
+2000012113690672,2025-06-29 18:30:05+00:00,paid,Protector Voltaje Refrigerador/enfriador/lavadora,Unknown,1,239.0,239.0,MXN
+2000012113685076,2025-06-29 18:30:05+00:00,paid,Regulador De Voltaje De 800 Va 4 Contactos Volteck Rv-800 Color Negro,Unknown,1,329.0,329.0,MXN
+2000012113690692,2025-06-29 18:30:06+00:00,paid,Arroz Inflado 450g Sano Mundo Caja De 15 Piezas,Unknown,1,1275.0,1275.0,MXN
+2000012113690696,2025-06-29 18:30:06+00:00,cancelled,"2 Cajones Para Debajo Del Escritorio, Bandeja Autoadhesiva O",Unknown,1,89.78,89.78,MXN
+2000012113692410,2025-06-29 18:30:07+00:00,paid,Vinagre Clemente Jacques Blanco 3.75l,Unknown,1,47.22,47.22,MXN
+2000012113688728,2025-06-29 18:30:07+00:00,paid,Leche Entera Orgánica Bové 6 Piezas De 1 L,Unknown,2,184.5,369.0,MXN
+2000012113688726,2025-06-29 18:30:07+00:00,paid,"Toallas Húmedas Para Adulto, Xl,desechables En Inodoro 300pz",Unknown,1,179.0,179.0,MXN
+2000012113690708,2025-06-29 18:30:07+00:00,cancelled,3 Uds Prefiltros Filtro Hepa Ap-1512hh Reemplazo Del Filtro,Unknown,1,170.27,170.27,MXN
+2000012113688754,2025-06-29 18:30:08+00:00,cancelled,3 Uds Prefiltros Filtro Hepa Ap-1512hh Reemplazo Del Filtro,Unknown,2,170.27,340.54,MXN
+2000012113692434,2025-06-29 18:30:09+00:00,paid,Nap - Saquito Para Dormir De Bebe 100% Algodón,Unknown,1,573.18,573.18,MXN
+2000012457442872,2025-07-28 23:16:13+00:00,paid,Bobs Red Mill Harina Trigo Blanqueada Unbleach White 2.27kg,Unknown,4,249.0,996.0,MXN
+2000012457438990,2025-07-28 23:16:13+00:00,paid,Leche Entera Orgánica Bové 6 Piezas De 1 L,Unknown,1,205.0,205.0,MXN
+2000012457438988,2025-07-28 23:16:13+00:00,paid,Vinagre Clemente Jacques Blanco 3.75l,Unknown,4,47.22,188.88,MXN
+2000012457439012,2025-07-28 23:16:14+00:00,paid,Leche Entera Orgánica Bové 6 Piezas De 1 L,Unknown,3,205.0,615.0,MXN
+2000012457450348,2025-07-28 23:16:14+00:00,paid,Vinagre Clemente Jacques Blanco 3.75l,Unknown,1,47.22,47.22,MXN
+2000012578693332,2025-08-07 17:18:20+00:00,paid,Memoria Ram 16gb Ddr4 Vengeance Lpx Gamer Corsair 2400mhz,Unknown,1,450.0,450.0,MXN
+2000012588864186,2025-08-08 12:47:43+00:00,cancelled,Bocina Privado Auricular Para iPhone 13 A2482 A2631/33/34/35,Unknown,1,179.0,179.0,MXN
+2000012601960710,2025-08-09 13:50:41+00:00,paid,Sugru Mouldable Glue Azul-amarillo-rojo 3 X 3.5 G (0.12 Oz ),Unknown,1,490.0,490.0,MXN
+2000012609794438,2025-08-10 05:17:37+00:00,paid,Apple iPhone 16e (256 Gb) - Negro - Distribuidor Autorizado,Unknown,1,16439.0,16439.0,MXN
+2000012609787700,2025-08-10 05:29:11+00:00,paid,Funda Case Para iPhone Compatible Con Magsafe Stand Cover Funda Para iPhone 16 / iPhone 16 Pro / iPhone 16e / iPhone 16 Pro Max / iPhone 16 Plus Case,Unknown,1,173.4,173.4,MXN
+2000012686869406,2025-08-16 04:31:15+00:00,paid,Salsa Picante San Luis Botella 210gr,Unknown,1,19.9,19.9,MXN
+2000012686870800,2025-08-16 04:31:15+00:00,paid,Hipp Orgánico Combiotic Fórmula Infantil 0-12 Meses - 2 Pack,Unknown,1,1270.0,1270.0,MXN
+2000012686869432,2025-08-16 04:31:16+00:00,paid,Algodón Plisado Iceberg Contenido 10 Paquetes De 300 Gr C/u,Unknown,1,741.0,741.0,MXN
+2000012686869442,2025-08-16 04:31:16+00:00,paid,3-in-1 Hd Endoscope For Usb/c/iPhone 1080p Ip67,Unknown,1,408.99,408.99,MXN
+2000012686869440,2025-08-16 04:31:16+00:00,paid,Adaptador Audifonos Lightning A Type C,Unknown,1,170.6,170.6,MXN
+2000012686870818,2025-08-16 04:31:16+00:00,paid,Maiz Inflado 12 Bolsas Presentacion 500gr Maicitos Botana,Unknown,1,1099.0,1099.0,MXN
+2000012815953420,2025-08-27 05:35:13+00:00,paid,Herramienta Elevadora Con Ruedas Para Mover Objetos Pesados,Unknown,1,210.0,210.0,MXN
+2000012815956564,2025-08-27 05:35:13+00:00,paid,Pinza De Chofer 10'' Mango De Vinil Pretul 28160,Unknown,1,135.0,135.0,MXN
+2000012815954882,2025-08-27 05:35:13+00:00,paid,Mochila Urbana Fjallraven Kånken Con Cierre Unisex Adultos Color Cobalt Blue Diseño De La Tela Lisa,Unknown,1,1409.0,1409.0,MXN
+2000012815954884,2025-08-27 05:35:13+00:00,paid,Mochila Urbana Fjallraven F23561 Color Ochre Diseño Lisa 7l,Unknown,1,1445.46,1445.46,MXN
+2000012815951954,2025-08-27 05:35:13+00:00,paid,2 Bloqueadores De Datos Usb-c A Usb-a Protect Ag,Unknown,1,67.43,67.43,MXN
+2000012815953430,2025-08-27 05:35:14+00:00,cancelled,Cr Soporte Para Trapeador Y Escoba Sin Perforar Acero,Unknown,2,103.2,206.4,MXN
+2000012815951976,2025-08-27 05:35:15+00:00,paid,Curitas Cureband Venditas Translúcidas X 100 Unidades,Unknown,2,60.0,120.0,MXN
+2000012815956590,2025-08-27 05:35:15+00:00,paid,Galletas Gamesa Habaneras Integrales 468g,Unknown,1,67.38,67.38,MXN
+2000012815956592,2025-08-27 05:35:15+00:00,paid,Turin Conejos Mini 8 Piezas,Unknown,1,73.0,73.0,MXN
+2000012815953432,2025-08-27 05:35:15+00:00,paid,Suplemento Creatina Monohidrato 100% (80 Cáps) Prowinner Sabor Natural,Unknown,1,196.2,196.2,MXN
+2000012815954916,2025-08-27 05:35:16+00:00,paid,2 Unidades Bolsa De Lavandería De Malla Con Cierre De,Unknown,1,85.41,85.41,MXN
+2000012872690716,2025-09-01 09:31:22+00:00,paid,Cr Soporte Para Trapeador Y Escoba Sin Perforar Acero,Unknown,1,103.2,103.2,MXN
+2000012872690840,2025-09-01 09:31:53+00:00,paid,Cr Soporte Para Trapeador Y Escoba Sin Perforar Acero,Unknown,1,103.2,103.2,MXN
+2000012975719058,2025-09-09 12:47:08+00:00,paid,Caja De Pan Doméstica De Acero Inoxidable Para Alimentos,Unknown,1,694.7,694.7,MXN
+2000012975719084,2025-09-09 12:47:09+00:00,paid,Set Parche Adhesivo Reparación Salvavidas Albercas Inflable,Unknown,1,69.0,69.0,MXN
+2000012975713982,2025-09-09 12:47:09+00:00,paid,Soldadora Para Reparación De Plásticos Con 200 Grapas,Unknown,1,149.33,149.33,MXN
+2000012975713978,2025-09-09 12:47:09+00:00,paid,Dedales Guantes Fundas Dedos Gamer Antisudor Touch Azul 20pz,Unknown,1,43.12,43.12,MXN
+2000012975728044,2025-09-09 12:47:09+00:00,paid,Toalla Extra Grande Hotelera 190x90cm 900gr 100% Algodón,Unknown,1,290.0,290.0,MXN
+2000012975728038,2025-09-09 12:47:09+00:00,paid,Caja De Pan Doméstica De Acero Inoxidable Para Alimentos,Unknown,1,694.7,694.7,MXN
+2000012975728072,2025-09-09 12:47:10+00:00,paid,Ducray Kelual Ds Shampoo Anticaspa Severa 100 Ml,Unknown,3,332.85,998.55,MXN
+2000012975730028,2025-09-09 12:47:11+00:00,cancelled,Lata De Aerosol De Aceite Atomizante N P 7003 Para Freidora,Unknown,1,57.97,57.97,MXN
+2000012975730016,2025-09-09 12:47:11+00:00,cancelled,Rampa De Acera Portátil Rampa De Plástico Para Bordillos,Unknown,1,127.35,127.35,MXN
+2000012975724216,2025-09-09 12:47:12+00:00,cancelled,Rampa De Acera Portátil Rampa De Plástico Para Bordillos,Unknown,1,127.35,127.35,MXN
+2000012975724242,2025-09-09 12:47:12+00:00,paid,Funda Para Batería De Airtag Impermeable Y Anti Pérdida,Unknown,1,157.08,157.08,MXN
+2000012975724258,2025-09-09 12:47:13+00:00,cancelled,Rampa De Acera Portátil Rampa De Plástico Para Bordillos,Unknown,1,127.35,127.35,MXN
+2000012975719196,2025-09-09 12:47:13+00:00,paid,Cubiertas Para Perillas De Estufa A Prueba De Niños,Unknown,1,62.83,62.83,MXN
+2000012975719206,2025-09-09 12:47:14+00:00,cancelled,// Nuevo Cepillo De Dientes Natural Hot Miswak Siwak De 5 //,Unknown,1,330.06,330.06,MXN
+2000012975719216,2025-09-09 12:47:14+00:00,cancelled,Rampa De Acera Portátil Rampa De Plástico Para Bordillos,Unknown,1,127.35,127.35,MXN
+2000012975724302,2025-09-09 12:47:14+00:00,paid,Caja De Pan Doméstica De Acero Inoxidable Para Alimentos,Unknown,1,694.7,694.7,MXN
+2000012975724310,2025-09-09 12:47:15+00:00,paid,Pilas Recargables Energizer Aaa 800 Mah Blister 4 Unidades,Unknown,1,349.0,349.0,MXN
+2000012975724308,2025-09-09 12:47:15+00:00,paid,Nueces Mixtas Sal Premier Vitrolero De 800g,Unknown,1,218.94,218.94,MXN
+2000012975730128,2025-09-09 12:47:15+00:00,paid,"Tempra Solución 100 Mg/ml, 1 Frasco Gotero 30 Ml",Unknown,1,135.0,135.0,MXN
+2000012975730132,2025-09-09 12:47:15+00:00,paid,Cotonetes-hisopos De Algodón Y Bambú Nitram (600 Pzas),Unknown,1,49.5,49.5,MXN
+2000012975728222,2025-09-09 12:47:15+00:00,paid,"Duracell Pilas Aa Alcalinas 1.5v, 4 Baterías Larga Duración",Unknown,1,90.9,90.9,MXN
+2000012989732640,2025-09-10 05:17:40+00:00,paid,Royal Canin Satiety | Control De Peso Gato Adulto | 8.5 Kg,Unknown,1,2112.0,2112.0,MXN
+2000013285970666,2025-10-05 14:43:39+00:00,paid,Set 2 Biberón De Vidrio Evenflo 120 Ml 4 Onzas 2 Pzs Transparente,Unknown,1,299.0,299.0,MXN
+2000013285970686,2025-10-05 14:43:40+00:00,paid,Salsa Hunt's Bbq Original 620g,Unknown,1,52.0,52.0,MXN
+2000013285967068,2025-10-05 14:43:40+00:00,paid,Leche Entera Orgánica Bové 6 Piezas De 1 L,Unknown,2,216.0,432.0,MXN
+2000013285970688,2025-10-05 14:43:40+00:00,paid,Hipp Orgánico Combiotic Fórmula Infantil 0-12 Meses - 2 Pack,Unknown,2,1270.0,2540.0,MXN
+2000013285970692,2025-10-05 14:43:40+00:00,paid,Loción Humectante Cetaphil Piel Sensible Normal A Seca 473ml,Unknown,6,217.28,1303.68,MXN
+2000013285970724,2025-10-05 14:43:41+00:00,paid,1 Cuchillo Navaja Juguete Fidget Antiestrés Carrot Knife 3d,Unknown,1,59.08,59.08,MXN
+2000013285967088,2025-10-05 14:43:41+00:00,paid,1 Cuchillo Navaja Juguete Fidget Antiestrés Carrot Knife 3d,Unknown,1,59.08,59.08,MXN
+2000013285967080,2025-10-05 14:43:41+00:00,paid,5 Ropitas Para Nenuco Y Baby Alive Surtida Hecha A Mano,Unknown,1,399.0,399.0,MXN
+2000013285967102,2025-10-05 14:43:42+00:00,paid,100 Pack Maiz Inflado A Vapor Elige Sabores Botana Saludable,Unknown,1,1050.0,1050.0,MXN
+2000013285967114,2025-10-05 14:43:43+00:00,paid,Growvit Multivitaminico Infantil Zn Zinc Aniquelado Sabor Natural,Unknown,2,450.0,900.0,MXN
+2000013285967138,2025-10-05 14:43:43+00:00,paid,1 Cuchillo Navaja Juguete Fidget Antiestrés Carrot Knife 3d,Unknown,1,59.08,59.08,MXN
+2000013285970760,2025-10-05 14:43:43+00:00,paid,4 Popotes Ecologicos Reusables Metalicos De Silicon Tapioca Color Verde Y Azul,Unknown,1,123.5,123.5,MXN
+2000013285960002,2025-10-05 14:43:43+00:00,paid,Bidé Inodoro Baño Acero Inoxidable Lavadora Alta Presión,Unknown,1,263.61,263.61,MXN
+2000013285967140,2025-10-05 14:43:43+00:00,paid,Jutang Fidget Spinner Antiestrés Con Luces Led Y Diseños Variados Juguetes Antiestrés E Ingenio Fidget Spinners Spinner De La Punta De Los Dedos Led Transparente,Unknown,3,79.6,238.8,MXN
+2000013285970762,2025-10-05 14:43:43+00:00,paid,"Recolector De Fruta Sin Mango, Polietileno, Truper 14338",Unknown,1,189.0,189.0,MXN
+2000013285967142,2025-10-05 14:43:43+00:00,paid,2 Squishy Galleta Oreos Antiestres Juguete Fidget Colores,Unknown,1,82.59,82.59,MXN
+2000013285960004,2025-10-05 14:43:43+00:00,paid,3pcs Botella Rociadora De Agua De 300 Ml Para Cabello,Unknown,1,146.26,146.26,MXN
+2000013285970764,2025-10-05 14:43:43+00:00,paid,2 Squishy Galleta Oreos Antiestres Juguete Fidget Colores,Unknown,1,82.59,82.59,MXN
+2000013285967144,2025-10-05 14:43:43+00:00,paid,Etiqueta Para Pizarra Reutilizable Impermeable Vinil 220pcs Multicolor,Unknown,1,82.32,82.32,MXN
+2000013463450626,2025-10-18 16:07:55+00:00,cancelled,"Good Almohada Ortopédica Para Rodillas Y Entrepierna,",Unknown,2,70.75,141.5,MXN
+2000013463443638,2025-10-18 16:07:56+00:00,paid,"Jy Sellador 9900, Impermeable, Permanent Solution",Unknown,1,147.6,147.6,MXN
+2000013463447136,2025-10-18 16:07:56+00:00,paid,"Pegatinas Tension Fidget Para Aliviar El Estrés, 6 Unidades",Unknown,1,46.3,46.3,MXN
+2000013463447154,2025-10-18 16:07:57+00:00,paid,Disfraz Alien Marcianito Cosplay Toy Story Mameluco Bebé Niños Unisex,Unknown,1,547.77,547.77,MXN
+2000013463450650,2025-10-18 16:07:57+00:00,paid,Disfraz Alien Marcianito Cosplay Toy Story Mameluco Bebé Niños Unisex,Unknown,2,547.77,1095.54,MXN
+2000013463450648,2025-10-18 16:07:57+00:00,paid,Jaboneras Para Baño Autovaciante Jabon Esponja Secador Wc Transparente,Unknown,1,92.65,92.65,MXN
+2000013839047004,2025-11-15 20:44:34+00:00,paid,Plumon Permanente Artline Secado Rapido Punta Cincel,Unknown,1,45.02,45.02,MXN
+2000013839052478,2025-11-15 20:44:34+00:00,paid,Pistola Calafateadora Cnx Barril Sellador Silicon Color Rojo,Unknown,1,67.87,67.87,MXN
+2000013839052482,2025-11-15 20:44:34+00:00,paid,"8bitdo Ultimate C Controlador Con Cable Para Xbox, Anillo De Fuego Con Iluminación Rgb Y Joysticks De Efecto Hall, Compatible Con Xbox Series X|s, Xbox One, Windows 10/11 (verde Oscuro)",Unknown,1,719.0,719.0,MXN
+2000013839052480,2025-11-15 20:44:34+00:00,paid,Mini Pinzas Santul Punta De Aguja 150mm Largo Acero,Unknown,1,62.0,62.0,MXN
+2000013839054538,2025-11-15 20:44:36+00:00,paid,"Beyond Vitamins | Magnesio Complex |citrato De Magnesio Polvo, Glicinato De Magnesio, Gluconato De Magnesio Y Óxido De Magnesio | Vitaminas Mujer / Hombre - Magnesium - 180 Cápsulas",Unknown,2,345.0,690.0,MXN
+2000013839045924,2025-11-15 20:44:36+00:00,paid,(duo Pack) Creatina Monohidrato (150 Caps X Caja) Prowinner Natural,Unknown,1,455.0,455.0,MXN
+2000013839052528,2025-11-15 20:44:36+00:00,paid,"C-blast+d Cero Azúcar Vitamina C Y D, Complejo B Zinc Sabor Naranja",Unknown,4,70.3,281.2,MXN
+2000013839049052,2025-11-15 20:44:36+00:00,paid,Glico St. Patrick Galleta Dulce - Té Verde - Unidad - 1 - 70 G - Chocolate,Unknown,1,65.0,65.0,MXN
+2000013839045928,2025-11-15 20:44:36+00:00,paid,Galleta Con Cobertura De Sabores Sablex Sablex Matcha 30 g,Unknown,1,22.5,22.5,MXN
+2000013839052526,2025-11-15 20:44:36+00:00,paid,Omegal | Omega 3-6-9 Vegano Con Astaxantina | 90 Cápsulas Sin Sabor | Purely Organics,Unknown,1,485.74,485.74,MXN
+2000013839045922,2025-11-15 20:44:36+00:00,paid,"Pocky Cookies & Cream 40g, Glico",Unknown,3,42.75,128.25,MXN
+2000013839047048,2025-11-15 20:44:36+00:00,paid,Café Don Justo Sin Tacc 500 G,Unknown,2,233.75,467.5,MXN
+2000013839054590,2025-11-15 20:44:38+00:00,paid,Taladro Manual Miniatura Joyeria Modelismo Brocas 10 Mano,Unknown,1,78.0,78.0,MXN
+2000013839047144,2025-11-15 20:44:38+00:00,paid,"Cable Usb C A Hdmi2.1 8k60hz Para Thunderbolt 4/3/macbook,2m",Unknown,1,279.2,279.2,MXN
+2000013839054588,2025-11-15 20:44:38+00:00,paid,Lima Plana Bastarda Con Mango Comfort Grip 8'' Truper 15311 Lpb-8t,Unknown,1,86.0,86.0,MXN
+2000013839049136,2025-11-15 20:44:38+00:00,paid,Plumón Permanente Llanta Marcador Papel Metal Auto Moto,Unknown,1,45.0,45.0,MXN
+2000013839049134,2025-11-15 20:44:38+00:00,paid,1200 Pegatinas Autoadhesivas Estrellas Premio Niños Bebés F,Unknown,1,139.0,139.0,MXN
+2000013839049132,2025-11-15 20:44:38+00:00,paid,"Power Bank Portátil Anker Maggo 10,000mah Carga Inalámbrica 15w Qi Usb-c 30w Ultra Delgado Control De Temperatura, Carga Magnética, Funda Antideslizante Para iPhone 17/16/15/14/13/12, Color Negro",Unknown,1,710.0,710.0,MXN
+2000013839056064,2025-11-15 20:44:39+00:00,paid,"Tetera Chantal Carina, 1.7 Litros, Esmalte Premium En Acero Al Carbono, Silbido, Calefacción Uniforme Y Hervidor Rápido, Negro",Unknown,1,1746.1,1746.1,MXN
+2000013927864910,2025-11-21 17:26:22+00:00,paid,Granola Almendra Granos Ancestrales Orgánico 1kg,Unknown,1,236.13,236.13,MXN
+2000013927870550,2025-11-21 17:26:22+00:00,paid,Harina De Trigo Organica Sin Blanquear 4.54kg 12g Proteina,Unknown,1,265.0,265.0,MXN
+2000013927861862,2025-11-21 17:26:23+00:00,paid,100 Pack Maiz Inflado A Vapor Elige Sabores Botana Saludable,Unknown,1,1050.0,1050.0,MXN
+2000013927864940,2025-11-21 17:26:23+00:00,paid,Scotch 845 Cinta Book Tape 13.7m X 38mm,Unknown,1,159.0,159.0,MXN
+2000013927861842,2025-11-21 17:26:23+00:00,paid,Tabla De Madera Nextep Con Clip Oficio Porta Documentos /v,Unknown,2,89.0,178.0,MXN
+2000013954899358,2025-11-24 00:42:45+00:00,paid,"Tp-link, Enchufe Inteligente Wifi Google Alexa Tapo P100 2pk Color Blanco",Unknown,1,539.0,539.0,MXN
+2000014235700114,2025-12-10 18:26:16+00:00,paid,Pack X12 Leche Entera Barista Bové 946ml,Unknown,1,498.0,498.0,MXN
+2000014235700112,2025-12-10 18:26:16+00:00,paid,10 Pilas Lr44 Lr44h 357 357a Ag13 Tianqiu Baterias Original,Unknown,2,35.0,70.0,MXN
+2000014235700152,2025-12-10 18:26:17+00:00,paid,6pzs 70*50cm Papel Kraft Para Envolver Regalos Para Navidad,Unknown,1,98.48,98.48,MXN
+2000014235696514,2025-12-10 18:26:17+00:00,paid,Máquina Juegos Descompresión Consola Juegos Pop Quick Push,Unknown,1,79.0,79.0,MXN
+2000014400616010,2025-12-20 04:24:22+00:00,paid,Pack De 3 Cajitas De Fruit Rolls Bear Apple Sabor Manzana,Unknown,1,467.0,467.0,MXN
+2000014400624384,2025-12-20 04:24:23+00:00,paid,Niños Montessori Juguete De Pájaro Carpintero Juego Atrapar,Unknown,1,180.0,180.0,MXN
+2000014400624386,2025-12-20 04:24:23+00:00,paid,Juguetes Educativos Montessori Niños 83 Pcs Para Enhebrar Color Traffic Combination,Unknown,2,155.04,310.08,MXN
+2000014555916360,2026-01-03 16:22:56+00:00,paid,Cat Montable Excavadora Niños Correpasillos Camión Juguete Color Amarillo,Unknown,1,2299.0,2299.0,MXN
+2000014555909546,2026-01-03 16:22:56+00:00,paid,Cat Montable Excavadora Niños Correpasillos Camión Juguete Color Amarillo,Unknown,1,2299.0,2299.0,MXN
+2000015134478374,2026-02-13 13:05:59+00:00,paid,"Energizer Baterías Recargables Tipo Aaa - Compactas Para Luces Led, Sensores Y Mandos A Distancia - Paquete Con 2 Pilas Triple A",Unknown,1,182.0,182.0,MXN
+2000015134471388,2026-02-13 13:05:59+00:00,paid,Leche Entera Orgánica Bové 6 Piezas De 1 L,Unknown,2,228.0,456.0,MXN
+2000015134471404,2026-02-13 13:06:00+00:00,paid,Termo De Acero Inoxidable 500ml Botella Agua Escuela Oficina Negro,Unknown,1,193.89,193.89,MXN
+2000015134478400,2026-02-13 13:06:00+00:00,paid,"Pimnouk Lápiz Óptico Stylus Pluma Para iPad 6/7/8/9/10/11(a16),iPad Pro 11/12.9/13 Inch, iPad Mini 5/6/7,air 3/4/5/m2/m3 Carga Rápida Y Magnético Dibujo Escritura Digital Color Blanco",Unknown,1,135.49,135.49,MXN
+2000015410634182,2026-03-05 15:23:40+00:00,paid,Semilla De Chía Calidad Premium 500g,Unknown,1,56.05,56.05,MXN
+2000015410626804,2026-03-05 15:23:40+00:00,paid,Papaina Y Bromelina 100 Tabletas Vidanat Sabor Sin Sabor,Unknown,1,73.47,73.47,MXN
+2000015410621956,2026-03-05 15:23:40+00:00,paid,Pilas A A A De Carbón Zinc Panasonic Blíster Con 4 Pilas,Unknown,1,26.4,26.4,MXN
+2000015410626802,2026-03-05 15:23:40+00:00,paid,Crema De Almendras Kirkland 765gr,Unknown,1,233.99,233.99,MXN
+2000015410634184,2026-03-05 15:23:40+00:00,paid,Nsn Vegan Omega 3 6 9 Cápsulas Con Hierro Vitamina B12 K2 Sin Sabor,Unknown,1,237.9,237.9,MXN
+2000015410621954,2026-03-05 15:23:40+00:00,paid,Aceite San Lucas De Ajonjolí Extra Virgen Cont. 500 Ml,Unknown,1,95.0,95.0,MXN
+2000015410628766,2026-03-05 15:23:40+00:00,paid,Glicerina Liquida Pura 500ml Farmacia Paris Oficial,Unknown,1,113.05,113.05,MXN
+2000015410628762,2026-03-05 15:23:40+00:00,paid,Pomada Hipoglos Pac Crema Para Rozaduras Tubo Grande De 110g,Unknown,1,154.0,154.0,MXN
+2000015410626800,2026-03-05 15:23:40+00:00,paid,Gn+vida Avena Integral - 1 Kg,Unknown,1,47.54,47.54,MXN
+2000015410628764,2026-03-05 15:23:40+00:00,paid,Energizer Boton Cr2032 3v Reloj Control Alarma,Unknown,1,56.7,56.7,MXN
+2000015993986746,2026-04-15 13:13:25+00:00,paid,Arroz Inflado 450g Sano Mundo Caja De 15 Piezas,Unknown,1,1499.0,1499.0,MXN
+2000015993979506,2026-04-15 13:13:25+00:00,paid,Alimento Felix Paté Para Gato Adulto Pack 24x156g Sabor Pavo,Unknown,1,849.0,849.0,MXN
+2000015993992338,2026-04-15 13:13:26+00:00,paid,"Encendedor Electrónico, Carga Usb, Viaje, Hogar, Cocina De C",Unknown,1,58.0,58.0,MXN
+2000015993979532,2026-04-15 13:13:26+00:00,paid,Monster Truck Inercial Todoterreno Vehículo Para Niños 4pcs Combinación / Combinación Verde Naranja Rojo Morado Combinación Verde Narania Rojo Mo,Unknown,1,95.52,95.52,MXN
+2000015993986804,2026-04-15 13:13:27+00:00,paid,Pilas A A A De Carbón Zinc Panasonic Blíster Con 4 Pilas,Unknown,2,24.0,48.0,MXN
+2000015993979550,2026-04-15 13:13:27+00:00,paid,Leche Entera Orgánica Bové 6 Piezas De 1 L,Unknown,2,236.0,472.0,MXN
+2000015993990362,2026-04-15 13:13:27+00:00,paid,Café Orgánico Don Justo 500g Libre De Tacc Cultivo Ecológico,Unknown,1,247.5,247.5,MXN
+2000015993990360,2026-04-15 13:13:27+00:00,paid,Avena Hojuela Tradicional Orgánico Integral 400g N1,Unknown,2,19.99,39.98,MXN
+2000015993992358,2026-04-15 13:13:27+00:00,paid,Paquete Consumo Bolsas 50g Maíz Inflado Maicitos Botana 30pz,Unknown,1,393.86,393.86,MXN
+2000016267246292,2026-05-04 19:01:00+00:00,paid,Okko Hemp Pepitas De Cáñamo Orgánico 1 Kg,Unknown,1,419.0,419.0,MXN
+2000016267235816,2026-05-04 19:01:00+00:00,paid,Calzones Entrenadores Baby Pants Talla M Para Niño Con 16 Unidades,Unknown,2,93.6,187.2,MXN
+2000016267241434,2026-05-04 19:01:00+00:00,paid,"Pilas Aaa Panasonic Ultra Hyper De Carbón Zinc, Blíster Con 4 Pilas",Unknown,1,24.0,24.0,MXN
+2000016267252092,2026-05-04 19:01:01+00:00,paid,Caja 10 Pz Bisagra Rectangular 1 Hermex 43185,Unknown,1,79.0,79.0,MXN
+2000016267235854,2026-05-04 19:01:01+00:00,paid,Taladro Manual Miniatura Joyeria Modelismo Brocas 10 Mano Negro,Unknown,1,76.65,76.65,MXN
+2000016267241496,2026-05-04 19:01:02+00:00,paid,Maicitos Inflados Al Vapor Blofis 150 Pz Botana En Mayoreo,Unknown,1,1723.5,1723.5,MXN
+2000016504676658,2026-05-19 12:54:12+00:00,paid,Kit De 320 Tornillos Y Tuercas De Acero Inoxidable,Unknown,1,67.88,67.88,MXN
+2000016504676634,2026-05-19 12:54:12+00:00,paid,"Toallas De Baño Y De Manos De Algodón De 34 X 74 Cm, 3 Pieza",Unknown,1,186.1,186.1,MXN
+2000016504676668,2026-05-19 12:54:13+00:00,paid,4 Lateral Ventana Cubre Sol Automotiv Cortains Parasol Z,Unknown,1,90.45,90.45,MXN
+2000016556036898,2026-05-22 13:16:15+00:00,paid,Leche Entera Orgánica Bové 6 Piezas De 1 L,Unknown,2,217.12,434.24,MXN
+2000016556031452,2026-05-22 13:16:15+00:00,paid,Aceite Puro De Oliva Extra Virgen Español 3 Lt Extraído Frio,Unknown,3,498.0,1494.0,MXN
+2000016556038870,2026-05-22 13:16:15+00:00,paid,Loción Humectante Cetaphil Piel Sensible Normal A Seca 473ml Día/noche,Unknown,10,276.0,2760.0,MXN
+2000016556040222,2026-05-22 13:16:15+00:00,paid,Jarabe De Maple Canadiense Kirkland 1lt,Unknown,1,295.0,295.0,MXN
+2000016556031474,2026-05-22 13:16:15+00:00,paid,Aceite Puro De Oliva Extra Virgen Español 3 Lt Extraído Frio,Unknown,2,498.0,996.0,MXN
+2000016698538676,2026-05-31 16:34:55+00:00,paid,"Tide Free & Gentle Liquid Detergent, 100 Loads,132 Fl Oz",Unknown,1,799.0,799.0,MXN
+2000016698546164,2026-05-31 16:34:56+00:00,paid,Royal Canin Satiety | Control De Peso Gato Adulto | 8.5 Kg,Unknown,1,2349.0,2349.0,MXN
+2000016899570408,2026-06-11 22:46:40+00:00,paid,Alimento Para Gatos Purina Friskies 9.36 Kg,Unknown,1,1396.0,1396.0,MXN
+2000016899570432,2026-06-11 22:46:40+00:00,paid,Zapatilla De Lona Niña Tan Ballet,Unknown,1,252.45,252.45,MXN
+2000016899570434,2026-06-11 22:46:40+00:00,paid,Antena De Televisión Abierta Digital Hd Recepción De Canales Tv Cable Coaxial 3 Metros De Largo Antena Tv Negro,Unknown,1,79.2,79.2,MXN
+2000016899570436,2026-06-11 22:46:40+00:00,paid,"Leotardo Niña Manga Corta. Colores, Disfraces, Ballet Negro 2\4",Unknown,1,121.0,121.0,MXN
+2000016899563154,2026-06-11 22:46:40+00:00,paid,Funda Case Para iPhone Magsafe Uso Rudo De Protector Camara,Unknown,2,143.04,286.08,MXN
+2000016899557552,2026-06-11 22:46:40+00:00,paid,"Leotardo Niña Manga Corta. Colores, Disfraces, Ballet Rosa 2\4",Unknown,1,136.17,136.17,MXN
+2000016899555520,2026-06-11 22:46:40+00:00,paid,Pack De 3 Mallas Convertibles De Ballet Para Niña Marca Tan,Unknown,1,378.0,378.0,MXN
+2000017660751500,2026-07-30 03:06:34+00:00,cancelled,Leche Entera Orgánica Bové 6 Piezas De 1 L,Unknown,2,212.4,424.8,MXN
+2000017660751476,2026-07-30 03:06:34+00:00,paid,Leche Entera Orgánica Bové 6 Piezas De 1 L,Unknown,2,212.4,424.8,MXN
+2000017661971210,2026-07-30 05:48:23+00:00,paid,Leche Entera Orgánica Bové 6 Piezas De 1 L,Unknown,1,212.4,212.4,MXN
+2000017661966004,2026-07-30 05:48:23+00:00,paid,Leche Entera Orgánica Bové 6 Piezas De 1 L,Unknown,1,212.4,212.4,MXN
+2000017952741916,2026-08-15 20:19:49+00:00,paid,"Organizador De Ollas Ajustable, Que Ahorra Espacio Y Es Resi",Unknown,1,190.38,190.38,MXN
+2000017952747262,2026-08-15 20:19:49+00:00,paid,"Organizador De Ollas Ajustable, Que Ahorra Espacio Y Es Resi",Unknown,1,190.38,190.38,MXN
+2000017952748996,2026-08-15 20:19:50+00:00,paid,"Cajón De Almacenamiento Para Debajo Del Escritorio, Perforad",Unknown,1,63.06,63.06,MXN
+2000017952741996,2026-08-15 20:19:51+00:00,paid,Baterías Aa Panasonic Paquete 4 Piezas Pilas Original Carbón,Unknown,2,22.08,44.16,MXN
+2000017952747320,2026-08-15 20:19:51+00:00,paid,Baterías Aaa Panasonic Paquete 4 Pzas Pilas Original Carbón,Unknown,2,25.66,51.32,MXN
+2000017952749050,2026-08-15 20:19:51+00:00,paid,Leche Entera Orgánica Bové 6 Piezas De 1 L,Unknown,2,212.4,424.8,MXN
+2000017952743952,2026-08-15 20:19:51+00:00,paid,Omega 3 6 9 Cáps De Aceite De Linaza Orgánica 1000 Mg 60u N/a,Unknown,2,225.0,450.0,MXN
+2000017958480712,2026-08-16 04:43:09+00:00,paid,Cable Adaptador Disco Duro Usb C 3.1 Sata Hdd Ssd 2.5,Unknown,1,119.99,119.99,MXN
+2000017958482668,2026-08-16 04:43:10+00:00,paid,Teclado Ele-gate Qwerty Español España Color Negro,Unknown,1,172.12,172.12,MXN
+2000017958480730,2026-08-16 04:43:11+00:00,paid,Avena Hojuela Excelente Calidad Pack 10 Kg Agroecológica,Unknown,1,669.99,669.99,MXN
+2000017958482680,2026-08-16 04:43:11+00:00,paid,2pcs Candados Seguridad Ventana Corrediza Bloqueo Aluminio,Unknown,2,97.0,194.0,MXN
+2000017958480746,2026-08-16 04:43:12+00:00,paid,Repelente De Mosquitos Eco Natural Gaor Life 4 Litros,Unknown,1,331.01,331.01,MXN
+2000017958482696,2026-08-16 04:43:13+00:00,paid,Leche Entera Orgánica Bové 6 Piezas De 1 L,Unknown,2,212.4,424.8,MXN
+2000018126327960,2026-08-26 13:11:31+00:00,paid,Ipakitine 300 Gramos Vetoquinol Insuficiencia Renal,Unknown,1,820.0,820.0,MXN
+2000018126327980,2026-08-26 13:11:31+00:00,paid,Koi Pond Pellets Alimento Carpas Koi Doradas Goldfish 1kg,Unknown,1,159.0,159.0,MXN
+2000018126338278,2026-08-26 13:11:31+00:00,paid,Kingston Datatraveler 128gb Unidad Flash Usb-c Usb 3.2 Gen 1 Dt70/128gb Negro Liso,Unknown,1,285.0,285.0,MXN
+2000018126334610,2026-08-26 13:11:32+00:00,paid,Panel Decorativo De Feltro Foto En Pared Mariposas Memories Tablero De Fieltro Para Fotos Bordó,Unknown,1,59.0,59.0,MXN
+2000018126346020,2026-08-26 13:11:33+00:00,paid,Vitanna® Omega 3 Epax® Salmón Noruego Epa 600mg Dha 400mg Sin Sabor.,Unknown,1,512.4,512.4,MXN
+2000018343946926,2026-09-08 13:32:38+00:00,paid,Leche Entera Orgánica Bové 6 Piezas De 1 L,Unknown,2,212.4,424.8,MXN
+2000018343946924,2026-09-08 13:32:38+00:00,paid,Hongo Melena De León 180 Cápsulas Sin Sabor Suplemento Alimenticio | Life360+,Unknown,1,383.7,383.7,MXN
+2000018343946922,2026-09-08 13:32:38+00:00,paid,Semilla De Chía Calidad Premium 500g,Unknown,1,56.05,56.05,MXN
+2000018343952278,2026-09-08 13:32:39+00:00,paid,2 Pzs Soporte Del Cuello Cabeza Del Asiento Seguridad Bebés,Unknown,1,188.09,188.09,MXN
+2000018343948818,2026-09-08 13:32:40+00:00,paid,Maicitos Inflados Al Vapor Blofis 150 Pz Botana En Mayoreo,Unknown,1,1723.5,1723.5,MXN
+2000018343952362,2026-09-08 13:32:41+00:00,paid,Leche Entera Orgánica Bové 6 Piezas De 1 L,Unknown,2,212.4,424.8,MXN
+2000018343950556,2026-09-08 13:32:41+00:00,paid,Calzones Entrenadores Para Niño Huggies Pull-ups Extra Grandes 30 Piezas Xg Niños,Unknown,1,399.0,399.0,MXN
+2000018402091652,2026-09-11 03:59:13+00:00,paid,"Cajón De Almacenamiento Para Debajo Del Escritorio, Perforad",Unknown,1,72.72,72.72,MXN
+2000018402093336,2026-09-11 03:59:14+00:00,paid,Organizador Automático De Huevos 4 Niveles Refri White,Unknown,3,63.56,190.68,MXN
+2000018402095378,2026-09-11 03:59:15+00:00,paid,Soporte Magnético Para Teléfono Anillo Soporte Doble Cara,Unknown,1,119.16,119.16,MXN
+2000018946206810,2026-10-12 23:12:23+00:00,paid,24 Meses De Garantía Extendida,Unknown,1,82.0,82.0,MXN
+2000018946197828,2026-10-12 23:12:23+00:00,paid,Cargador Compatible Con Magsafe ® 2 85w A1424 A1398 A1343,Unknown,1,399.0,399.0,MXN
