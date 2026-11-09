@@ -113,6 +113,15 @@ contact. Code in `~/c/ayuyo` (last commit: the "Ajustes" settings control); ther
   list what's missing.
 - Once it's out, it's a good LinkedIn post.
 
+## 7. Nacionalidad española: consulate appointment Wed 2026-11-11 (added 2026-11-09)
+
+Nationality granted (acta literal española 2026-10-13). Next: the consulate visit (matrícula
+consular), then the Spanish passport. Docs folder and working plan: see CLAUDE.md "Where his
+stuff lives". His sister's checklist for the visit: his acta española, mother's acta española,
+grandfather's acta (Héctor Eugenio Trueba), great-grandfather's acta + Registro Civil letter,
+copy of Mexican passport, proof of address copy, 2 forms (Solicitud de inscripción como
+residente + Declaración de elección de municipio). Prep: fill, print, copy everything before 11-11.
+
 ## Dated things from Reminders
 
 - Día de muertos (Nov 1–2): alfeñique, veladoras, hojaldra, incienso, fotos de abuelos,

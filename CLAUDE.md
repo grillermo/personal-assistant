@@ -133,6 +133,9 @@ he's low; they persuade more than anything you could say.
 - Notes vault (Obsidian, PARA layout):
   `~/google drive personal/documentos/notas/` with `Proyectos/`, `Areas/`, `Recursos/`,
   `Archivo/`. Each active project has a folder in `Proyectos/`, often with a `to-do.md`.
+- Spanish nationality paperwork (his own documents, plus his sister Bernarda's under `tuka/`):
+  `~/google drive personal/documentos/documentos personales Guillermo Siliceo Trueba/nacionalidad española/`.
+  Working plan: https://files.chiq.me/files/plan-nacionalidad-espanola.html
 - Code: `~/c/<project>`. Other machines (macmini etc.) are described in his global rules.
 
 Commit changes to `coach/` and this file as you make them (git-sync carries them to his other
