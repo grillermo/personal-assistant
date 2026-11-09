@@ -5,6 +5,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-11
 
+- 2026-11-09: A CEO who had rejected him as an IC ("too managerial") reached out because she's now hiring managers; he shared his cal.com link.
 - 2026-11-09: Daisolar: Armando agreed to release the bot and will finish the remaining steps himself. The late project is out of your hands and moving.
 - 2026-11-09: Walked (day 5 of the Move streak), listed an item and started SelfControl before the morning page.
 
