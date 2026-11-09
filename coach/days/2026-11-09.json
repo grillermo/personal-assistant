@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-09", "dateLabel": "Monday, November 9",
+  "greeting": "Good morning. Walk done, item listed, SelfControl running: three things before the day even starts. That's day 5 of the Move streak.",
+  "nextAction": "Open the Daisolar bot (~/c/daisolar/bot) and message Armando asking for his final details so the bot can be deployed.",
+  "quotes": [
+    {"text": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.", "author": "Will Durant"},
+    {"text": "Do what you can, with what you have, where you are.", "author": "Theodore Roosevelt"}
+  ],
+  "habits": [
+    {"title": "Move: 20-minute walk before the laptop", "detail": "When I finish breakfast, I put on shoes and walk. Day 5 of the new streak (5/10).", "done": true},
+    {"title": "SelfControl block (x.com, youtube.com, linkedin.com)", "detail": "Start it right after the walk, before reading anything.", "bonus": true, "done": true},
+    {"title": "Daily LinkedIn post", "detail": "Next in the queue: Comunidad Antesis. Tweak the draft, publish, then close the tab.", "bonus": true},
+    {"title": "List one item for sale", "detail": "Photograph one thing and send it to the coach for the listing.", "bonus": true, "done": true}
+  ],
+  "goals": [
+    {"title": "Daisolar: get Armando's final details, then deploy the bot", "detail": "Carried over. Send Armando a WhatsApp asking for the details; deploy from ~/c/daisolar/bot once he answers."},
+    {"title": "Draft the Comunidad Antesis LinkedIn post", "detail": "Carried over. Ask the coach for a draft from ~/c/comunidad-antesis-staging (multi-country pricing)."},
+    {"title": "Remove the CodeRabbit line from the resume", "detail": "Resume(v12-fixed).pdf in Google Drive, or the online builder it came from. 10 minutes."}
+  ],
+  "comingUp": ["Write to Liz to renew the SAT certificate (certificado de hacienda)", "Weekly scoreboard: new targets for social media and job-hunt this week"],
+  "stats": [
+    {"label": "Social media yesterday", "value": "?"},
+    {"label": "Job-hunt minutes Friday", "value": "? (1 application)"},
+    {"label": "Move streak", "value": "5 days"},
+    {"label": "Posts this week", "value": "0"}
+  ],
+  "recentWins": [
+    "Applied to a job position (11-06)",
+    "Published another item for sale on Facebook Marketplace, fourth day in a row (11-06)",
+    "Started the SelfControl block before the morning page (11-06)",
+    "Walked before the morning page, day 4 of the Move streak (11-06)"
+  ],
+  "vision": "Posting daily about what he builds is the job hunt now and the distribution channel for his own products later."
+}

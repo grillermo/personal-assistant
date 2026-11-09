@@ -5,6 +5,8 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-11
 
+- 2026-11-09: Walked (day 5 of the Move streak), listed an item and started SelfControl before the morning page.
+
 - 2026-11-06: Applied to a job position (details tracked in ai-job-search).
 - 2026-11-06: Published another item for sale on Facebook Marketplace, fourth day in a row.
 - 2026-11-06: Started the SelfControl block before the morning page.
