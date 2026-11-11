@@ -120,7 +120,7 @@ consular), then the Spanish passport. Docs folder and working plan: see CLAUDE.m
 stuff lives". His sister's checklist for the visit: his acta española, mother's acta española,
 grandfather's acta (Héctor Eugenio Trueba), great-grandfather's acta + Registro Civil letter,
 copy of Mexican passport, proof of address copy, 2 forms (Solicitud de inscripción como
-residente + Declaración de elección de municipio). Envelope ready 2026-11-10 (photo skipped, optional). Next step: go to the consulate Wed 11-11 early with the originals of his Mexican passport and proof of address. After the visit: wait for the matrícula email (about 2 months, or Apr–Jun 2027 by his sister's estimate), then book the passport appointment.
+residente + Declaración de elección de municipio). Envelope ready 2026-11-10 (photo skipped, optional). Wed 11-11 trip cancelled: the highway was closed. Next step: get a new appointment date, then go early with the envelope and the originals of his Mexican passport and proof of address. After the visit: wait for the matrícula email (about 2 months, or Apr–Jun 2027 by his sister's estimate), then book the passport appointment.
 
 ## Dated things from Reminders
 
