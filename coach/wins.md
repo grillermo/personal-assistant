@@ -5,6 +5,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-11
 
+- 2026-11-11: Published another item for sale, on a day that started with a cancelled trip.
 - 2026-11-11: Walked anyway after the highway closure cancelled the consulate trip: the plan broke, the habit held.
 - 2026-11-10: Nacionalidad española: the whole consulate envelope is ready for tomorrow (actas, passport and address copies, both forms filled and signed).
 - 2026-11-09: A CEO who had rejected him as an IC ("too managerial") reached out because she's now hiring managers; he shared his cal.com link.

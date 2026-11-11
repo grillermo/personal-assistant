@@ -32,7 +32,8 @@
     {
       "title": "List one item for sale",
       "detail": "Photograph one thing you don't use and send it to the coach; the listing gets written for you.",
-      "bonus": true
+      "bonus": true,
+      "done": true
     }
   ],
   "goals": [
