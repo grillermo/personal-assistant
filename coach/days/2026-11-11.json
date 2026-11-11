@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-11",
+  "dateLabel": "Wednesday, November 11",
+  "greeting": "Consulate day. The envelope is already packed from yesterday; today you just carry it in. Ten months of paperwork for your Spanish nationality comes down to one morning.",
+  "nextAction": "Shoes on, short walk around the block, then leave early for the consulate with the envelope plus the originals of your Mexican passport and proof of address.",
+  "quotes": [
+    {"text": "Caminante, no hay camino, se hace camino al andar.", "author": "Antonio Machado"},
+    {"text": "El que lee mucho y anda mucho, ve mucho y sabe mucho.", "author": "Miguel de Cervantes"}
+  ],
+  "habits": [
+    {"title": "Move: walk before you leave", "detail": "When I finish breakfast, I will put on shoes and walk outside for 20 minutes, before opening the laptop. Short on time today? 5 minutes counts, and walking part of the way to the consulate counts too."},
+    {"title": "SelfControl block", "detail": "When I come back from the walk (or the consulate), I will start SelfControl for x.com, youtube.com and linkedin.com before reading anything.", "bonus": true},
+    {"title": "LinkedIn post", "detail": "Next up is Comunidad Antesis. Publish before the block starts, never by scrolling the feed.", "bonus": true},
+    {"title": "List one item for sale", "detail": "Photograph one thing you don't use and send it to the coach; the listing gets written for you.", "bonus": true}
+  ],
+  "goals": [
+    {"title": "Consulate: hand in the nationality envelope", "detail": "Go early. Bring the envelope (actas, copies, both signed forms) and the originals of your Mexican passport and proof of address. Ask how they will notify you about the matrícula and the passport appointment."},
+    {"title": "Draft the Comunidad Antesis LinkedIn post (15 min)", "detail": "Carried over since 11-05. Ask the coach for a draft about multi-country pricing for real buyers in several countries; you only read, tweak and save it."},
+    {"title": "Remove the CodeRabbit line from the resume", "detail": "Resume(v12-fixed).pdf in Google Drive, or the online builder it came from. Until then send cv/main_example.pdf from ~/c/ai-job-search."}
+  ],
+  "comingUp": [
+    "Today: consulate visit (matrícula consular), go early",
+    "After the visit: matrícula email in about 2 months (or Apr–Jun 2027), then book the passport appointment",
+    "CEO manager role: watch for a booking on your cal.com link",
+    "Write to Liz to renew the SAT certificate (no date)"
+  ],
+  "stats": [
+    {"label": "Social media yesterday", "value": "?"},
+    {"label": "Job-hunt minutes yesterday", "value": "?"},
+    {"label": "Move streak", "value": "5 (Tue ?)"},
+    {"label": "Posts this week", "value": "0"}
+  ],
+  "recentWins": [
+    "Nov 10: the whole consulate envelope ready (actas, copies, both forms signed)",
+    "Nov 9: a CEO who passed on you as an IC came back for a manager role",
+    "Nov 9: Daisolar bot released; Armando finishes the rest",
+    "Nov 9: walked, listed an item and started SelfControl before the page",
+    "Nov 6: applied to a job, listed an item four days in a row"
+  ],
+  "vision": "Get paid as a product engineer for building products, and build the audience that later sells what you make."
+}
