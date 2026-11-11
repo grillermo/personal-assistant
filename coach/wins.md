@@ -5,6 +5,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-11
 
+- 2026-11-11: Walked anyway after the highway closure cancelled the consulate trip: the plan broke, the habit held.
 - 2026-11-10: Nacionalidad española: the whole consulate envelope is ready for tomorrow (actas, passport and address copies, both forms filled and signed).
 - 2026-11-09: A CEO who had rejected him as an IC ("too managerial") reached out because she's now hiring managers; he shared his cal.com link.
 - 2026-11-09: Daisolar: Armando agreed to release the bot and will finish the remaining steps himself. The late project is out of your hands and moving.

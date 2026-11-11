@@ -2,7 +2,7 @@
   "date": "2026-11-11",
   "dateLabel": "Wednesday, November 11",
   "greeting": "The highway closed, so the consulate trip is off. That's a road problem, not yours. The envelope is still packed and ready for the new date.",
-  "nextAction": "You're home now, so take the full 20-minute walk before opening the laptop.",
+  "nextAction": "Contact the consulate for a new appointment date.",
   "quotes": [
     {
       "text": "Caminante, no hay camino, se hace camino al andar.",
@@ -16,7 +16,8 @@
   "habits": [
     {
       "title": "Move: 20-minute walk",
-      "detail": "When I finish breakfast, I will put on shoes and walk outside for 20 minutes, before opening the laptop. 5 minutes still counts."
+      "detail": "When I finish breakfast, I will put on shoes and walk outside for 20 minutes, before opening the laptop. 5 minutes still counts.",
+      "done": true
     },
     {
       "title": "SelfControl block",
