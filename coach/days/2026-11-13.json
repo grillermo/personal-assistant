@@ -4,19 +4,51 @@
   "greeting": "Good morning, Guillermo. Walk already done, three days in a row this week. Today has a real opening: Ridepanda's CEO wants you to talk to his Product Lead. Send that email first, then the weekend is close.",
   "nextAction": "Goal 1: send the email to Reena at Ridepanda (draft is ready in chat).",
   "quotes": [
-    {"text": "Fortune favors the bold.", "author": "Virgil"},
-    {"text": "The impediment to action advances action. What stands in the way becomes the way.", "author": "Marcus Aurelius"}
+    {
+      "text": "Fortune favors the bold.",
+      "author": "Virgil"
+    },
+    {
+      "text": "The impediment to action advances action. What stands in the way becomes the way.",
+      "author": "Marcus Aurelius"
+    }
   ],
   "habits": [
-    {"title": "Move: 20-minute walk", "detail": "When I finish breakfast, I will put on shoes and walk outside for 20 minutes, before opening the laptop.", "done": true},
-    {"title": "SelfControl block", "detail": "When I come back from the walk, I will start SelfControl (x.com, youtube.com, linkedin.com) before reading anything.", "bonus": true},
-    {"title": "LinkedIn post", "detail": "When the coach shows today's draft, I will tweak it and publish it before starting the SelfControl block. Next up: Comunidad Antesis.", "bonus": true},
-    {"title": "List one item for sale", "detail": "When I close the laptop, I will photograph one thing I don't use and send the photos to the coach. Ledger: ventas.chiq.me", "bonus": true}
+    {
+      "title": "Move: 20-minute walk",
+      "detail": "When I finish breakfast, I will put on shoes and walk outside for 20 minutes, before opening the laptop.",
+      "done": true
+    },
+    {
+      "title": "SelfControl block",
+      "detail": "When I come back from the walk, I will start SelfControl (x.com, youtube.com, linkedin.com) before reading anything.",
+      "bonus": true
+    },
+    {
+      "title": "LinkedIn post",
+      "detail": "When the coach shows today's draft, I will tweak it and publish it before starting the SelfControl block. Next up: Comunidad Antesis.",
+      "bonus": true
+    },
+    {
+      "title": "List one item for sale",
+      "detail": "When I close the laptop, I will photograph one thing I don't use and send the photos to the coach. Ledger: ventas.chiq.me",
+      "bonus": true
+    }
   ],
   "goals": [
-    {"title": "Email Reena (Ridepanda Product Lead) to set the meeting Chinmay asked for", "detail": "Reply on Chinmay's original thread, keep him in CC. Check her name's spelling in his email. Then tell the coach so it's logged as outreach."},
-    {"title": "Consulate: get a new appointment date", "detail": "Carried since 11-11. Open the consulate booking page or email them; mention the 11-11 appointment was missed because the highway was closed. Once booked, add it to Reminders."},
-    {"title": "Comunidad Antesis LinkedIn post: write 3 sentences", "detail": "Carried since 11-05. Smallest version: what it is, one hard thing you built (multi-country pricing), one screenshot. Paste them here and the coach polishes."}
+    {
+      "title": "Email Reena (Ridepanda Product Lead) to set the meeting Chinmay asked for",
+      "detail": "Reply on Chinmay's original thread, keep him in CC. Check her name's spelling in his email. Then tell the coach so it's logged as outreach.",
+      "done": true
+    },
+    {
+      "title": "Consulate: get a new appointment date",
+      "detail": "Carried since 11-11. Open the consulate booking page or email them; mention the 11-11 appointment was missed because the highway was closed. Once booked, add it to Reminders."
+    },
+    {
+      "title": "Comunidad Antesis LinkedIn post: write 3 sentences",
+      "detail": "Carried since 11-05. Smallest version: what it is, one hard thing you built (multi-country pricing), one screenshot. Paste them here and the coach polishes."
+    }
   ],
   "comingUp": [
     "Consulate (matrícula consular): new date to book; take the envelope plus originals of Mexican passport and proof of address",
@@ -25,10 +57,22 @@
     "Weekend off: Saturday and Sunday are optional"
   ],
   "stats": [
-    {"label": "Social media yesterday", "value": "?"},
-    {"label": "Job-hunt minutes yesterday", "value": "?"},
-    {"label": "Walks this week", "value": "Mon, Wed, Thu, Fri (Tue not logged)"},
-    {"label": "Posts this week", "value": "0"}
+    {
+      "label": "Social media yesterday",
+      "value": "?"
+    },
+    {
+      "label": "Job-hunt minutes yesterday",
+      "value": "?"
+    },
+    {
+      "label": "Walks this week",
+      "value": "Mon, Wed, Thu, Fri (Tue not logged)"
+    },
+    {
+      "label": "Posts this week",
+      "value": "0"
+    }
   ],
   "recentWins": [
     "Walked and started SelfControl before the morning page (Thu).",
