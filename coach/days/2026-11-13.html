@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start your day</title>
+<style>
+  :root {
+    --bg: #faf7f2; --card: #ffffff; --text: #22201c; --muted: #6f6a62;
+    --accent: #d9623b; --accent-soft: #fbe6dc; --ok: #2f8f5b; --line: #ebe5dc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17161a; --card: #211f25; --text: #eeebe6; --muted: #a09a92;
+      --accent: #f08a5d; --accent-soft: #3a2a24; --ok: #5cc48d; --line: #302d34;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 28px 16px 64px; }
+  .date { color: var(--muted); font-size: 15px; letter-spacing: .02em; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 4px 0 20px; }
+  h2 { font-size: 14px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 12px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px; margin: 0 0 16px; }
+  .quote { background: var(--accent-soft); border: 0; }
+  .quote blockquote { margin: 0; font-size: 21px; line-height: 1.4; font-style: italic; }
+  .quote cite { display: block; margin-top: 10px; font-style: normal; color: var(--muted); font-size: 15px; }
+  .quote + .quote { margin-top: -6px; }
+  .quote.small blockquote { font-size: 17px; }
+  .next { border: 2px solid var(--accent); }
+  .next p { margin: 0; font-size: 19px; font-weight: 600; }
+  ul.tasks { list-style: none; margin: 0; padding: 0; }
+  ul.tasks li { border-top: 1px solid var(--line); }
+  ul.tasks li:first-child { border-top: 0; }
+  ul.tasks label { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; cursor: pointer; }
+  ul.tasks input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--ok); flex: none; }
+  ul.tasks .title { font-weight: 600; }
+  ul.tasks .detail { display: block; color: var(--muted); font-size: 15px; }
+  ul.tasks input:checked + span .title { text-decoration: line-through; color: var(--muted); }
+  .tag { display: inline-block; margin-left: 6px; padding: 0 7px; border: 1px solid var(--line); border-radius: 9px; color: var(--muted); font-size: 12px; font-weight: 500; vertical-align: 2px; }
+  .progress { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; margin: 4px 0 14px; }
+  .progress div { height: 100%; width: 0; background: var(--ok); transition: width .3s; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+  .stat { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+  .stat b { display: block; font-size: 22px; }
+  .stat span { color: var(--muted); font-size: 14px; }
+  ul.plain { margin: 0; padding-left: 20px; }
+  ul.plain li { margin: 4px 0; }
+  .vision p { margin: 0; color: var(--muted); }
+  .done-msg { display: none; color: var(--ok); font-weight: 600; margin-top: 8px; }
+</style>
+</head>
+<body>
+<main id="app"></main>
+
+<script id="day-data" type="application/json">{"date": "2026-11-13", "dateLabel": "Friday, November 13", "greeting": "Good morning, Guillermo. Walk already done, three days in a row this week. Today has a real opening: Ridepanda's CEO wants you to talk to his Product Lead. Send that email first, then the weekend is close.", "nextAction": "Goal 1: send the email to Reena at Ridepanda (draft is ready in chat).", "quotes": [{"text": "Fortune favors the bold.", "author": "Virgil"}, {"text": "The impediment to action advances action. What stands in the way becomes the way.", "author": "Marcus Aurelius"}], "habits": [{"title": "Move: 20-minute walk", "detail": "When I finish breakfast, I will put on shoes and walk outside for 20 minutes, before opening the laptop.", "done": true}, {"title": "SelfControl block", "detail": "When I come back from the walk, I will start SelfControl (x.com, youtube.com, linkedin.com) before reading anything.", "bonus": true}, {"title": "LinkedIn post", "detail": "When the coach shows today's draft, I will tweak it and publish it before starting the SelfControl block. Next up: Comunidad Antesis.", "bonus": true}, {"title": "List one item for sale", "detail": "When I close the laptop, I will photograph one thing I don't use and send the photos to the coach. Ledger: ventas.chiq.me", "bonus": true}], "goals": [{"title": "Email Reena (Ridepanda Product Lead) to set the meeting Chinmay asked for", "detail": "Reply on Chinmay's original thread, keep him in CC. Check her name's spelling in his email. Then tell the coach so it's logged as outreach."}, {"title": "Consulate: get a new appointment date", "detail": "Carried since 11-11. Open the consulate booking page or email them; mention the 11-11 appointment was missed because the highway was closed. Once booked, add it to Reminders."}, {"title": "Comunidad Antesis LinkedIn post: write 3 sentences", "detail": "Carried since 11-05. Smallest version: what it is, one hard thing you built (multi-country pricing), one screenshot. Paste them here and the coach polishes."}], "comingUp": ["Consulate (matrícula consular): new date to book; take the envelope plus originals of Mexican passport and proof of address", "Write to Liz to renew the SAT certificate (certificado de hacienda)", "Daisolar: Armando is finishing the bot; ask for his feedback once it's live", "Weekend off: Saturday and Sunday are optional"], "stats": [{"label": "Social media yesterday", "value": "?"}, {"label": "Job-hunt minutes yesterday", "value": "?"}, {"label": "Walks this week", "value": "Mon, Wed, Thu, Fri (Tue not logged)"}, {"label": "Posts this week", "value": "0"}], "recentWins": ["Walked and started SelfControl before the morning page (Thu).", "Tailscale now signs in with your own domain through Pocket ID on the macmini.", "Walked anyway after the highway closure cancelled the consulate trip.", "Published another item for sale on a day that started with a cancelled trip.", "A CEO who once said no reached out because she's hiring managers; you sent your cal.com link."], "vision": "First: get paid as a product engineer for building products."}</script>
+<script>
+const d = JSON.parse(document.getElementById('day-data').textContent);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const key = 'start-day:' + d.date;
+const saved = JSON.parse(localStorage.getItem(key) || '{}');
+
+const taskList = (id, items) => `<ul class="tasks">${items.map((t, i) => `
+  <li><label><input type="checkbox" data-id="${id}-${i}" ${t.bonus ? 'data-bonus' : ''} ${(id + '-' + i in saved ? saved[id + '-' + i] : t.done) ? 'checked' : ''}>
+  <span><span class="title">${esc(t.title)}</span>${t.bonus ? '<span class="tag">bonus</span>' : ''}${t.detail ? `<span class="detail">${esc(t.detail)}</span>` : ''}</span></label></li>`).join('')}</ul>`;
+
+const [first, ...more] = d.quotes || [];
+document.getElementById('app').innerHTML = `
+  <div class="date">${esc(d.dateLabel)}</div>
+  <h1>${esc(d.greeting)}</h1>
+
+  ${first ? `<div class="card quote"><blockquote>${esc(first.text)}</blockquote><cite>${esc(first.author)}</cite></div>` : ''}
+
+  <div class="card next"><h2>Your one next action</h2><p>${esc(d.nextAction)}</p></div>
+
+  <div class="card"><h2>Today</h2>
+    <div class="progress"><div id="bar"></div></div>
+    <h2 style="margin-top:4px">Habits</h2>${taskList('habit', d.habits || [])}
+    <h2 style="margin-top:18px">Goals</h2>${taskList('goal', d.goals || [])}
+    <div class="done-msg" id="done">Everything that counts is done. That's a win; tell your coach.</div>
+  </div>
+
+  ${(d.comingUp || []).length ? `<div class="card"><h2>Coming up</h2><ul class="plain">${d.comingUp.map(c => `<li>${esc(c)}</li>`).join('')}</ul></div>` : ''}
+
+  ${(d.stats || []).length ? `<div class="card"><h2>Scoreboard</h2><div class="stats">${d.stats.map(s => `<div class="stat"><b>${esc(s.value)}</b><span>${esc(s.label)}</span></div>`).join('')}</div></div>` : ''}
+
+  ${(d.recentWins || []).length ? `<div class="card"><h2>Recent wins</h2><ul class="plain">${d.recentWins.map(w => `<li>${esc(w)}</li>`).join('')}</ul></div>` : ''}
+
+  ${more.map(q => `<div class="card quote small"><blockquote>${esc(q.text)}</blockquote><cite>${esc(q.author)}</cite></div>`).join('')}
+
+  ${d.vision ? `<div class="card vision"><h2>Why</h2><p>${esc(d.vision)}</p></div>` : ''}
+`;
+
+function refresh() {
+  // Bonus habits never count against the day: progress tracks required items only.
+  const boxes = [...document.querySelectorAll('ul.tasks input:not([data-bonus])')];
+  const done = boxes.filter(b => b.checked).length;
+  document.getElementById('bar').style.width = (boxes.length ? done / boxes.length * 100 : 0) + '%';
+  document.getElementById('done').style.display = boxes.length && done === boxes.length ? 'block' : 'none';
+}
+document.querySelectorAll('ul.tasks input').forEach(b => b.addEventListener('change', () => {
+  saved[b.dataset.id] = b.checked;
+  localStorage.setItem(key, JSON.stringify(saved));
+  refresh();
+}));
+refresh();
+</script>
+</body>
+</html>
