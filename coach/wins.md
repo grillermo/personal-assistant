@@ -5,6 +5,7 @@ a hard conversation had, a day without doomscrolling. Newest first. One line eac
 
 ## 2026-11
 
+- 2026-11-13: Walked before the morning page, four walks this week.
 - 2026-11-12: Walked and started the SelfControl block before the morning page.
 - 2026-11-11: Self-hosted login: Tailscale now signs in with hola@grillermo.com through his own Pocket ID on the macmini.
 - 2026-11-11: Published another item for sale, on a day that started with a cancelled trip.
